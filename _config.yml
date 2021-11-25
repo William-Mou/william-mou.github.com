@@ -1,11 +1,11 @@
-title: Hexo
-subtitle: ''
-description: ''
+title: William Mou
+subtitle: William-Mou's Blog
+description: William-Mou's Blog
 keywords: null
-author: John Doe
+author: William Mou
 language: en
 timezone: ''
-url: http://example.com
+url: https://william-mou.github.io/
 permalink: ':year/:month/:day/:title/'
 permalink_defaults: null
 pretty_urls:
