@@ -3,9 +3,9 @@ title: IREE MMA 執行流程完整分析
 date: 2025-11-07 09:50:00
 tags:
 categories:
-thumbnail: 
+thumbnail: /img/iree-mma-debug-walkthrough_files/encrypted-tbn0_gstatic_com_image.png
 ---
-> 這份文件以 iree-compiler 獲得的 mma_debug.log 為基礎，完整解析 IREE 編譯器在 GPU 後端（特別是 AMD RDNA3 架構）推導 MMA（Matrix Multiply-Accumulate）Schedule 的整個過程。   
+> 這份文件以 samples/jerry_test/jerry_mma_debug.log 為基礎，完整解析 IREE 編譯器在 GPU 後端（特別是 AMD RDNA3 架構）推導 MMA（Matrix Multiply-Accumulate）Schedule 的整個過程。   
 
 > IREE（Intermediate Representation Execution Environment）是由 Google 與開源社群共同開發的高效能編譯框架，用來把高階機器學習模型轉換成能在各種硬體上直接執行的程式碼。模型可以從 PyTorch、TensorFlow 或其他前端匯出為 MLIR（Multi-Level Intermediate Representation）格式，IREE 便能基於這些中介表示進行優化、分配記憶體、並最終產生針對目標硬體（如 GPU、CPU、或專用加速器）的執行程式。   
 
@@ -1376,3 +1376,6 @@ if (isVerySkinny) {
 - Debug MMA 問題的指南   
 - 優化 matmul 性能的基礎   
    
+希望這份文件能幫助你深入理解 IREE 的 MMA 編譯機制! 🎉   
+   
+![](/img/iree-mma-debug-walkthrough_files/encrypted-tbn0_gstatic_com_image.png)    
