@@ -160,7 +160,7 @@ widgets:
         action_url: ''
         verification_code: ''
 plugins:
-    animejs: true
+    animejs: false
     back_to_top: true
     baidu_analytics:
         tracking_id: 
