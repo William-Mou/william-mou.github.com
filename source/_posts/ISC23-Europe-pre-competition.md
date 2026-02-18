@@ -3,7 +3,7 @@ title: ISC23 歐洲行 - 賽前準備及旅遊安排
 date: 2026-02-18 16:34:23
 tags:
 categories:
-thumbnail: /img/ISC23-Europe-pre-competition_files/image.png
+thumbnail: /img/ISC23-Europe-pre-competition_files/image_b.png
 ---
    
 沒想到人生第一次踏上歐洲，竟是跟著清大超算團隊出國參加競賽！舉辦這次競賽的是 ISC High Performance 德國超高速運算電腦展會底下的 HPC-AI ADVISORY COUNCIL，由於 ISC 及該主辦單位並不提供參賽隊伍住宿與機票補助，清大超算團隊過往不會主動報名歐洲的 ISC 比賽，通常只有在 HPC-AI 線上賽或 SCC 奪得冠軍的隊伍，才會因為獲得主辦方正式邀請前往參賽。   
