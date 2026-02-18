@@ -32,10 +32,17 @@ perl -0777 -i -pe 's/!\[[^\]]*\]\(files\/([^)]+)\)\s*\n\*\*(.*?)\*\*/![\2]\(\/im
 # 2️⃣ 無註解的情況
 perl -0777 -i -pe 's/!\[[^\]]*\]\(files\/([^)]+)\)/![]\(\/img\/'"${NEWNAME}"'_files\/\1\)/g' "$NEW_FILE"
 
-# 3️⃣ 轉換 YAML header
+# 3️⃣ 轉換 YAML header（支援兩種格式：有 Name: 的舊格式、或 Anytype 的 Creation date: 格式）
 if grep -q '^Name:' "$NEW_FILE"; then
-    TITLE=$(grep '^Name:' "$NEW_FILE" | sed 's/Name:[[:space:]]*//')
+    TITLE=$(grep '^Name:' "$NEW_FILE" | sed 's/Name:[[:space:]]*//' | sed 's/[[:space:]]*$//')
     DATE=$(grep 'Creation date:' "$NEW_FILE" | sed -E 's/.*"([0-9-]+)T([0-9:]+)Z".*/\1 \2/')
+elif grep -q 'Creation date:' "$NEW_FILE"; then
+    # Anytype 匯出沒有 Name:，標題在 YAML 後第一個「# 標題」行
+    TITLE=$(awk '/^---$/ { n++; next } n==2 && /^# / { sub(/^# +/, ""); gsub(/[[:space:]]+$/, ""); print; exit }' "$NEW_FILE")
+    DATE=$(grep 'Creation date:' "$NEW_FILE" | sed -E 's/.*"([0-9-]+)T([0-9:]+)Z".*/\1 \2/')
+fi
+
+if [ -n "$DATE" ]; then
 
     # 尋找第一張圖片作為縮圖
     THUMB_FILE=$(find "$DIR/files" -maxdepth 1 -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.webp" \) | sort | head -n 1)
