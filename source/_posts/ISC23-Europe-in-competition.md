@@ -36,7 +36,7 @@ thumbnail: /img/ISC23-Europe-in-competition_files/image_j.png
 ![其中最重要得事情就是去超市囤糧，作為窮學生，基本上外食沒有東西是我們吃的起得，靠超市度過接下來五天的早餐還是很有必要的。一般來說我都靠一包吐司+一罐草莓果醬，配上幾罐大罐的可樂/盜版可樂，剛好夠吃五天的早餐，](/img/ISC23-Europe-in-competition_files/image_n.png)   
 ![第一個在歐洲度過的落日，是漂亮的漸層](/img/ISC23-Europe-in-competition_files/image_13.png)   
 ### 比賽期間 - Day 0   
-比賽一早，前往 CCH，眾多研討會、活動都在這邊舉行，例如年度盛事 CCC 及不少工程類展覽等，近幾年 ISC 似乎也都在這邊舉辦。大致的行程是：Day0（5/21） 架設機器，Day1~Day3（5/22~5/24）比賽，Day3 下午頒獎。   
+比賽一早，前往 CCH，眾多研討會、活動都在這邊舉行，例如年度盛事 CCC 及不少工程類展覽等，近幾年 ISC 似乎也都在這邊舉辦。大致的行程是：Day0（5/21） 架設機器，Day1\~Day3（5/22\~5/24）比賽，Day3 下午頒獎。   
 ![](/img/ISC23-Europe-in-competition_files/image_l.png)    
 ![](/img/ISC23-Europe-in-competition_files/image_18.png)    
 一到會場，機器就直接被堆在我們的 Booth 攤位前，這點比起美國 SC22 真是十分貼心，不用滿場跑來跑去跟貨運公司溝通，感覺德鐵 DB 在送貨方面比起送人可靠多了。   
