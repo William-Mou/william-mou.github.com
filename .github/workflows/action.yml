@@ -1,6 +1,8 @@
 name: GitHub Pages
 
-on: push
+on:
+  push:
+  workflow_dispatch:  # 可從 Actions 頁面手動執行
 
 jobs:
   publish:
