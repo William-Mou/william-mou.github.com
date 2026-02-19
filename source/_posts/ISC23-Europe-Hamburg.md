@@ -2,11 +2,11 @@
 title: ISC23 歐洲行 - 漢堡
 date: 2023-05-26 09:00:00
 tags:
-categories:
+categories: 旅行
 thumbnail: /img/ISC23-Europe-Hamburg_files/image_1n.png
 ---
 ### 前言   
-從 Lubeck 回來後睡了一個晚上，2025/05/26 原訂整天是留給漢堡的行程，原訂早上一起來大家各自到漢堡城市內晃晃，約定好下午 3:00 去[搭船遊覽易北河](https://www.klook.com/zh-TW/activity/21169-harbor-cruise-tour-hamburg/?aid=34&utm_medium=affiliate-alwayson&utm_source=non-network&utm_campaign=34&utm_term=)。   
+從 Lubeck 回來後睡了一個晚上，2023/05/26 原訂整天是留給漢堡的行程，原訂早上一起來大家各自到漢堡城市內晃晃，約定好下午 3:00 去[搭船遊覽易北河](https://www.klook.com/zh-TW/activity/21169-harbor-cruise-tour-hamburg/?aid=34&utm_medium=affiliate-alwayson&utm_source=non-network&utm_campaign=34&utm_term=)。   
 但人算不如天算，因為大賽獲獎後，學校秘書處會幫忙發新聞稿，而這是有時效性的事情必須盡速處理。歐洲時間早上剛好是台灣時間下午，所以一起床我就開始跟秘書處書信往來，提供比賽題目、成員名單等相關資訊，並協助校稿新聞稿內容是否有誤，一來一往一個早上就過去了，最後在飯店吃了維力炸醬麵當午餐（又省了 10 EUR），終於把行政事項處理完了。   
    
 ### 易北河遊船   
@@ -61,7 +61,7 @@ thumbnail: /img/ISC23-Europe-Hamburg_files/image_1n.png
 ![買滿零食和飲料準備回飯店休息](/img/ISC23-Europe-Hamburg_files/image_u.png)   
    
 ### 次日 City Walk   
-2025/05/27 好像又因為在處理事情，下午才出飯店，有些人或許會覺得很可惜，但對我來說，旅行不是一個獨立出來的休息時間，而是我生活的一部分。在歐洲工作，也是一種特殊的生活體驗。   
+2023/05/27 好像又因為在處理事情，下午才出飯店，有些人或許會覺得很可惜，但對我來說，旅行不是一個獨立出來的休息時間，而是我生活的一部分。在歐洲工作，也是一種特殊的生活體驗。   
    
 ![去市政廳走走晃晃，還記得市政廳的德文嗎？Rathaus！在市政廳的正門口，刻著漢薩自由市的名言 Libertatem quam peperere maiores digne studeat servare posteritas. 自由乃汝先祖奮鬥所得，願後人致力於珍惜之。讀過漢薩歷史的你應該心有戚戚焉](/img/ISC23-Europe-Hamburg_files/image_1h.png)   
    
@@ -79,7 +79,7 @@ thumbnail: /img/ISC23-Europe-Hamburg_files/image_1n.png
 當然除了工業以外，也有許多海事相關的手稿、藝術。其中這幅畫特別吸引我，畫面中那一抹落日的橘，跟我在台灣鹿林拍得落日十分相似，沒想到在歐洲的海洋及台灣的高山上，居然有著相同的光彩？   
 後來我瞭解到這幅畫是由俄羅斯著名的海洋畫家艾瓦佐夫斯基繪製的，背景右側停泊著一艘已卸下帆具的戰艦，前方則有一艘護衛艦正由一艘蒸汽拖船拖曳前行。這種用光技巧，這種海洋敘事，換作是今天的我，肯定會立刻聯想到威廉·透納（J.M.W. Turner）的畫作，那是我最喜歡的畫家。   
 沒想到一查以後發現，艾瓦佐夫斯基非常崇拜透納，怪不得他對光影的極致處理深深打動了我。旅行及藝術就是如此特別，在多次旅行、多次看展、多年後，或許會猛然發現自己喜歡的事物間總有著某種關聯⋯⋯   
-![伊凡·康斯坦丁諾維奇·艾瓦佐夫斯基 (Iwan Konstantinowitsch Ajwasowskij)](/img/ISC23-Europe-Hamburg_files/image_1l.png) 所作，作品名稱為 **《日落時的港口》（Hafen bei Sonnenuntergang）**   
+![伊凡·康斯坦丁諾維奇·艾瓦佐夫斯基 (Iwan Konstantinowitsch Ajwasowskij) 所作，作品名稱為 《日落時的港口》（Hafen bei Sonnenuntergang](/img/ISC23-Europe-Hamburg_files/image_1l.png)
 ![當然還有不少特殊的船隻模型，不過在看完微縮博物館後顯得有點小巫見大巫了](/img/ISC23-Europe-Hamburg_files/image_y.png)   
 ![也賣了不少模型，但對海運不太了解的我只能買了看得懂的 stack（資工術語） 和 uboot（資工軟體）](/img/ISC23-Europe-Hamburg_files/image_g.png)   
 ![晚餐再次挑戰魚漢堡，人不會犯兩次同樣的錯誤，這次直接買沒有麵包的吃，不會掉牙齒了](/img/ISC23-Europe-Hamburg_files/image_14.png)   
