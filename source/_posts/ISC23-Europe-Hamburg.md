@@ -53,8 +53,8 @@ thumbnail: /img/ISC23-Europe-Hamburg_files/image_1n.png
 ![當然也有飛機，他們是會滑行、起飛、降落的！偶爾還會有不速之客如千年鷹飛過。](/img/ISC23-Europe-Hamburg_files/image_8.png)   
 ![每一個角落都彷彿藏著一些小人物故事，值得駐足許久默默觀賞。不經思考當初設計展場的人們是否把自己的親身經歷藏在其中呢？](/img/ISC23-Europe-Hamburg_files/image_c.png)   
 ![也有一些令你會心一笑的場景](/img/ISC23-Europe-Hamburg_files/image_m.png)   
-![颱風天就是要泛舟](/img/ISC23-Europe-Hamburg_files/image.png)   
-![傳統德式風格的小房子，也可以在法國 Colmar 及鄰近地區看到](/img/ISC23-Europe-Hamburg_files/image_e.png)！   
+![颱風天就是要泛舟](/img/ISC23-Europe-Hamburg_files/image.png)
+![傳統德式風格的小房子，也可以在法國 Colmar 及鄰近地區看到](/img/ISC23-Europe-Hamburg_files/image_e.png)
 ![微縮博物館甚至有所有鐵道與交通系統的中控台，遇到事故脫軌/卡著等會派人出去處理。](/img/ISC23-Europe-Hamburg_files/image_p.png)   
 ![這博物館實在有太多地方可以細細品味了，一出來就晚上九點了，光有點暗來不及拍照了（對，這就是高緯度地區的晚上九點），我決定明天再來拍下這些紅磚建築的風采。](/img/ISC23-Europe-Hamburg_files/image_r.png)   
 ![微縮景觀世界博物館票根，相信會成為我最難忘的一個博物館](/img/ISC23-Europe-Hamburg_files/image_1e.png)   
