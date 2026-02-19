@@ -2,7 +2,7 @@
 title: ISC23 歐洲行 - 呂北克
 date: 2023-05-25 09:00:00
 tags:
-categories:
+categories: 旅行
 thumbnail: /img/ISC23-Europe-Lubeck_files/image_13.png
 ---
 
