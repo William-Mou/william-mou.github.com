@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>完整學習機器學習實錄1——安裝 Ubuntu 18.04 - William Mou</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#3273dc"><meta name="application-name" content="William Mou Blog"><meta name="msapplication-TileImage" content="/img/logo.png"><meta name="msapplication-TileColor" content="#3273dc"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="William Mou Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="完整學習機器學習實錄1——安裝 Ubuntu 18.04前言　　本系列將紀錄作者在學習機器學習的同時，曾經踩過的坑與詳細的操作記錄。  一方面希望之後能夠在不久的未來回顧過去所為、遇到相同的問題時能夠讓迅速找到答案；同時也希望幫助在類似環境下學習的朋友，能夠有一套較詳細的學習筆記，共同勉勵與成長！   一篇重要的雙系統筆記與安裝前置作業，有需要雙系統的讀者請建議閱讀：https:&amp;#x2F;&amp;#x2F;medium."><meta property="og:type" content="blog"><meta property="og:title" content="完整學習機器學習實錄1——安裝 Ubuntu 18.04"><meta property="og:url" content="https://william-mou.github.io/2019/09/13/%E5%AE%8C%E6%95%B4%E5%AD%B8%E7%BF%92%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%AF%A6%E9%8C%841%E2%80%94%E2%80%94%E5%AE%89%E8%A3%9D-Ubuntu-18-04/"><meta property="og:site_name" content="William Mou"><meta property="og:description" content="完整學習機器學習實錄1——安裝 Ubuntu 18.04前言　　本系列將紀錄作者在學習機器學習的同時，曾經踩過的坑與詳細的操作記錄。  一方面希望之後能夠在不久的未來回顧過去所為、遇到相同的問題時能夠讓迅速找到答案；同時也希望幫助在類似環境下學習的朋友，能夠有一套較詳細的學習筆記，共同勉勵與成長！   一篇重要的雙系統筆記與安裝前置作業，有需要雙系統的讀者請建議閱讀：https:&amp;#x2F;&amp;#x2F;medium."><meta property="og:locale" content="en_US"><meta property="og:image" content="https://docs.microsoft.com/zh-cn/windows-hardware/drivers/bringup/images/oem-boot-flow-detail.png"><meta property="article:published_time" content="2019-09-13T22:28:12.000Z"><meta property="article:modified_time" content="2026-02-20T18:08:53.556Z"><meta property="article:author" content="William Mou"><meta property="article:tag" content="機器學習"><meta property="article:tag" content="完整學習機器學習實錄"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://docs.microsoft.com/zh-cn/windows-hardware/drivers/bringup/images/oem-boot-flow-detail.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://william-mou.github.io/2019/09/13/%E5%AE%8C%E6%95%B4%E5%AD%B8%E7%BF%92%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%AF%A6%E9%8C%841%E2%80%94%E2%80%94%E5%AE%89%E8%A3%9D-Ubuntu-18-04/"},"headline":"完整學習機器學習實錄1——安裝 Ubuntu 18.04","image":["https://docs.microsoft.com/zh-cn/windows-hardware/drivers/bringup/images/oem-boot-flow-detail.png"],"datePublished":"2019-09-13T22:28:12.000Z","dateModified":"2026-02-20T18:08:53.556Z","author":{"@type":"Person","name":"William Mou"},"publisher":{"@type":"Organization","name":"William Mou","logo":{"@type":"ImageObject","url":"https://william-mou.github.io/img/logo.png"}},"description":"完整學習機器學習實錄1——安裝 Ubuntu 18.04前言　　本系列將紀錄作者在學習機器學習的同時，曾經踩過的坑與詳細的操作記錄。  一方面希望之後能夠在不久的未來回顧過去所為、遇到相同的問題時能夠讓迅速找到答案；同時也希望幫助在類似環境下學習的朋友，能夠有一套較詳細的學習筆記，共同勉勵與成長！   一篇重要的雙系統筆記與安裝前置作業，有需要雙系統的讀者請建議閱讀：https:&#x2F;&#x2F;medium."}</script><link rel="canonical" href="https://william-mou.github.io/2019/09/13/%E5%AE%8C%E6%95%B4%E5%AD%B8%E7%BF%92%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%AF%A6%E9%8C%841%E2%80%94%E2%80%94%E5%AE%89%E8%A3%9D-Ubuntu-18-04/"><link rel="icon" href="/img/logo.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.png" alt="William Mou" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/William-Mou"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2019-09-13T22:28:12.000Z" title="9/13/2019, 10:28:12 PM">2019-09-13</time></span><span class="level-item">Updated&nbsp;<time dateTime="2026-02-20T18:08:53.556Z" title="2/20/2026, 6:08:53 PM">2026-02-20</time></span><span class="level-item"><a class="link-muted" href="/categories/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/">機器學習</a></span><span class="level-item">25 minutes read (About 3741 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">完整學習機器學習實錄1——安裝 Ubuntu 18.04</h1><div class="content"><h1 id="完整學習機器學習實錄1——安裝-Ubuntu-18-04"><a href="#完整學習機器學習實錄1——安裝-Ubuntu-18-04" class="headerlink" title="完整學習機器學習實錄1——安裝 Ubuntu 18.04"></a>完整學習機器學習實錄1——安裝 Ubuntu 18.04</h1><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>　　本系列將紀錄作者在學習機器學習的同時，曾經踩過的坑與詳細的操作記錄。</p>
+<blockquote>
+<p>一方面希望之後能夠在不久的未來回顧過去所為、遇到相同的問題時能夠讓迅速找到答案；同時也希望幫助在類似環境下學習的朋友，能夠有一套較詳細的學習筆記，共同勉勵與成長！</p>
+</blockquote>
+<ul>
+<li>一篇重要的雙系統筆記與安裝前置作業，有需要雙系統的讀者請建議閱讀：<a target="_blank" rel="noopener" href="https://medium.com/caesars-study-review-on-web-development/win10-and-ubuntu-%E9%9B%99%E7%B3%BB%E7%B5%B1%E5%AE%89%E8%A3%9D%E7%AD%86%E8%A8%98-bc824bef7fb4">https://medium.com/caesars-study-review-on-web-development/win10-and-ubuntu-%E9%9B%99%E7%B3%BB%E7%B5%B1%E5%AE%89%E8%A3%9D%E7%AD%86%E8%A8%98-bc824bef7fb4</a></li>
+</ul>
+<h1 id="硬體配置"><a href="#硬體配置" class="headerlink" title="硬體配置"></a>硬體配置</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">MB : X299 AORUS Gaming 9</span><br><span class="line">CPU: Intel I9-7920X</span><br><span class="line">RAM: DDR4 HyperX 128G</span><br><span class="line">SSD: Kingston A1000 NVMe PCIe SSD 960G</span><br><span class="line">GPU: Nvidia GTX 1080ti (ROG-STRIX-GTX1080TI-O11G-GAMING)</span><br></pre></td></tr></table></figure>
+<h2 id="這邊需要注意的"><a href="#這邊需要注意的" class="headerlink" title="這邊需要注意的"></a>這邊需要注意的</h2><ul>
+<li>MB 與 CPU 經由老外實測<a target="_blank" rel="noopener" href="https://youtu.be/WpKPw56ABQU">^1</a>，是可以運行 Ubuntu 的，所以如果出問題，不需要先去考慮是主板與 CPU 不支持。</li>
+<li>SSD 是 NVME 協議，LINUX 理論上是支持的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/NVM_Express">^2</a>，組配時需確定主板支持才行。</li>
+<li>GPU 是 Nvidia ，自古以來 Nvidia 這類外接顯卡在 LINUX 上都需要另外安裝驅動，比較麻煩些，但也不得不用是吧。</li>
+</ul>
+<h1 id="系統安裝"><a href="#系統安裝" class="headerlink" title="系統安裝"></a>系統安裝</h1><p>筆者打算安裝此時最新的 Ubuntu 18.04 ，並且實現 Windows 10 與 Ubuntu 雙系統。雖然可能會遇到不少坑，但畢竟他是 LTS 版本，選用還是有點保障的。</p>
+<h2 id="基本知識"><a href="#基本知識" class="headerlink" title="基本知識"></a>基本知識</h2><p>安裝系統涉及主板等許多基礎知識，這邊以條列式記錄，並且附上連結，有興趣大家可以自行研讀，但至少要了解它的功用與存在意義。</p>
+<ul>
+<li>UEFI：Unified Extensible Firmware Interface 統一可延伸韌體介面，用來定義<strong>作業系統</strong>與<strong>韌體</strong>的中介	<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%B5%B1%E4%B8%80%E5%8F%AF%E5%BB%B6%E4%BC%B8%E9%9F%8C%E9%AB%94%E4%BB%8B%E9%9D%A2">^3</a>，過去舊稱為 EFI，是用來取代 BIOS 的一種新定義。<a target="_blank" rel="noopener" href="https://www.howtogeek.com/56958/htg-explains-how-uefi-will-replace-the-bios/">^4</a><ul>
+<li>韌體的階層位置![韌體的階層位置](<a target="_blank" rel="noopener" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Efi-simple_zh-tw.svg/1920px-Efi-simple_zh-tw.svg.png">https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Efi-simple_zh-tw.svg/1920px-Efi-simple_zh-tw.svg.png</a> &#x3D;400x)     </li>
+<li>BIOS 與 UEFI 的外觀差別<br><img src="https://www.howtogeek.com/wp-content/uploads/2017/05/img_5913820521683.png" alt="BIOS 與 UEFI 的外觀差別"></li>
+</ul>
+</li>
+<li>韌體（固件）：firmware 顧名思義，韌體的所在是位於軟體和硬體之間的。像軟體一樣，他是一個被電腦所執行的程式。現已演進為一個硬體裝置當中的可程式化的內容，通常可用 <em>電流清除並重寫</em> 或 <em>更換儲存媒介</em> 的方式更新。<blockquote>
+<p>俗稱刷 BIOS 就是在刷韌體</p>
+</blockquote>
+</li>
+<li>Legacy&#x2F;CSM：在 UEFI 普及後，我們時常可以在主機板選項中看到這兩者之一，開啟、關閉分別代表<strong>是否兼容傳統 BIOS</strong> 。這是在標準整合的時代，必然會出現的混亂選項，之後有望完全脫離 CSM<a target="_blank" rel="noopener" href="https://www.techbang.com/posts/55248-intel-will-completely-remove-csm-simulation-legacy-bios2020-year-full-transfer-to-uefi-class-3">^5</a><ul>
+<li>微軟的 UEFI 推廣計畫：<br>  <img src="https://cdn0.techbang.com/system/images/420883/original/0e448957d310d541d9a2606797e833c5.jpg?1511214698" alt="在这里插入图片描述">         <ul>
+<li>類別0，這類系統使用x86 BIOS韌體，只支援傳統作業系統。</li>
+<li>類別1，這類系統採用支援UEFI和Pi規範的韌體，啟用CSM層功能，只支援傳統作業系統。</li>
+<li>類別2，這類系統採用支援UEFI和Pi規範的韌體，啟用CSM層功能，同時支援傳統和UEFI啟動的作業系統。</li>
+<li>類別3，這類系統採用支援UEFI和Pi規範的韌體，不再提供或完全關閉CSM層功能，只支援由UEFI啟動的作業系統。</li>
+<li>類別3+，在類別3的系統基礎上提供並啟用Secure Boot功能。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>若您的系統都以 UEFI 安裝，理論上開啟與否都不影響，但是為了更好的兼容，通常建議開啟 CSM 後選擇 UEFI 優先。（金士頓的官方說明<a target="_blank" rel="noopener" href="https://www.kingston.com/tw/ssd/resources/dcp1000-boot-configurations-and-recommendations">^6</a> 與 SSD 疑惑<a target="_blank" rel="noopener" href="https://askubuntu.com/questions/882346/cant-boot-into-linux-on-2nd-ssd">^7</a>）</p>
+</blockquote>
+<ul>
+<li>Secure Boot：中文稱安全啟動，也就是主機板只認定「安全的系統」，才能夠順利啟動，目前被認定為安全的系統有以下等，不少 Linux 發行版也通過「安全」認證。<ul>
+<li>Windows 8 and 8.1</li>
+<li>Windows Server 2012, and 2012 R2</li>
+<li>Windows 10, VMware vSphere 6.5[52] </li>
+<li>Fedora (since version 18)</li>
+<li>openSUSE (since version 12.3)</li>
+<li>RHEL (since RHEL 7)</li>
+<li>CentOS (since CentOS 7[53]) </li>
+<li>Ubuntu (since version 12.04.2)</li>
+<li>FreeBSD</li>
+</ul>
+</li>
+</ul>
+<p>而更詳記得內容如下文所述<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface#SECURE-BOOT">^8</a>：</p>
+<blockquote>
+<p>The UEFI 2.3.1 Errata C specification (or higher) defines a protocol known as secure boot, which can secure the boot process by preventing the loading of drivers or OS loaders that are not signed with an acceptable digital signature. The mechanical details of how precisely these drivers are to be signed are not specified.[49] When secure boot is enabled, it is initially placed in “setup” mode, which allows a public key known as the “platform key” (PK) to be written to the firmware. Once the key is written, secure boot enters “User” mode, where only drivers and loaders signed with the platform key can be loaded by the firmware. Additional “key exchange keys” (KEK) can be added to a database stored in memory to allow other certificates to be used, but they must still have a connection to the private portion of the platform key.[50] Secure boot can also be placed in “Custom” mode, where additional public keys can be added to the system that do not match the private key.[51]<br>Secure boot is supported by Windows 8 and 8.1, Windows Server 2012, and 2012 R2, and Windows 10, VMware vSphere 6.5[52] and a number of Linux distributions including Fedora (since version 18), openSUSE (since version 12.3), RHEL (since RHEL 7), CentOS (since CentOS 7[53]) and Ubuntu (since version 12.04.2).[54] As of January 2017, FreeBSD support is in a planning stage.[55]<br><img src="https://1.bp.blogspot.com/-utBmke02KrE/UHaaPshfyqI/AAAAAAAABDs/Nuz-Dldc18A/s1600/Windows-8s-Secure-Boot.jpg" alt="在这里插入图片描述"></p>
+</blockquote>
+<ul>
+<li><p>MBR 與 GPT：兩者分別為傳統 BIOS 與新型 UEFI 的分區結構，狹義的MBR 可以單止 BIOS 的系統引導程序，與之相對應的是 UEFI 的系統引導程序分區 ESP（EFI system partition）。</p>
+<ul>
+<li>GPT 好處為近乎無限的分區數量以及識別無限硬碟大小。</li>
+<li>MBR 僅限制 2T 與 4 個主要分區，但存在較好的相容性。</li>
+<li>單以一張圖可以這麼解釋兩者差別，MBR 主要受限於其分區、引導等內容都儲存在第一個分區，而這個分區的大小會影響其發展可能性：<br><img src="http://www.mustbegeek.com/wp-content/uploads/2018/04/Difference-between-MBR-and-GPT.png"><blockquote>
+<p>這部分較為複雜，牽扯到系統啟動時所需要查找的硬碟分區、以及其紀錄方式等，詳細內容可以查看這篇文章<a target="_blank" rel="noopener" href="https://tw.saowen.com/a/64f464b3ebc85f9dd9209dd767d4aed957fb91746e98d4265969ffbbbe212075">^9</a>或是較口語化的這篇<a target="_blank" rel="noopener" href="https://kknews.cc/zh-tw/collect/jva4zl.html">^10</a>。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>在 windows 以 UEFI 啟動電腦的流程：<br><img src="https://docs.microsoft.com/zh-cn/windows-hardware/drivers/bringup/images/oem-boot-flow-detail.png" alt="在这里插入图片描述"><br>Bootloader（引導）代碼及配置文件存於系統盤的ESP中。其中如圖深灰色層，Win10自帶的 Bootloader 為 Windows Boot Manager ，而同屬相同層次 ubuntu18.04 自帶的 Bootloader 為 GRUB2 。</p>
+</li>
+</ul>
+<p>目前實現 win10 &#x2F; ubuntu18.04 雙系統有兩種方案：</p>
+<ol>
+<li>在深灰色層，仍染以 Windows Boot Mananger 為主引導，但需要關閉 UEFI 和 Secure Boot，開啟Legacy &#x2F; CSM，最後通過 EasyBCD 手動添加 Ubuntu 入口。</li>
+<li>在淺灰色層，就交給以 GRUB2 作為主引導，使其生成開機選單。</li>
+</ol>
+<p>顯而易見的，第二種方案更省時省力。</p>
+<blockquote>
+<p>前面有提到，Ubuntu 已經通過 Secure Boot 的認證，所以如果以 GRUB2 為主導，其實不需要關閉 Secure Boot 依照邏輯也得以正常啟動。</p>
+</blockquote>
+<h2 id="製作與開始安裝-Ubuntu"><a href="#製作與開始安裝-Ubuntu" class="headerlink" title="製作與開始安裝 Ubuntu"></a>製作與開始安裝 Ubuntu</h2><ol>
+<li>使用 <a target="_blank" rel="noopener" href="http://tw.ezbsystems.com/ultraiso/">Ultraiso</a>  選用「寫入硬碟映象」製作一支 ubuntu 18.04 的開機碟</li>
+<li>使用 Win10 自帶的硬碟管理（開始鍵 + X ➡️ 選磁碟管理），在 C 磁碟（系統盤），右鍵「壓縮卷」，依個人狀況選擇留給 Ubuntu 的大小。</li>
+<li>到 BIOS 將 Legacy &#x2F; CSM 兼容打開，Secure Boot 可以保持原設定，將帶有 UEFI 前綴字樣的隨身碟設為首選開機。F10 存擋並重新啟動。</li>
+<li>此時會進入 Ubuntu GRUB2 的引導開機介面，選擇 install Ubuntu 後正常情況會順利安裝。</li>
+<li>這兒筆者遇到兩個狀況，第一是點選 install 後卻因為 ACPI error 而導致黑屏死機，必須強壓電源關機。在此紀錄筆者排除此狀況的流程。<br><img src="https://img-blog.csdnimg.cn/20190104021917884.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTc3NzUwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+</ol>
+<h2 id="釐清問題-—-ACPI-是啥？"><a href="#釐清問題-—-ACPI-是啥？" class="headerlink" title="釐清問題 — ACPI 是啥？"></a>釐清問題 — ACPI 是啥？</h2><ul>
+<li>進階組態與電源介面（英文：Advanced Configuration and Power Interface，縮寫：ACPI），是1997年由英特爾、微軟、東芝公司共同提出、制定提供作業系統應用程式管理所有電源管理埠，是一種工業標準，包括了軟體和硬體方面的規範<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%AB%98%E7%BA%A7%E9%85%8D%E7%BD%AE%E4%B8%8E%E7%94%B5%E6%BA%90%E6%8E%A5%E5%8F%A3">^11</a>。 <ul>
+<li>換句話說，這又是一個 UEFI 社群的新規章，他定義了一些特殊的電源使用方式，例如下面這些功能<a target="_blank" rel="noopener" href="https://blog.xuite.net/mmmminst/mouthfire/30682165-%E7%8F%BE%E5%AD%B8%E7%8F%BE%E8%B3%A3%EF%BC%9A%E4%BB%80%E9%BA%BC%E6%98%AFACPI%E9%98%BF%3F%3F">^12</a>:<ol>
+<li>用戶可以使外設在指定時間開關。</li>
+<li>使用筆記本電腦的用戶可以指定電腦在低電壓的情況下進入 低功耗狀態，以保證重要的應用程式運行。</li>
+<li>作業系統可以在應用程式對時間要求不高的情況下降低時鐘頻率。</li>
+<li>作業系統可以根據外設和主板的具體需求為它分配能源。</li>
+<li>在無人使用電腦時可以使電腦進入休眠狀態，但保證一些通 信設備打開。</li>
+<li>即插即用設備在插入時能夠由ACPI來控制。</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>問題的發生<ul>
+<li>Ubuntu 18.04 沒有原裝 Nvidia 顯卡的圖形驅動，導致無法正確透過 ACPI 調用電源管理而出錯。<a target="_blank" rel="noopener" href="https://www.cnblogs.com/handsomer/p/9310559.html">^13</a></li>
+</ul>
+</li>
+<li>問題的解決<ul>
+<li><p>我們可以透過更改 GRUB2 的啟動參數來「迴避」這個問題。<a target="_blank" rel="noopener" href="https://www.itread01.com/articles/1502056813.html">^14</a></p>
+</li>
+<li><p>再進入選擇 Try Ubuntu 或 install Ubuntu 的頁面，在選項上按下 <code>e</code> ，隨後可以進入 GRUB2 的參數修改介面，在 Linux 那行，後方刪除三個 <code>---</code> 後加入 <code>acpi=off</code> </p>
+<ul>
+<li>錯誤示範：<img src="https://img-blog.csdnimg.cn/20190105181527458.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTc3NzUwNw==,size_16,color_FFFFFF,t_70" alt="acpi&#x3D;off 錯誤示範"></li>
+<li>正確示範：<img src="https://img-blog.csdnimg.cn/20190105181851441.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTc3NzUwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+<li>接著在開機時，要壓住 <code>shift</code> ，再次進入 GRUB2 並且做相同的設定。如圖片中倒數第二行，一樣加在 Linux 那行。</li>
+</ul>
+</li>
+</ul>
+<p>  <img src="https://img-blog.csdnimg.cn/20190105190941750.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTc3NzUwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<ul>
+<li>開機後可以使用以下指令安裝 Nvidia 驅動<br>  <code>sudo add-apt-repository ppa:graphics-drivers/ppa</code></li>
+</ul>
+</li>
+</ul>
+<p><code>sudo apt-get update</code><br><code>nvidia-smi</code> 後可獲得建議安裝指令<br><code>sudo apt-get install nvidia-381</code> (後面請選擇適當的或最新版本)<br>	- 如果仍然出現問題可以編輯 <code>/etc/default/grub</code> ，加入 <code>acpi=off</code><br>但是要注意可能發生 CPU 風散停止的問題。<br><img src="https://img-blog.csdnimg.cn/20190105192421291.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTc3NzUwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<ul>
+<li>問題補充<ul>
+<li>網路上有人有遇到循環 GRUB2 而無法進入系統的情形，詳情可參考此篇：<a target="_blank" rel="noopener" href="https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=209042">https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=209042</a></li>
+<li>筆者建議可以安裝 <code>Psensor</code> 這個圖形化的軟體，在安裝完成後的一段時間，觀測硬體溫度。<a target="_blank" rel="noopener" href="https://www.ubuntu-tw.org/modules/newbb/viewtopic.php?post_id=75694">^15</a><br>  <code>sudo apt-get install lm-sensors hddtemp</code><br>  <code>sudo sensors-detect</code><br>  <code>sensors</code></li>
+</ul>
+</li>
+</ul>
+<ol start="6">
+<li>接著，順利進入安裝程序後後，卻發現無法正確抓到 NVME SSD。</li>
+</ol>
+<h2 id="釐清問題-—-NVME-SSD"><a href="#釐清問題-—-NVME-SSD" class="headerlink" title="釐清問題 — NVME SSD"></a>釐清問題 — NVME SSD</h2><p>根據這篇文章<code>把 Ubuntu 16.04 及 18.04 安裝到幾款特殊的 NVMe SSD</code><a target="_blank" rel="noopener" href="https://medium.com/@honglong/%E6%8A%8A-ubuntu-16-04-%E5%8F%8A-18-04-%E5%AE%89%E8%A3%9D%E5%88%B0%E5%B9%BE%E6%AC%BE%E7%89%B9%E6%AE%8A%E7%9A%84-nvme-ssd-%E4%B8%8A-504a519ab729">^16</a> 上，可以知道大概是 APST(Autonomous Power State Transitions) 的問題，可見作者在  <a target="_blank" rel="noopener" href="https://wiki.archlinux.org/index.php/Solid_state_drive/NVMe">Arch Linux Wiki</a> 上可以找到解決方法</p>
+<ul>
+<li>問題的發生<ul>
+<li>而問題的細節是因為 NVME 的省電模式似乎因為驅動的問題而掛了，近一步可以閱讀<code>PMC NVMe主控动态电源管理</code><a target="_blank" rel="noopener" href="http://www.10tiao.com/html/609/201608/2652239581/1.html">^17</a>理解更多有關於 NVME 電源管理代碼的問題。</li>
+</ul>
+</li>
+<li>問題的解決<ul>
+<li>在剛剛相同的頁面，相同行，空格後接續補上此參數<code>nvme_core.default_ps_max_latency_us=5500</code> 開機後 installer 就能偵測到 NVMe SSD 了。<br> <img src="https://img-blog.csdnimg.cn/2019010519232869.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTc3NzUwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+<li>因為 Ubuntu 預設是不會出現 GRUB 選單，會自動進入系統，所以安裝完第一次開機時要按住 shift 強制讓 GRUB 出現，再次加上 <code>nvme_core.default_ps_max_latency_us=5500</code> 參數開機，如果不加上還是能進系統，但會隨機遇到系統完全 hang 住無法動彈，只能強制重新開機的狀況，例如執行 <code>lscpi</code> <code>uname</code> 等指令都有可能引發。</li>
+<li>成功第一次穩定進入系統，要去編輯 <code>/etc/default/grub</code> 把 <code>nvme_core.default_ps_max_latency_us=5500</code> 參數加上去，再執行 <code>sudo update-grub</code> 更新 GRUB 設定。<br><img src="https://img-blog.csdnimg.cn/20190105192410895.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl8zOTc3NzUwNw==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></li>
+</ul>
+</li>
+</ul>
+<h1 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h1><p>至此為止，已經成功了安裝必備的基本環境，可開始 Ubuntu 18.04 的機器學習之旅。接著，可以開始安裝相對應的 CUDA 以及 cuDNN，以及自己熟悉的機器學習框架與庫，Here we go！</p>
+</div><div class="article-licensing box"><div class="licensing-title"><p>完整學習機器學習實錄1——安裝 Ubuntu 18.04</p><p><a href="https://william-mou.github.io/2019/09/13/完整學習機器學習實錄1——安裝-Ubuntu-18-04/">https://william-mou.github.io/2019/09/13/完整學習機器學習實錄1——安裝-Ubuntu-18-04/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>William Mou</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2019-09-13</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2026-02-20</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/">機器學習</a><a class="link-muted mr-2" rel="tag" href="/tags/%E5%AE%8C%E6%95%B4%E5%AD%B8%E7%BF%92%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%AF%A6%E9%8C%84/">完整學習機器學習實錄</a></div><div class="sharethis-inline-share-buttons"></div><script src="https://platform-api.sharethis.com/js/sharethis.js#property=619fa9250255320019654888&amp;product=inline-share-buttons" defer></script></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support the author with</h3><div class="buttons is-centered"><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>Wechat</span><span class="qrcode"><img src="/img/wechat.jpg" alt="Wechat"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2019/09/13/%E5%AE%8C%E6%95%B4%E5%AD%B8%E7%BF%92%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%AF%A6%E9%8C%842%E2%80%94%E2%80%94%E5%AE%89%E8%A3%9D-Nvidia-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%92%B0%E5%A2%83/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">完整學習機器學習實錄2——安裝 Nvidia 機器學習環境</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2019/09/13/AI-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98%E6%95%B4%E7%90%86/"><span class="level-item">AI 學習筆記整理</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card" id="comments"><div class="card-content"><h3 class="title is-5">Comments</h3><div class="fb-comments" data-width="100%" data-href="https://william-mou.github.io/2019/09/13/%E5%AE%8C%E6%95%B4%E5%AD%B8%E7%BF%92%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%AF%A6%E9%8C%841%E2%80%94%E2%80%94%E5%AE%89%E8%A3%9D-Ubuntu-18-04/" data-num-posts="5"></div><script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en/sdk.js#xfbml=1&version=v12.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/me.jpeg" alt="William Mou"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">William Mou</p><p class="is-size-6 is-block">HPC engineer</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>NTHU CS, Taiwan</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives/"><p class="title">22</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories/"><p class="title">7</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags/"><p class="title">22</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/William-Mou" target="_blank" rel="me noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/William-Mou"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Facebook" href="https://www.facebook.com/william.mou1024/"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Telegram" href="https://t.me/WilliamMou"><i class="fab fa-telegram"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://www.nthu.edu.tw/hotNews/content/1023" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">ASC</span></span><span class="level-right"><span class="level-item tag">www.nthu.edu.tw</span></span></a></li><li><a class="level is-mobile" href="https://sitcon.org/2020/agenda/bb4fc171-920f-48de-b411-ec0095306491" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">PVE</span></span><span class="level-right"><span class="level-item tag">sitcon.org</span></span></a></li><li><a class="level is-mobile" href="https://sitcon.org" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">SITCON</span></span><span class="level-right"><span class="level-item tag">sitcon.org</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Blockchain/"><span class="level-start"><span class="level-item">Blockchain</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/SITCON/"><span class="level-start"><span class="level-item">SITCON</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%97%85%E8%A1%8C/"><span class="level-start"><span class="level-item">旅行</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/"><span class="level-start"><span class="level-item">機器學習</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%B6%93%E9%A9%97%E8%B3%87%E6%BA%90/"><span class="level-start"><span class="level-item">經驗資源</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/"><span class="level-start"><span class="level-item">資訊安全</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%B3%87%E8%A8%8A%E8%AC%9B%E5%BA%A7/"><span class="level-start"><span class="level-item">資訊講座</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><figure class="media-left"><a class="image" href="/2023/05/26/ISC23-Europe-Hamburg/"><img src="/img/ISC23-Europe-Hamburg_files/image_1n.png" alt="ISC23 歐洲行 - 漢堡"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-05-26T09:00:00.000Z">2023-05-26</time></p><p class="title"><a href="/2023/05/26/ISC23-Europe-Hamburg/">ISC23 歐洲行 - 漢堡</a></p><p class="categories"><a href="/categories/%E6%97%85%E8%A1%8C/">旅行</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2023/05/25/ISC23-Europe-Lubeck/"><img src="/img/ISC23-Europe-Lubeck_files/image_13.png" alt="ISC23 歐洲行 - 呂北克"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-05-25T09:00:00.000Z">2023-05-25</time></p><p class="title"><a href="/2023/05/25/ISC23-Europe-Lubeck/">ISC23 歐洲行 - 呂北克</a></p><p class="categories"><a href="/categories/%E6%97%85%E8%A1%8C/">旅行</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2023/05/21/ISC23-Europe-in-competition/"><img src="/img/ISC23-Europe-in-competition_files/image_j.png" alt="ISC23 歐洲行 - 賽中及展覽參訪"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-05-21T09:00:00.000Z">2023-05-21</time></p><p class="title"><a href="/2023/05/21/ISC23-Europe-in-competition/">ISC23 歐洲行 - 賽中及展覽參訪</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2023/05/20/ISC23-Europe-pre-competition/"><img src="/img/ISC23-Europe-pre-competition_files/image_b.png" alt="ISC23 歐洲行 - 賽前準備及旅遊安排"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-05-20T09:00:00.000Z">2023-05-20</time></p><p class="title"><a href="/2023/05/20/ISC23-Europe-pre-competition/">ISC23 歐洲行 - 賽前準備及旅遊安排</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2019/09/13/%E5%AE%8C%E6%95%B4%E5%AD%B8%E7%BF%92%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%AF%A6%E9%8C%842%E2%80%94%E2%80%94%E5%AE%89%E8%A3%9D-Nvidia-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%92%B0%E5%A2%83/"><img src="https://img-blog.csdnimg.cn/20190117174859505.png?" alt="完整學習機器學習實錄2——安裝 Nvidia 機器學習環境"></a></figure><div class="media-content"><p class="date"><time dateTime="2019-09-13T22:31:13.000Z">2019-09-13</time></p><p class="title"><a href="/2019/09/13/%E5%AE%8C%E6%95%B4%E5%AD%B8%E7%BF%92%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%AF%A6%E9%8C%842%E2%80%94%E2%80%94%E5%AE%89%E8%A3%9D-Nvidia-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%92%B0%E5%A2%83/">完整學習機器學習實錄2——安裝 Nvidia 機器學習環境</a></p><p class="categories"><a href="/categories/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/">機器學習</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2023/05/"><span class="level-start"><span class="level-item">May 2023</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/09/"><span class="level-start"><span class="level-item">September 2019</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/01/"><span class="level-start"><span class="level-item">January 2019</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/12/"><span class="level-start"><span class="level-item">December 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/11/"><span class="level-start"><span class="level-item">November 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/08/"><span class="level-start"><span class="level-item">August 2018</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/05/"><span class="level-start"><span class="level-item">May 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/03/"><span class="level-start"><span class="level-item">March 2018</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/01/"><span class="level-start"><span class="level-item">January 2018</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2017/08/"><span class="level-start"><span class="level-item">August 2017</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/AIJT/"><span class="tag">AIJT</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ChatBot/"><span class="tag">ChatBot</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Firefox/"><span class="tag">Firefox</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/GCP/"><span class="tag">GCP</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/GPU/"><span class="tag">GPU</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/HITCON/"><span class="tag">HITCON</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Microsoft/"><span class="tag">Microsoft</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Myself/"><span class="tag">Myself</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/NTHU/"><span class="tag">NTHU</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Telegram/"><span class="tag">Telegram</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/TensorFlow/"><span class="tag">TensorFlow</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Web/"><span class="tag">Web</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8D%80%E5%A1%8A%E9%8F%88/"><span class="tag">區塊鏈</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%94%90%E9%B3%B3/"><span class="tag">唐鳳</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%AE%8C%E6%95%B4%E5%AD%B8%E7%BF%92%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%AF%A6%E9%8C%84/"><span class="tag">完整學習機器學習實錄</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%AF%A6%E9%A9%97%E6%95%99%E8%82%B2/"><span class="tag">實驗教育</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%BD%B1%E5%83%8F%E8%BE%A8%E8%AD%98/"><span class="tag">影像辨識</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/"><span class="tag">機器學習</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%A0%94%E8%A8%8E%E6%9C%83/"><span class="tag">研討會</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%B6%93%E9%A9%97%E5%88%86%E4%BA%AB/"><span class="tag">經驗分享</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%87%AA%E5%AD%B8/"><span class="tag">自學</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%B3%87%E5%AE%89/"><span class="tag">資安</span><span class="tag">3</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">Subscribe for updates</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.png" alt="William Mou" height="28"></a><p class="is-size-7"><span>&copy; 2026 William Mou</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-sourcetree"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax src="/js/insight.js" defer></script><script data-pjax>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

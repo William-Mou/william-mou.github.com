@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta><title>Tag: TensorFlow - William Mou</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#3273dc"><meta name="application-name" content="William Mou Blog"><meta name="msapplication-TileImage" content="/img/logo.png"><meta name="msapplication-TileColor" content="#3273dc"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="William Mou Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="William-Mou&amp;#39;s Blog"><meta property="og:type" content="blog"><meta property="og:title" content="William Mou"><meta property="og:url" content="https://william-mou.github.io/"><meta property="og:site_name" content="William Mou"><meta property="og:description" content="William-Mou&amp;#39;s Blog"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://william-mou.github.io/img/og_image.png"><meta property="article:author" content="William Mou"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://william-mou.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://william-mou.github.io"},"headline":"William Mou","image":["https://william-mou.github.io/img/og_image.png"],"author":{"@type":"Person","name":"William Mou"},"publisher":{"@type":"Organization","name":"William Mou","logo":{"@type":"ImageObject","url":"https://william-mou.github.io/img/logo.png"}},"description":"William-Mou&#39;s Blog"}</script><link rel="icon" href="/img/logo.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.png" alt="William Mou" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/William-Mou"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags/">Tags</a></li><li class="is-active"><a href="#" aria-current="page">TensorFlow</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2019-01-13T22:05:43.000Z" title="1/13/2019, 10:05:43 PM">2019-01-13</time></span><span class="level-item">Updated&nbsp;<time dateTime="2026-02-20T18:08:53.556Z" title="2/20/2026, 6:08:53 PM">2026-02-20</time></span><span class="level-item"><a class="link-muted" href="/categories/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/">機器學習</a></span><span class="level-item">29 minutes read (About 4363 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2019/01/13/Tensorflow-GPU-%E7%92%B0%E5%A2%83%E9%85%8D%E7%BD%AE/">Tensorflow-GPU 環境配置</a></p><div class="content"><h1 id="Tensorflow-GPU-環境配置"><a href="#Tensorflow-GPU-環境配置" class="headerlink" title="Tensorflow-GPU 環境配置"></a>Tensorflow-GPU 環境配置</h1><p><code>Author</code>：<a target="_blank" rel="noopener" href="https://t.me/WilliamMou">William Mou</a><br><a href="https://william-mou.github.io/">點我進入個人 Blog</a></p>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>:::info<br>AI 發展日新月異，各軟硬體更是推陳出新，而其中 Tensorflow 與其依賴的 CUDA 更是當今潮流，但兩者版本卻多不互相兼容，常常有各種 Bug 。</p>
+<p>故，今天實作一篇安裝成功的例子，盡可能完整的陳述相關知識，以及所需注意的地方；供大家參考與共同學習。若有任何不恰當或錯誤的地方，都煩請您聯絡作者修改，共同進步。<br>:::</p>
+<h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><p>:::success<br>安裝前，須先明瞭自己對於開發（<del>潔癖</del>）需求，以個人為例，我希望能夠在 <code>VScode</code> 中用 <code>shift + enter</code> run <code>conda env</code> 裡的 <code>tensorflow-gpu</code> with <code>Cuda9</code> and <code>Cudnn7</code> </p>
+<hr>
+<p>以清單表示：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>細項</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>硬體</td>
+<td>GeForce GTX 1080Ti</td>
+</tr>
+<tr>
+<td>系統</td>
+<td>Windows10 專業版</td>
+</tr>
+<tr>
+<td>框架</td>
+<td>Tensorlfow-GPU 1.9</td>
+</tr>
+<tr>
+<td>版本</td>
+<td><code>CUDA 9</code> &amp; <code>cuDNN 7.5</code></td>
+</tr>
+<tr>
+<td>環境</td>
+<td><code>python3.5</code> conda(<code>Anaconda</code>) env</td>
+</tr>
+<tr>
+<td>編輯器</td>
+<td>Visual Stusio code</td>
+</tr>
+<tr>
+<td>:::</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><h3 id="安裝-CUDA"><a href="#安裝-CUDA" class="headerlink" title="安裝 CUDA"></a>安裝 CUDA</h3><p>:::info<br>定義：</p>
+<p><code>CUDA</code> 是由 NVIDIA 所推出的一種整合技術，在其製造的圖形處理單元（GPUs）之上，實現平行計算平臺與程式設計模型。透過這個技術，開發人員可了直接存取 <code>CUDA GPUs</code> 中的虛擬指令集和平行計算元件的記憶體，運用 NVIDIA GeForce 8 以後的 GPU 和較新的 Quadro GPU 進行並行計算。 </p>
+<blockquote>
+<p>[name&#x3D;<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/CUDA">取自wiki</a>]</p>
+</blockquote>
+<blockquote>
+<p>作者案：</p>
+<p>你可以將它看作是 NVIDIA 顯示卡專用的平台，讓開發者更輕鬆的以 CUDA C 或 OpenCL 撰寫代碼，並透過 <code>CUDA</code> 最終被驅動程式轉換成PTX代碼，交由顯示核心計算。</p>
+<p>這種方法與 <code>CPUs</code> 不同的是， <code>GPUs</code> 有著側重以較慢速度執行大量併發執行緒的並行流架構，而非快速執行單一執行緒。擅長運算「小」而「多」的數據資料，尤其是圖像運算更是在行。</p>
+<p>但這並不表示在相同的花費下，使用 GPU 訓練 AI 一定會比使用 CPU 來的有效益，端看數據的資料大小及其特性，有時候數台 Xeon 系列的 CPU 多核運算，會比 GPU 來的快或節省經費。<br>:::</p>
+</blockquote>
+<p>:::success<br>綜合上述，要在 Windows 平台安裝 CUDA ，我們需要準備一些其所需要的軟體，包括以下：</p>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://visualstudio.microsoft.com/zh-hant/?rr=https://www.google.com/">Visual Studio 2017</a></p>
+<ul>
+<li><p>用以編寫 CUDA 代碼，若無需求可不安裝。</p>
+<p>  <img src="https://i.imgur.com/tZTiujI.png"></p>
+</li>
+<li><p>安裝時，至少勾選 使用 C++ 的桌面開發<br>  <img src="https://i.imgur.com/XnI4BLd.png"></p>
+</li>
+<li><p>並且安裝位置建議放在 C:\ （系統磁碟機）</p>
+<blockquote>
+<p>作者案：</p>
+<p>Visual Studio IDE 有時候會有版本未識別錯誤的訊息，例如 <a target="_blank" rel="noopener" href="https://devtalk.nvidia.com/default/topic/1027299/cuda-setup-and-installation/cuda-9-failed-to-support-the-latest-visual-studio-2017-version-15-5/">CUDA 9 failed to support the latest Visual Studio 2017 version 15.5</a> 可透過修改版本代號的方式解決</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://www.nvidia.com.tw/Download/index.aspx?lang=tw">顯示卡驅動程式</a></p>
+<ul>
+<li><p>依照自己的顯示卡型號下載<br>  <img src="https://i.imgur.com/XP5YraM.png"></p>
+<blockquote>
+<p>作者案：</p>
+<p>務必注意自己得硬體型號，若不確定可以使用 NVIDIA 開發的工具 <a target="_blank" rel="noopener" href="http://www.nvidia.com.tw/object/gpureader-faq-tw.html">NVIDIA GPU Reader</a> 辨識</p>
+</blockquote>
+</li>
+<li><p>以下提供安裝示意圖</p>
+<p>  <img src="https://i.imgur.com/83ajtNT.png"></p>
+<p>  <img src="https://i.imgur.com/dRnyRMm.png"></p>
+<p>  <img src="https://i.imgur.com/gExA7WB.png"></p>
+<p>  <img src="https://i.imgur.com/NMqqrft.png"></p>
+<p>  <img src="https://i.imgur.com/U5kyKT9.png"></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>:::</p>
+<p>接著，要來安裝本節主角： <code>CUDA</code> 與 <code>cuDNN</code><br>:::danger<br>CUDA 的版本較多，而每個版本有自己所對應的 cuDNN （將在下節介紹），為此，我們必須選定好適當的版本號，並謹記在心，以對應恰當的 Tensorflow 與 cuDNN。</p>
+<p>建議各位在安裝前，可以去搜尋看看他人 Tendsorflow 與 CUDA 配對成功的版本，而這裡提供<a target="_blank" rel="noopener" href="https://developer.nvidia.com/cuda-90-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exenetwork"> 其他作者 </a>已經測試成功的案例：</p>
+<ul>
+<li>tensorflow 1.4 及以下的不支持高於 CUDA 9.0 。</li>
+<li>tensorflow 1.0 及以上的不支持低於 CUDA 8.0 。</li>
+<li>tensorflow-gpu 1.5 以上不支持使用 CUDA 8.0。</li>
+</ul>
+<p>而本節，以 Tensorflow 1.9 與 CUDA 9.0 做為安裝範例。</p>
+<p>:::</p>
+<p>:::success<br>首先，前往 NVIDIA 開發者的官網，下載 CUDA <a target="_blank" rel="noopener" href="https://developer.nvidia.com/cuda-90-download-archive?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exenetwork"> 連結點我 </a></p>
+<p><img src="https://i.imgur.com/xkYZm4J.png"></p>
+<p>點選相對應的版本後，下載 Base Installer。</p>
+<p>雙擊執行檔案 <code>cuda_9.0.176_win10_network.exe</code> 開始安裝<br><img src="https://i.imgur.com/r6R9Mml.png"></p>
+<p><img src="https://i.imgur.com/ibn7qDE.png"></p>
+<p>在檢查系統系統相容性與合約後<br><img src="https://i.imgur.com/2rKFFGp.png"></p>
+<p><img src="https://i.imgur.com/rABqW3n.png"></p>
+<p>會進入安裝選項，建議可以直接快速安裝。<br><img src="https://i.imgur.com/kIauEYD.png"></p>
+<blockquote>
+<p>作者案</p>
+<p>若沒有要使用Visual Studio 2017 編譯 CUDA 的朋友，可以進入自訂安裝中修改設定，將 Visual Studio Integration 關閉，避免報錯。<br><img src="https://i.imgur.com/kBdt4uo.png"><br>:::warning<br>若仍然遇到 安裝失敗的情形<br><img src="https://i.imgur.com/1ArZxqd.png"><br>建議可至 <a target="_blank" rel="noopener" href="https://blog.csdn.net/zzpong/article/details/80282814">這篇博客</a> 依照步驟解決，本文便不多贅述。<br>:::</p>
+</blockquote>
+<h3 id="安裝-cuDNN"><a href="#安裝-cuDNN" class="headerlink" title="安裝 cuDNN"></a>安裝 cuDNN</h3><p>:::info<br>定義：</p>
+<p><code>cuDNN</code> 全名為：<code>NVIDIACUDA®深度神經網絡庫</code> 是用於 <a target="_blank" rel="noopener" href="https://developer.nvidia.com/deep-learning"><code>深度神經網絡</code> </a>的GPU加速庫。 cuDNN為標準例程提供高度調整的實現，例如卷積，池化，規範化和激活層。而 cuDNN 同時也是 NVIDIA <a target="_blank" rel="noopener" href="https://developer.nvidia.com/deep-learning-sdk"><code>深度學習SDK</code></a> 的一部分。</p>
+<p>全球深度學習研究人員和框架開發人員依靠 <code>cuDNN</code> 實現高性能 GPU 加速。它允許他們專注於訓練神經網絡和開發軟件應用程序，而不是花時間在低級 GPU 性能調適上。 <code>cuDNN</code> 加速了廣泛使用的深度學習框架，包括 <code>Caffe2</code>，<code>MATLAB</code>，<code>Microsoft Cognitive Toolkit</code> ， <code>TensorFlow</code> ， <code>Theano</code> 和 <code>PyTorch</code> 。</p>
+<blockquote>
+<p>作者案</p>
+<p>作為 CUDA 的一個深度學習加速庫， cuDNN 的版本必須配合 CUDA 才能正常運行。下面我們將演示如何正確的安裝 cuDNN 。<br>:::</p>
+</blockquote>
+<p>:::success<br>首先，前往 NVIDIA DEVELOPER 官網，點擊下載 cuDNN。<br><img src="https://i.imgur.com/ax7yK8d.png"><br>註冊或登入<br><img src="https://i.imgur.com/71PUOCC.png"><br><img src="https://i.imgur.com/tFAZcmn.png"><br>跳轉至下載頁面<br><img src="https://i.imgur.com/J1kMlp3.png"><br>勾選同意後，會跳出版本選擇<br><img src="https://i.imgur.com/qDuWVWk.png"><br>此處，我們可以選擇適合的 CUDA 版本、與作業系統進行下載<br><img src="https://i.imgur.com/XW0Nim8.png"></p>
+<blockquote>
+<p>作者案</p>
+<p>此處選擇 CUDA 9.0 ，以應對上方我們所安裝的版本。</p>
+</blockquote>
+<p>下載後開啟<br><img src="https://i.imgur.com/0lPKvVp.png"></p>
+<p>解壓縮檔案<br><img src="https://i.imgur.com/O1NN2Bx.png"></p>
+<p>之後會得到一個 CUDA 資料夾，分別含有 <code>bin</code> 、 <code>include</code> 、 <code>lib</code> 三個資料夾<br><img src="https://i.imgur.com/jWvCji7.png"></p>
+<p>將其內部的檔案，分別移至 <code>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0</code> 路徑下的對應資料夾中<br><img src="https://i.imgur.com/skQndsU.png"></p>
+<p>例如： <code>bin</code> 裡面，需包含 <code>cudnn64_7.dll</code><br><img src="https://i.imgur.com/sZQryQw.png"></p>
+<p>再分別將三個資料夾的檔案拖移至對應的位置後，<br>我們要將下列路徑加入環境變數中，以利將來調用</p>
+<ul>
+<li>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin<br>  <img src="https://i.imgur.com/njhoU1h.png"></li>
+<li>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64<br>  <img src="https://i.imgur.com/YgUysjH.png"></li>
+</ul>
+<p>打開控制台→系統及安全性→進階系統設定→進階→環境變數（或是直接在控制台中搜尋 PATH）<br>尋找「系統變數」中「Path」的部份並用左鍵雙擊，新增下述變數：</p>
+<ul>
+<li>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin</li>
+<li>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64<br><img src="https://i.imgur.com/56azOht.png"></li>
+</ul>
+<p>到此為止， cuDNN 的安裝就到一段落了<br>:::</p>
+<h3 id="安裝-Anaconda"><a href="#安裝-Anaconda" class="headerlink" title="安裝 Anaconda"></a>安裝 Anaconda</h3><p>:::info<br>Anaconda 是一種 Python 語言的免費增值開源發行版，用於進行大規模數據處理, 預測分析, 和科學計算, 致力於簡化包的管理和部署。Anaconda 使用 軟體包管理系統 Conda 進行包管理。</p>
+<blockquote>
+<p>[name&#x3D;<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Anaconda_(Python%E5%8F%91%E8%A1%8C%E7%89%88)">取自wiki</a>]</p>
+</blockquote>
+<blockquote>
+<p>編者案</p>
+<p>使用 Anaconda 的好處是他擁有豐富的套件包與良好的套件管理，在資源（硬碟）足夠的情況下，安裝它可以為我們省去很多套件相關的麻煩。</p>
+<p>而其安裝過程較為簡單，唯一需要的注意的是，關於 Python 的 PATH 是否與電腦內存在的（例如：Visual Studio 自帶的 Python、 或是原生的 Python）產生衝突，若為第一次安裝則沒有這個問題。</p>
+</blockquote>
+<p>而關於使用方式， wiki 寫得相當清楚，下方引用列出。</p>
+<ul>
+<li>使用時，可以點擊啟動相應的編程環境：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">Python(shell) ： 標準CPython</span><br><span class="line">IPython(shell)： 相當於在命令窗口的命令提示符後輸入ipython回車。pip install ipython安裝的ipython用法一樣。</span><br><span class="line">Ipython QTConsole</span><br><span class="line">IPython Notebook：直接點擊打開，或者在命令提示符中輸入ipython.exe notebook</span><br><span class="line">Jupyter QTConsole</span><br><span class="line">Jupyter Notebook：直接點擊打開，或在終端中輸入： jupyter notebook 以啟動伺服器；在瀏覽器中打開notebook頁面地址：http://localhost:8888 。Jupyter Notebook是一種 Web 應用，能讓用戶將說明文本、數學方程、代碼和可視化內容全部組合到一個易於共享的文檔中。</span><br><span class="line">Spyder：直接點擊打開IDE。最大優點就是模仿MATLAB的「工作空間」</span><br><span class="line">Anaconda Prompt ： 命令行終端</span><br><span class="line">支持其他IDE，如Pycharm</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>安裝包管理：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">列出已經安裝的包：在命令提示符中輸入pip list或者用conda list</span><br><span class="line">安裝新包：在命令提示符中輸入「pip install 包名」，或者「conda install 包名」</span><br><span class="line">更新包： conda update package_name</span><br><span class="line">升級所有包： conda upgrade --all</span><br><span class="line">卸載包：conda remove package_names</span><br><span class="line">搜索包：conda search search_term</span><br></pre></td></tr></table></figure>
+<ul>
+<li>管理環境：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">安裝nb_conda，用於notebook自動關聯nb_conda的環境</span><br><span class="line">創建環境：在Anaconda終端中 conda create -n env_name package_names[=ver]</span><br><span class="line">使用環境：在Anaconda終端中 activate env_name</span><br><span class="line">離開環境：在Anaconda終端中 deactivate</span><br><span class="line">導出環境設置：conda env export &gt; environmentName.yaml 或 pip freeze &gt; environmentName.txt</span><br><span class="line">導入環境設置：conda env update -f=/path/environmentName.yaml 或 pip install -r /path/environmentName.txt</span><br><span class="line">列出環境清單：conda env list</span><br><span class="line">刪除環境： conda env remove -n env_name</span><br></pre></td></tr></table></figure>
+<p>:::</p>
+<p>:::success<br>首先，我們進入 <a target="_blank" rel="noopener" href="https://anaconda.org/">Anaconda 官方網站</a>，並點擊右上方的 <a target="_blank" rel="noopener" href="https://www.anaconda.com/downloads">Download Anaconda</a>。<br><img src="https://i.imgur.com/zrtBsB7.png"></p>
+<p>選擇 Python3.6 64-bit版本<br><img src="https://i.imgur.com/0ZlZeVf.png"></p>
+<p>下載完成後雙擊安裝，以下為安裝過程截圖<br><img src="https://i.imgur.com/MohCChL.png"></p>
+<p><img src="https://i.imgur.com/9i8xbDT.png"></p>
+<p><img src="https://i.imgur.com/VybIu3w.png"></p>
+<p><img src="https://i.imgur.com/zqy3Zxq.png"></p>
+<p><img src="https://i.imgur.com/iGTNwAt.png"><br>可將兩者一併勾選，省去設定的麻煩<br><img src="https://i.imgur.com/L7bxcrW.png"></p>
+<p>安裝完成後，我們可以打開 Anaconda prompt 創建環境<br><img src="https://i.imgur.com/X04H5Zp.png"></p>
+<p>前面<code>()</code>表示我們當前的環境，我們需要創造一個專屬於 tensorflow 的環境，以免套件彼此間相互干擾，連跟新個版本都要綁手綁腳的。<br><img src="https://i.imgur.com/tBq18aX.png"></p>
+<p>依照 wiki 所說，我們可以使用<br><code>conda create -n env_name package_names[=ver]</code><br>來創建一個環境。</p>
+<blockquote>
+<p>編者案</p>
+<p>由於電腦已創建過 tensorflow 環境，所以截圖中的命名會多一個 -t 避免衝突</p>
+</blockquote>
+<p>輸入</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">conda create -n tensorflow python=3.5</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/8eoOPt7.png"></p>
+<p>他會提示你你的環境將放在何處。<br><img src="https://i.imgur.com/qKDX0jp.png"></p>
+<p>輸入 Y　進行環境創建，他會預先幫你安裝一些套件<br><img src="https://i.imgur.com/4DOCufs.png"></p>
+<p>環境創建完成，依照命令行提示，你的環境被套件被放在 <code>C:\Users\willi\Anaconda3\pkgs\wheel-0.31.1-py35_0</code> ，可以輸入 <code>conda activate</code> 指令來進入環境，輸入 <code>conda deactivate</code> 來離開環境<br><img src="https://i.imgur.com/b1YWVuT.png"></p>
+<p>接著我們進入環境</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">conda activate tensorflow</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/s126Kvn.png"></p>
+<p>使用以下指令來安裝 tensorflow</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">pip install tensorflow</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">或者</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">conda install tensorflow</span></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>編者案</p>
+<p>若有開發需求，可以如以下方式指定 tensoeflow 版本</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash"><span class="comment"># 移除舊有版本</span></span></span><br><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">$ pip uninstall tensorflow-gpu==1.3.0</span></span><br><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash"><span class="comment"># 安裝指定版本</span></span></span><br><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">$ pip install tensorflow-gpu==1.5.0</span></span><br></pre></td></tr></table></figure></blockquote>
+<p>安裝完成<br><img src="https://i.imgur.com/LFL5aag.png"></p>
+<p>使用 import 來檢驗是否安裝正確</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">python</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">進入 python 互動介面後</span></span><br><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">&gt;&gt; import tensorflow as tf</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/vxx6bb3.png"></p>
+<p>隨後逐行複製以下代碼，檢測是否正常運行 GPU </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line"><span class="comment"># Creates a graph.</span></span><br><span class="line">a = tf.constant([<span class="number">1.0</span>, <span class="number">2.0</span>, <span class="number">3.0</span>, <span class="number">4.0</span>, <span class="number">5.0</span>, <span class="number">6.0</span>], shape=[<span class="number">2</span>, <span class="number">3</span>], name=<span class="string">&#x27;a&#x27;</span>)</span><br><span class="line">b = tf.constant([<span class="number">1.0</span>, <span class="number">2.0</span>, <span class="number">3.0</span>, <span class="number">4.0</span>, <span class="number">5.0</span>, <span class="number">6.0</span>], shape=[<span class="number">3</span>, <span class="number">2</span>], name=<span class="string">&#x27;b&#x27;</span>)</span><br><span class="line">c = tf.matmul(a, b)</span><br><span class="line"><span class="comment"># Creates a session with log_device_placement set to True.</span></span><br><span class="line">sess = tf.Session(config=tf.ConfigProto(log_device_placement=<span class="literal">True</span>))</span><br><span class="line"><span class="comment"># Runs the op.</span></span><br><span class="line"><span class="built_in">print</span>(sess.run(c))</span><br></pre></td></tr></table></figure>
+<p>運行成功應該如圖，輸出運行之顯示卡序號 </p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GPU 0</span><br></pre></td></tr></table></figure>
+
+<p>與運算結果</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[[22. 28.]</span><br><span class="line"> [49. 64.]]</span><br></pre></td></tr></table></figure>
+<p><img src="https://i.imgur.com/UUCdhsb.png"></p>
+<p>:::</p>
+<h3 id="安裝-Visual-Stduio-Code"><a href="#安裝-Visual-Stduio-Code" class="headerlink" title="安裝 Visual Stduio Code"></a>安裝 Visual Stduio Code</h3><p>:::info<br>Visual Studio Code（簡稱VS Code）是一個由微軟開發的，同時支援Windows、Linux和macOS作業系統且開放原始碼的文字編輯器。它支援偵錯，並內建了Git 版本控制功能，同時也具有開發環境功能，例如代碼補全（類似於 IntelliSense）、代碼片段、代碼重構等。該編輯器支援用戶自訂配置，例如改變主題顏色、鍵盤捷徑、編輯器屬性和其他參數，還支援擴充功能程式並在編輯器中內建了擴充功能程式管理的功能。 </p>
+<blockquote>
+<p>[name&#x3D;<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Visual_Studio_Code">取自wiki</a>]</p>
+</blockquote>
+<blockquote>
+<p>作者案</p>
+<p>作為一門編輯器， VS Code 具有跨平台、輕量、擴展性高等優點，使用容易上手，功能雖多卻不會像 Visual Studio 般繁亂，是個老少咸宜的好軟體。<br>:::</p>
+</blockquote>
+<p>:::success<br>首先，前往 <a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VS Code官網</a> 下載之<br><img src="https://i.imgur.com/FNMsK22.png"></p>
+<p>之後全勾安裝後打開，可以得到如下畫面<br><img src="https://i.imgur.com/dK5QRKC.png"></p>
+<p>我們可以先至你想要編輯的資料夾，此處以這個 <code>ai</code> 資料夾為例<br><img src="https://i.imgur.com/c8baJoW.png"></p>
+<p>右鍵點擊 Open with Code<br><img src="https://i.imgur.com/J88XiPS.png"></p>
+<p>之後 VS Code 就會將此資料夾作為一個工作區，在 VS Code 中開啟</p>
+<p><img src="https://i.imgur.com/qkFRkWC.png"></p>
+<p>之後點擊紅框處的新增檔案，創建一個測試用的 .py 檔。<br><img src="https://i.imgur.com/TpontF8.png"></p>
+<p>接著，將以下 tensorflow 官方測試代碼複製到檔案內。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> tensorflow <span class="keyword">as</span> tf</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">SquareTest</span>(tf.test.TestCase):</span><br><span class="line">    <span class="keyword">def</span> <span class="title function_">testSquare</span>(<span class="params">self</span>):</span><br><span class="line">        <span class="keyword">with</span> <span class="variable language_">self</span>.test_session():</span><br><span class="line">            x = tf.square([<span class="number">2</span>, <span class="number">3</span>])</span><br><span class="line">            <span class="variable language_">self</span>.assertAllEqual(x.<span class="built_in">eval</span>(), [<span class="number">4</span>, <span class="number">9</span>])</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    tf.test.main()</span><br><span class="line">    </span><br></pre></td></tr></table></figure>
+
+<p>此時，因為你所處的環境是 Anaconda 預設的環境中，並不包含 tensorflow 套件，所以會報錯。<br><img src="https://i.imgur.com/B7Yhl5I.png"></p>
+<p>我們可以點選左下角的選項，以察看與切換環境<br><img src="https://i.imgur.com/khsatxX.png"></p>
+<p>點擊後，我們可以切換到到方才設定的環境 <code>tensorflow</code><br><img src="https://i.imgur.com/txN496l.png"></p>
+<p>此時，我們可以注意到右下角的 <code>pylint</code> 以及諸如此類的提示，可以選擇安裝他們，讓開發更加順利。<br><img src="https://i.imgur.com/DJPVpvE.png"></p>
+<p>下方命令行會自動打開，並顯示已成功安裝。<br><img src="https://i.imgur.com/ncoTa19.png"></p>
+<p>接著，點選左邊的紅框處，然後按下綠色三角形箭頭偵錯<br><img src="https://i.imgur.com/xnUzPAV.png"></p>
+<p>選擇 Python<br><img src="https://i.imgur.com/j9tAa0i.png"></p>
+<p>若得到以下畫面則代表設定與安裝順利<br><img src="https://i.imgur.com/6JsdFE1.png"></p>
+<p>之後也可以使用 F5 來偵錯。<br>但若有其他慣用偵錯快捷鍵，可以透過 <code>Ctrl</code> + <code>Shift</code> + <code>P</code> ，搜尋開啟鍵盤快速鍵<br><img src="https://i.imgur.com/DU6BhQV.png"><br>或是使用 <code>Ctrl</code> + <code>K</code> 緊接著按 <code>Ctrl</code> + <code>s</code> 來開啟<br><img src="https://i.imgur.com/q8PEtym.png"></p>
+<p>接著上方欄位中搜尋 F5<br><img src="https://i.imgur.com/TVSrbti.png"></p>
+<p>點選左邊的小鉛筆，再輸入你想要的鍵盤快捷鍵後按 <code>Enter</code> 就大功告成囉。<br><img src="https://i.imgur.com/IjnukA4.png"></p>
+<p>:::</p>
+<h2 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h2><p>希望讀者都能夠在本筆記中學到想學習的東西，也恭喜您成功設定完成 Tensorflow 的基礎設定，但 AI 的學習如同汪洋大海般，遠不只如此，僅此希望能夠帶給您一個好的開始與學習體驗，持之以恆，努力前進。共勉之。</p>
+<p>:::warning<br>若對於此筆記有任何錯誤、或是沒有詳盡提到的地方，都非常期待您與我聯絡，能與您的共筆是我的榮幸。歡迎將更多的建議寫在其他 HackMD 中，我將以連結的方式將其引入；或是將建議寄送到我的信箱： <a href="mailto:&#x77;&#x69;&#108;&#x6c;&#105;&#97;&#x6d;&#46;&#109;&#x6f;&#117;&#57;&#x36;&#x30;&#49;&#x37;&#x34;&#64;&#103;&#109;&#97;&#105;&#108;&#x2e;&#99;&#111;&#109;">william.mou960174@gmail.com</a> 。<br>:::</p>
+<h2 id="其他參考資料"><a href="#其他參考資料" class="headerlink" title="其他參考資料"></a>其他參考資料</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/LOVE1055259415/article/details/80343932">https://blog.csdn.net/LOVE1055259415/article/details/80343932</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/30324113">https://zhuanlan.zhihu.com/p/30324113</a><br><a target="_blank" rel="noopener" href="https://rreadmorebooks.blogspot.com/2017/04/win10cudacudnn.html">https://rreadmorebooks.blogspot.com/2017/04/win10cudacudnn.html</a><br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/37086409">https://zhuanlan.zhihu.com/p/37086409</a></p>
+</div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/me.jpeg" alt="William Mou"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">William Mou</p><p class="is-size-6 is-block">HPC engineer</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>NTHU CS, Taiwan</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives/"><p class="title">22</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories/"><p class="title">7</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags/"><p class="title">22</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/William-Mou" target="_blank" rel="me noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/William-Mou"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Facebook" href="https://www.facebook.com/william.mou1024/"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Telegram" href="https://t.me/WilliamMou"><i class="fab fa-telegram"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://www.nthu.edu.tw/hotNews/content/1023" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">ASC</span></span><span class="level-right"><span class="level-item tag">www.nthu.edu.tw</span></span></a></li><li><a class="level is-mobile" href="https://sitcon.org/2020/agenda/bb4fc171-920f-48de-b411-ec0095306491" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">PVE</span></span><span class="level-right"><span class="level-item tag">sitcon.org</span></span></a></li><li><a class="level is-mobile" href="https://sitcon.org" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">SITCON</span></span><span class="level-right"><span class="level-item tag">sitcon.org</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Blockchain/"><span class="level-start"><span class="level-item">Blockchain</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/SITCON/"><span class="level-start"><span class="level-item">SITCON</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%97%85%E8%A1%8C/"><span class="level-start"><span class="level-item">旅行</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/"><span class="level-start"><span class="level-item">機器學習</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%B6%93%E9%A9%97%E8%B3%87%E6%BA%90/"><span class="level-start"><span class="level-item">經驗資源</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/"><span class="level-start"><span class="level-item">資訊安全</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%B3%87%E8%A8%8A%E8%AC%9B%E5%BA%A7/"><span class="level-start"><span class="level-item">資訊講座</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><figure class="media-left"><a class="image" href="/2023/05/26/ISC23-Europe-Hamburg/"><img src="/img/ISC23-Europe-Hamburg_files/image_1n.png" alt="ISC23 歐洲行 - 漢堡"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-05-26T09:00:00.000Z">2023-05-26</time></p><p class="title"><a href="/2023/05/26/ISC23-Europe-Hamburg/">ISC23 歐洲行 - 漢堡</a></p><p class="categories"><a href="/categories/%E6%97%85%E8%A1%8C/">旅行</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2023/05/25/ISC23-Europe-Lubeck/"><img src="/img/ISC23-Europe-Lubeck_files/image_13.png" alt="ISC23 歐洲行 - 呂北克"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-05-25T09:00:00.000Z">2023-05-25</time></p><p class="title"><a href="/2023/05/25/ISC23-Europe-Lubeck/">ISC23 歐洲行 - 呂北克</a></p><p class="categories"><a href="/categories/%E6%97%85%E8%A1%8C/">旅行</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2023/05/21/ISC23-Europe-in-competition/"><img src="/img/ISC23-Europe-in-competition_files/image_j.png" alt="ISC23 歐洲行 - 賽中及展覽參訪"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-05-21T09:00:00.000Z">2023-05-21</time></p><p class="title"><a href="/2023/05/21/ISC23-Europe-in-competition/">ISC23 歐洲行 - 賽中及展覽參訪</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2023/05/20/ISC23-Europe-pre-competition/"><img src="/img/ISC23-Europe-pre-competition_files/image_b.png" alt="ISC23 歐洲行 - 賽前準備及旅遊安排"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-05-20T09:00:00.000Z">2023-05-20</time></p><p class="title"><a href="/2023/05/20/ISC23-Europe-pre-competition/">ISC23 歐洲行 - 賽前準備及旅遊安排</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2019/09/13/%E5%AE%8C%E6%95%B4%E5%AD%B8%E7%BF%92%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%AF%A6%E9%8C%842%E2%80%94%E2%80%94%E5%AE%89%E8%A3%9D-Nvidia-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%92%B0%E5%A2%83/"><img src="https://img-blog.csdnimg.cn/20190117174859505.png?" alt="完整學習機器學習實錄2——安裝 Nvidia 機器學習環境"></a></figure><div class="media-content"><p class="date"><time dateTime="2019-09-13T22:31:13.000Z">2019-09-13</time></p><p class="title"><a href="/2019/09/13/%E5%AE%8C%E6%95%B4%E5%AD%B8%E7%BF%92%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%AF%A6%E9%8C%842%E2%80%94%E2%80%94%E5%AE%89%E8%A3%9D-Nvidia-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%92%B0%E5%A2%83/">完整學習機器學習實錄2——安裝 Nvidia 機器學習環境</a></p><p class="categories"><a href="/categories/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/">機器學習</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2023/05/"><span class="level-start"><span class="level-item">May 2023</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/09/"><span class="level-start"><span class="level-item">September 2019</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/01/"><span class="level-start"><span class="level-item">January 2019</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/12/"><span class="level-start"><span class="level-item">December 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/11/"><span class="level-start"><span class="level-item">November 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/08/"><span class="level-start"><span class="level-item">August 2018</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/05/"><span class="level-start"><span class="level-item">May 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/03/"><span class="level-start"><span class="level-item">March 2018</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/01/"><span class="level-start"><span class="level-item">January 2018</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2017/08/"><span class="level-start"><span class="level-item">August 2017</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/AIJT/"><span class="tag">AIJT</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ChatBot/"><span class="tag">ChatBot</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Firefox/"><span class="tag">Firefox</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/GCP/"><span class="tag">GCP</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/GPU/"><span class="tag">GPU</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/HITCON/"><span class="tag">HITCON</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Microsoft/"><span class="tag">Microsoft</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Myself/"><span class="tag">Myself</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/NTHU/"><span class="tag">NTHU</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Telegram/"><span class="tag">Telegram</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/TensorFlow/"><span class="tag">TensorFlow</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Web/"><span class="tag">Web</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8D%80%E5%A1%8A%E9%8F%88/"><span class="tag">區塊鏈</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%94%90%E9%B3%B3/"><span class="tag">唐鳳</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%AE%8C%E6%95%B4%E5%AD%B8%E7%BF%92%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%AF%A6%E9%8C%84/"><span class="tag">完整學習機器學習實錄</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%AF%A6%E9%A9%97%E6%95%99%E8%82%B2/"><span class="tag">實驗教育</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%BD%B1%E5%83%8F%E8%BE%A8%E8%AD%98/"><span class="tag">影像辨識</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/"><span class="tag">機器學習</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%A0%94%E8%A8%8E%E6%9C%83/"><span class="tag">研討會</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%B6%93%E9%A9%97%E5%88%86%E4%BA%AB/"><span class="tag">經驗分享</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%87%AA%E5%AD%B8/"><span class="tag">自學</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%B3%87%E5%AE%89/"><span class="tag">資安</span><span class="tag">3</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">Subscribe for updates</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.png" alt="William Mou" height="28"></a><p class="is-size-7"><span>&copy; 2026 William Mou</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-sourcetree"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax src="/js/insight.js" defer></script><script data-pjax>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

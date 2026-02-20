@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Web 開發者技能樹演講 - William Mou</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#3273dc"><meta name="application-name" content="William Mou Blog"><meta name="msapplication-TileImage" content="/img/logo.png"><meta name="msapplication-TileColor" content="#3273dc"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="William Mou Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Web 開發者技能樹演講 2018&amp;#x2F;08&amp;#x2F;24原筆記網址：https:&amp;#x2F;&amp;#x2F;hackmd.io&amp;#x2F;S_BIlfpyRxGJWiLb5E7Nvg?view 我要提問 關於我 宏碁 摩茲工程師 今年年初遭到裁員（自由的狐狸）  今天你將學到 web 開發基礎 前端技術 後端技術 開發及維護 以上的概要     看完就九死一生,不看就十死無生web 的好處：全公開標準很多資源很多工作，不"><meta property="og:type" content="blog"><meta property="og:title" content="Web 開發者技能樹演講"><meta property="og:url" content="https://william-mou.github.io/2018/08/24/Web-%E9%96%8B%E7%99%BC%E8%80%85%E6%8A%80%E8%83%BD%E6%A8%B9%E6%BC%94%E8%AC%9B/"><meta property="og:site_name" content="William Mou"><meta property="og:description" content="Web 開發者技能樹演講 2018&amp;#x2F;08&amp;#x2F;24原筆記網址：https:&amp;#x2F;&amp;#x2F;hackmd.io&amp;#x2F;S_BIlfpyRxGJWiLb5E7Nvg?view 我要提問 關於我 宏碁 摩茲工程師 今年年初遭到裁員（自由的狐狸）  今天你將學到 web 開發基礎 前端技術 後端技術 開發及維護 以上的概要     看完就九死一生,不看就十死無生web 的好處：全公開標準很多資源很多工作，不"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://cdn-images-1.medium.com/max/2000/1*EBXc9eJ1YRFLtkNI_djaAw.png"><meta property="article:published_time" content="2018-08-24T21:20:19.000Z"><meta property="article:modified_time" content="2026-02-20T18:08:53.556Z"><meta property="article:author" content="William Mou"><meta property="article:tag" content="Firefox"><meta property="article:tag" content="Web"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://cdn-images-1.medium.com/max/2000/1*EBXc9eJ1YRFLtkNI_djaAw.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://william-mou.github.io/2018/08/24/Web-%E9%96%8B%E7%99%BC%E8%80%85%E6%8A%80%E8%83%BD%E6%A8%B9%E6%BC%94%E8%AC%9B/"},"headline":"Web 開發者技能樹演講","image":["https://cdn-images-1.medium.com/max/2000/1*EBXc9eJ1YRFLtkNI_djaAw.png"],"datePublished":"2018-08-24T21:20:19.000Z","dateModified":"2026-02-20T18:08:53.556Z","author":{"@type":"Person","name":"William Mou"},"publisher":{"@type":"Organization","name":"William Mou","logo":{"@type":"ImageObject","url":"https://william-mou.github.io/img/logo.png"}},"description":"Web 開發者技能樹演講 2018&#x2F;08&#x2F;24原筆記網址：https:&#x2F;&#x2F;hackmd.io&#x2F;S_BIlfpyRxGJWiLb5E7Nvg?view 我要提問 關於我 宏碁 摩茲工程師 今年年初遭到裁員（自由的狐狸）  今天你將學到 web 開發基礎 前端技術 後端技術 開發及維護 以上的概要     看完就九死一生,不看就十死無生web 的好處：全公開標準很多資源很多工作，不"}</script><link rel="canonical" href="https://william-mou.github.io/2018/08/24/Web-%E9%96%8B%E7%99%BC%E8%80%85%E6%8A%80%E8%83%BD%E6%A8%B9%E6%BC%94%E8%AC%9B/"><link rel="icon" href="/img/logo.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.png" alt="William Mou" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/William-Mou"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2018-08-24T21:20:19.000Z" title="8/24/2018, 9:20:19 PM">2018-08-24</time></span><span class="level-item">Updated&nbsp;<time dateTime="2026-02-20T18:08:53.556Z" title="2/20/2026, 6:08:53 PM">2026-02-20</time></span><span class="level-item"><a class="link-muted" href="/categories/%E8%B3%87%E8%A8%8A%E8%AC%9B%E5%BA%A7/">資訊講座</a></span><span class="level-item">16 minutes read (About 2325 words)</span></div></div><h1 class="title is-3 is-size-4-mobile">Web 開發者技能樹演講</h1><div class="content"><h1 id="Web-開發者技能樹演講-2018-08-24"><a href="#Web-開發者技能樹演講-2018-08-24" class="headerlink" title="Web 開發者技能樹演講 2018&#x2F;08&#x2F;24"></a>Web 開發者技能樹演講 2018&#x2F;08&#x2F;24</h1><p>原筆記網址：<a target="_blank" rel="noopener" href="https://hackmd.io/S_BIlfpyRxGJWiLb5E7Nvg?view">https://hackmd.io/S_BIlfpyRxGJWiLb5E7Nvg?view</a></p>
+<p><a target="_blank" rel="noopener" href="https://docs.google.com/presentation/d/e/2QANgcCBGbT_hNqwB1mcwXogq0qK3sZhsV4MKjyMZypSr6B-OpwM45Nx7Bibyv4YB6xu4p1ktabLmLzDOMSQ/askquestion?seriesId=66e91f97-35bd-44a0-960f-af8938f8656e">我要提問</a></p>
+<h2 id="關於我"><a href="#關於我" class="headerlink" title="關於我"></a>關於我</h2><ul>
+<li>宏碁</li>
+<li>摩茲工程師</li>
+<li>今年年初遭到裁員（自由的狐狸）</li>
+</ul>
+<h2 id="今天你將學到"><a href="#今天你將學到" class="headerlink" title="今天你將學到"></a>今天你將學到</h2><ul>
+<li>web 開發基礎</li>
+<li>前端技術</li>
+<li>後端技術</li>
+<li>開發及維護<ul>
+<li>以上的概要</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>看完就九死一生,不看就十死無生<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOOkq8htZelWEUUUMao9qkx5KuCnsqvYosrDfucGyHZMzVN7ul"><br>web 的好處：全公開標準<br>很多資源很多工作，不怕找不到工作</p>
+</blockquote>
+<h2 id="前端？後端？開發及維運？"><a href="#前端？後端？開發及維運？" class="headerlink" title="前端？後端？開發及維運？"></a>前端？後端？開發及維運？</h2><p><img src="https://cdn-images-1.medium.com/max/1600/1*qRmCzyBNzyE87_TE06oADA.png"></p>
+<h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h3><p>前端就是你看到很美的東西。</p>
+<h3 id="後端"><a href="#後端" class="headerlink" title="後端"></a>後端</h3><p>後端就是後面很醜的東西你看不到。</p>
+<h3 id="開發及維運"><a href="#開發及維運" class="headerlink" title="開發及維運"></a>開發及維運</h3><p>十萬個正妹及十萬個看不見的東西如何維護。當專案變大後，會變得相對重要。</p>
+<p>踏入 Web 這塊，你可以先選擇你要走前端還是後端。<br>如果你走後端，但又沒有走太深入，可以試試看走 DevOps（開發及維運）</p>
+<h2 id="Web-開發基礎"><a href="#Web-開發基礎" class="headerlink" title="Web 開發基礎"></a>Web 開發基礎</h2><ul>
+<li>資料結構及演算法</li>
+<li>HTTP &#x2F; HTTPS 和 Web API</li>
+<li>SSH 及簡單的命令列操作</li>
+<li>Git &#x2F; GitHub</li>
+</ul>
+<h2 id="資料結構與演算法"><a href="#資料結構與演算法" class="headerlink" title="資料結構與演算法"></a>資料結構與演算法</h2><p>可以自行 Google，總之很重要</p>
+<h2 id="HTTP-HTTPS-和-Web-API"><a href="#HTTP-HTTPS-和-Web-API" class="headerlink" title="HTTP &#x2F; HTTPS 和 Web API"></a>HTTP &#x2F; HTTPS 和 Web API</h2><h3 id="HTTP-協定-1-0-1-1-2，HTTPS加密"><a href="#HTTP-協定-1-0-1-1-2，HTTPS加密" class="headerlink" title="HTTP 協定 1.0&#x2F;1.1&#x2F;2，HTTPS加密"></a>HTTP 協定 1.0&#x2F;1.1&#x2F;2，HTTPS加密</h3><ul>
+<li>要寫 Web 要很清楚 HTTP 協定是甚麼</li>
+<li>要知道 HTTP 是怎麼加密的</li>
+</ul>
+<h3 id="HTTP-請求方法"><a href="#HTTP-請求方法" class="headerlink" title="HTTP 請求方法"></a>HTTP 請求方法</h3><h3 id="HTTP-狀態碼"><a href="#HTTP-狀態碼" class="headerlink" title="HTTP 狀態碼"></a>HTTP 狀態碼</h3><ul>
+<li>2XX：成功</li>
+<li>3XX：重新導向</li>
+<li>4XX：使用者錯誤</li>
+<li>5XX：伺服器錯誤<br>發送對的狀態碼給用戶很重要</li>
+</ul>
+<h2 id="Cookie-Cache"><a href="#Cookie-Cache" class="headerlink" title="Cookie &amp; Cache"></a>Cookie &amp; Cache</h2><h3 id="Cookie"><a href="#Cookie" class="headerlink" title="Cookie"></a>Cookie</h3><p>因為 HTTP 沒有狀態，因此 Cookie 被發明出來，可以用來記錄狀態</p>
+<h3 id="Cache"><a href="#Cache" class="headerlink" title="Cache"></a>Cache</h3><p>快取可以讓用戶在下次瀏覽時更加快速，也減輕伺服器負擔</p>
+<h2 id="SSH-及簡單的命令列操作"><a href="#SSH-及簡單的命令列操作" class="headerlink" title="SSH 及簡單的命令列操作"></a>SSH 及簡單的命令列操作</h2><h3 id="SSH-相關指令、金鑰控管"><a href="#SSH-相關指令、金鑰控管" class="headerlink" title="SSH 相關指令、金鑰控管"></a>SSH 相關指令、金鑰控管</h3><p>如題</p>
+<h3 id="Shell-Script（BASH-zsh-等）"><a href="#Shell-Script（BASH-zsh-等）" class="headerlink" title="Shell Script（BASH, zsh.. 等）"></a>Shell Script（BASH, zsh.. 等）</h3><p>可以透過 Shell Script 自動執行一些指令</p>
+<h3 id="Linux-服務及運作原理"><a href="#Linux-服務及運作原理" class="headerlink" title="Linux 服務及運作原理"></a>Linux 服務及運作原理</h3><p>要知道其原理，以及如何去開關一些服務，才能有效管理你的程式與服務</p>
+<h2 id="Git-GitHub-全球最大男性工程師交友網站"><a href="#Git-GitHub-全球最大男性工程師交友網站" class="headerlink" title="Git &#x2F; GitHub(全球最大男性工程師交友網站)"></a>Git &#x2F; GitHub(全球最大男性工程師交友網站)</h2><p>最近最流行的版本控制是 Git，但也有其他的版本控制軟體</p>
+<h3 id="個人"><a href="#個人" class="headerlink" title="個人"></a>個人</h3><p>可以透過版本控制來管理複雜的版本</p>
+<h3 id="團隊"><a href="#團隊" class="headerlink" title="團隊"></a>團隊</h3><p>把所有人寫的程式合起來，可以有效解決空間與時間的限制。</p>
+<h3 id="了解-git-的運作方式"><a href="#了解-git-的運作方式" class="headerlink" title="了解 git 的運作方式"></a>了解 git 的運作方式</h3><p>以下略，總之就是 Git，我相信大家都已經會了 OwO</p>
+<h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h3><p>GitHub 是用 issue 的方式來管理</p>
+<blockquote>
+<p>進階開始</p>
+</blockquote>
+<h2 id="Web-服務流程"><a href="#Web-服務流程" class="headerlink" title="Web 服務流程"></a>Web 服務流程</h2><blockquote>
+<p>有人會畫 Markdwon 流程圖嗎QQ<br>使用者 - 前端 - 後端</p>
+</blockquote>
+<h2 id="Web-前端技術的概要"><a href="#Web-前端技術的概要" class="headerlink" title="Web 前端技術的概要"></a>Web 前端技術的概要</h2><ul>
+<li>HTML：標題與目錄，一個簡單的 document 檔案：語法、元素、建立 DOM tree 和相關屬性</li>
+<li>CSS：網站的外觀與美化，用於潤飾網站，進階一點的內容有 Flexbox、Grid 等</li>
+<li>JavaScript：如何操作 DOM、事件傳遞、物件、Ajax&amp;XHR、ES6</li>
+<li>選修 jQuery：可以讓你寫 JS 的時候更簡單</li>
+</ul>
+<blockquote>
+<p>VBScript 已死 [name&#x3D;蔡孟達]</p>
+</blockquote>
+<h2 id="基礎練習"><a href="#基礎練習" class="headerlink" title="基礎練習"></a>基礎練習</h2><p>如果沒基礎，可以嘗試構思不同的響應式網頁（RWD）來練習，使用 JavaScript 加入互動</p>
+<p>如果不會可以在 GitHub 上找開源專案，找找 Good First Bug 可以解</p>
+<h2 id="進階"><a href="#進階" class="headerlink" title="進階"></a>進階</h2><ul>
+<li><strong>NPM</strong> &#x2F; <strong>Yarn</strong> 套件管理腳本，講者喜歡用 NPM，可是我是 Yarn 派的</li>
+<li><strong>PostCSS</strong> CSS 的前處理器，讓 CSS 更好管理</li>
+<li><strong>Bootstrap</strong> 響應式網頁的框架，可以快速開發出響應式網頁</li>
+<li><strong>Webpack</strong> 打包靜態網站所需要的資源</li>
+<li><strong>ESLint</strong> JavaScript 程式碼檢查工具</li>
+</ul>
+<h2 id="進階練習"><a href="#進階練習" class="headerlink" title="進階練習"></a>進階練習</h2><p>可以嘗試新增一個專案，讓自己充分了解並練習如何將複雜網站從開發到釋出的流程</p>
+<h2 id="高級"><a href="#高級" class="headerlink" title="高級"></a>高級</h2><ul>
+<li><p>熱門前端框架：</p>
+<ul>
+<li>React：開發者滿意度最高，可是他背後的公司(FB)很母湯，有問題可以問江俊廷</li>
+<li>Vue：壯哉我大 Vue，是最近最熱門的前端框架，有問題可以問陳威任&#x2F;姚韋辰（其實還有火柴）</li>
+<li>Angular：Google 出產，目前最冷門的ㄏ，Angular和 Angular2是不同的東西，Angular 已經過時了，時代的眼淚，千萬別搞錯ＸＤ</li>
+</ul>
+</li>
+<li><p>測試工具：單元測試、整合測試及功能測試</p>
+</li>
+<li><p><strong>伺服器端渲染</strong></p>
+</li>
+<li><p>更多：Canvas、HTML 5 Web API、WebGL、SVG</p>
+</li>
+</ul>
+<blockquote>
+<p>人家大神ni 前 Mozila 台灣區產品經理</p>
+</blockquote>
+<h2 id="Web-後端技術"><a href="#Web-後端技術" class="headerlink" title="Web 後端技術"></a>Web 後端技術</h2><ul>
+<li>Scripting：<strong>Python</strong>、Ruby、<del>PHP</del>、<strong>Node.js</strong></li>
+<li>Commercial：<strong>Java</strong>、<del>.Net</del></li>
+<li>New：<strong>Golang</strong>、<strong>Rust</strong>、<del>Kotlin</del>、<del>Swift</del></li>
+</ul>
+<h2 id="基礎練習-1"><a href="#基礎練習-1" class="headerlink" title="基礎練習"></a>基礎練習</h2><p>學習使用套件管理，開始練習簡單的輸入輸出、封裝及釋出專案<br>在 GitHub 上找技術開源專案,找找 Good First Bug 可以解</p>
+<h2 id="進階-1"><a href="#進階-1" class="headerlink" title="進階"></a>進階</h2><h3 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h3><h3 id="資料庫"><a href="#資料庫" class="headerlink" title="資料庫"></a>資料庫</h3><ul>
+<li>關連式：MySQL、PostgreSQL</li>
+<li>非關連式：NoSQL、MongoDB</li>
+<li>快取：Redis、Memcached</li>
+<li>授權及認證：OAuth、JWT<blockquote>
+<p>OAuth 介紹：<a target="_blank" rel="noopener" href="https://www.dcard.tw/f/tku/p/227852547">https://www.dcard.tw/f/tku/p/227852547</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="進階練習-1"><a href="#進階練習-1" class="headerlink" title="進階練習"></a>進階練習</h2><ul>
+<li>實作一個部落格 RESTful API 來完成<ul>
+<li>登入</li>
+<li>文章</li>
+</ul>
+</li>
+</ul>
+<h2 id="高級-1"><a href="#高級-1" class="headerlink" title="高級"></a>高級</h2><ul>
+<li>搜尋引擎：ElasticSearch、Solr<ul>
+<li>如果常規的資料庫無法應付的話，可以考慮用這個</li>
+</ul>
+</li>
+<li>訊息接收器：RabbitMQ、Kafka<ul>
+<li>不可能讓使用者在等待，所以會用 Message Queue</li>
+</ul>
+</li>
+<li>其他：Docker、Nginx、Apache、GraphQL、Graphic 資料庫<ul>
+<li>Docker：可以把系統環境包起來，讓你可以快速在任何地方建置起來你的服務，也可以提升安全性</li>
+<li>Nginx、Apache：網頁伺服器</li>
+</ul>
+</li>
+</ul>
+<h2 id="開發及維運（DevOps）"><a href="#開發及維運（DevOps）" class="headerlink" title="開發及維運（DevOps）"></a>開發及維運（DevOps）</h2><p><img src="https://cdn-images-1.medium.com/max/2000/1*EBXc9eJ1YRFLtkNI_djaAw.png" alt="DevOps"></p>
+<h2 id="基礎"><a href="#基礎" class="headerlink" title="基礎"></a>基礎</h2><p>不適合新手跳進來的領域</p>
+<ul>
+<li>作業系統概念：<ul>
+<li>I&#x2F;O 管理</li>
+<li>虛擬化</li>
+<li>記憶體和儲存空間</li>
+<li>檔案系統</li>
+<li>處理程序管理</li>
+<li>線程和並行處理</li>
+<li>Socket</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>網路和安全: <ul>
+<li>DNS</li>
+<li>HTTP</li>
+<li>HTTPS</li>
+<li>FTP</li>
+<li>SSL</li>
+<li>TLS</li>
+</ul>
+</li>
+<li>伺服器管理: Linux Server <ul>
+<li>Ubuntu：新手向（？</li>
+<li>Debian：穩定到爆的伺服器系統，但軟體都喜歡用舊一點的（因為穩定）</li>
+<li>CentOS：背後有大公司支援的伺服器系統，也滿穩的</li>
+<li>Red Hat Enterprise Linux（RHEL）：大公司支援的，但超貴，</li>
+<li>OpenSUSE：大蜥蜴（？ 是變色龍!</li>
+</ul>
+</li>
+</ul>
+<h2 id="基礎練習-2"><a href="#基礎練習-2" class="headerlink" title="基礎練習"></a>基礎練習</h2><ul>
+<li>安裝或是使用已有的 Linux Server</li>
+<li>練習命令列操作：Shell Script、文字編輯、編譯 App、調校系統效能、監控管理程序、網路管理指令</li>
+</ul>
+<h2 id="進階-2"><a href="#進階-2" class="headerlink" title="進階"></a>進階</h2><ul>
+<li>架設服務<ul>
+<li>Web Server</li>
+<li>Cache</li>
+<li>Proxy</li>
+<li>負載平衡</li>
+<li>防火牆</li>
+</ul>
+</li>
+<li>如何擴展服務<ul>
+<li>容器（Docker）</li>
+<li>組態管理（Ansible）</li>
+<li>架構管理（Terraform）</li>
+</ul>
+</li>
+<li>學習持續整合與持續發佈(佈署)<blockquote>
+<p>example: <a target="_blank" rel="noopener" href="https://www.booking.com/">某訂房網站</a>：完成開發後送到雲端上，若有問題則自動下架，回到前一個版本。</p>
+</blockquote>
+</li>
+<li>監控:<ul>
+<li>紀錄檔</li>
+<li>基礎設施</li>
+<li>應用程式</li>
+</ul>
+</li>
+<li>雲端服務廠商: <ul>
+<li>AWS（Amazon）</li>
+<li>GCP（Google）</li>
+<li>Azure（Microsoft）</li>
+<li>Heroku：和上面的有點差別，滿陽春的，但勝在方便和快速</li>
+</ul>
+</li>
+</ul>
+<h2 id="額外資源"><a href="#額外資源" class="headerlink" title="額外資源"></a>額外資源</h2><blockquote>
+<p>持續學習,持續進步!(謝謝)(…)<br>Mozila 講很多～</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.freecodecamp.org/">Free Code Camp</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/gothinkster/realworld">RealWorld</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/donnemartin/system-design-primer">系統設計入門</a></p>
+<p><a target="_blank" rel="noopener" href="https://goo.gl/D77a4K">JavaScript Testing in 2018</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/donnemartin/system-design-primer/blob/master/README-zh-TW.md">系統設計入門(繁中)</a></p>
+<h2 id="提問："><a href="#提問：" class="headerlink" title="提問："></a>提問：</h2><blockquote>
+<p>Ｑ：我想知道現在 Web 工程師寫網頁時通常都在哪個瀏覽器上測試OuO<br>Ａ：Google Chrome 先測，Firefox 和 Safari Mobile 。<br>先測當前版本，往前往後兩個</p>
+</blockquote>
+<blockquote>
+<p>Ｑ：台灣 Firefox 社群最近有哪些坑，有哪些適合後端開發者關注的？<br>Ａ：<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Rust">Rust</a></p>
+</blockquote>
+<blockquote>
+<p>Ｑ：有什麼推薦的 GitHub 開源專案或 Good First Bug 嗎？<br>哪裡容易找到 Good First Bug 呢？</p>
+</blockquote>
+<h1 id="Python-網路爬蟲"><a href="#Python-網路爬蟲" class="headerlink" title="Python 網路爬蟲"></a>Python 網路爬蟲</h1><h2 id="今天你將會學到"><a href="#今天你將會學到" class="headerlink" title="今天你將會學到"></a>今天你將會學到</h2><ul>
+<li>什麼是爬蟲</li>
+<li>Python 虛擬環境</li>
+<li>用爬蟲抓取網頁內容的程式</li>
+<li>用爬蟲抓取 <a target="_blank" rel="noopener" href="https://icook.tw/">iCook</a> 最新食譜並建檔</li>
+</ul>
+<h2 id="什麼是網路爬蟲"><a href="#什麼是網路爬蟲" class="headerlink" title="什麼是網路爬蟲"></a>什麼是網路爬蟲</h2><ul>
+<li>自動抓取網頁內容的程式</li>
+<li>代替人進行重複且繁瑣的資料收集工作且不出錯</li>
+<li>例如:收集十萬筆Google搜尋結果的標題</li>
+</ul>
+<h2 id="為什麼要學習-Python"><a href="#為什麼要學習-Python" class="headerlink" title="為什麼要學習 Python"></a>為什麼要學習 Python</h2><ul>
+<li><p>使用時機</p>
+<ul>
+<li>大數據資料分析和呈現</li>
+<li>人工智慧模型訓練</li>
+<li>ex: 熱門話題分析、價格歷史波動和預測</li>
+</ul>
+</li>
+<li><p>Python 易於上手，且在各領域被廣泛使用</p>
+</li>
+</ul>
+<h2 id="建立開發環境"><a href="#建立開發環境" class="headerlink" title="建立開發環境"></a>建立開發環境</h2><ul>
+<li>Python3、Pip3</li>
+<li>VirtualEnv <a target="_blank" rel="noopener" href="https://www.openfoundry.org/tw/tech-column/8516-pythons-virtual-environment-and-multi-version-programming-tools-virtualenv-and-pythonbrew">學習資源</a></li>
+<li>Requests</li>
+<li>BeautifulSoup4 (bs4)</li>
+<li>requirements.txt</li>
+</ul>
+<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><ul>
+<li>瀏覽器開發者工具</li>
+<li>處理登入狀態</li>
+<li>前端動態渲染內容</li>
+<li>其他爬蟲常用框架或是涵式庫</li>
+<li>使用爬蟲的正確禮儀</li>
+<li><strong>構思甚麼是你&#x2F;你想的第一個爬蟲</strong>?</li>
+</ul>
+</div><div class="article-licensing box"><div class="licensing-title"><p>Web 開發者技能樹演講</p><p><a href="https://william-mou.github.io/2018/08/24/Web-開發者技能樹演講/">https://william-mou.github.io/2018/08/24/Web-開發者技能樹演講/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>William Mou</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2018-08-24</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2026-02-20</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/Firefox/">Firefox</a><a class="link-muted mr-2" rel="tag" href="/tags/Web/">Web</a></div><div class="sharethis-inline-share-buttons"></div><script src="https://platform-api.sharethis.com/js/sharethis.js#property=619fa9250255320019654888&amp;product=inline-share-buttons" defer></script></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support the author with</h3><div class="buttons is-centered"><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>Wechat</span><span class="qrcode"><img src="/img/wechat.jpg" alt="Wechat"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2018/11/13/CNN-%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">CNN-實作練習</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2018/08/03/%E5%BD%B1%E5%83%8F%E8%BE%A8%E8%AD%98-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E9%80%A3%E7%B5%90/"><span class="level-item">影像辨識/機器學習連結</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card" id="comments"><div class="card-content"><h3 class="title is-5">Comments</h3><div class="fb-comments" data-width="100%" data-href="https://william-mou.github.io/2018/08/24/Web-%E9%96%8B%E7%99%BC%E8%80%85%E6%8A%80%E8%83%BD%E6%A8%B9%E6%BC%94%E8%AC%9B/" data-num-posts="5"></div><script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en/sdk.js#xfbml=1&version=v12.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/me.jpeg" alt="William Mou"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">William Mou</p><p class="is-size-6 is-block">HPC engineer</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>NTHU CS, Taiwan</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives/"><p class="title">22</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories/"><p class="title">7</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags/"><p class="title">22</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/William-Mou" target="_blank" rel="me noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/William-Mou"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Facebook" href="https://www.facebook.com/william.mou1024/"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Telegram" href="https://t.me/WilliamMou"><i class="fab fa-telegram"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://www.nthu.edu.tw/hotNews/content/1023" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">ASC</span></span><span class="level-right"><span class="level-item tag">www.nthu.edu.tw</span></span></a></li><li><a class="level is-mobile" href="https://sitcon.org/2020/agenda/bb4fc171-920f-48de-b411-ec0095306491" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">PVE</span></span><span class="level-right"><span class="level-item tag">sitcon.org</span></span></a></li><li><a class="level is-mobile" href="https://sitcon.org" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">SITCON</span></span><span class="level-right"><span class="level-item tag">sitcon.org</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Blockchain/"><span class="level-start"><span class="level-item">Blockchain</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/SITCON/"><span class="level-start"><span class="level-item">SITCON</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%97%85%E8%A1%8C/"><span class="level-start"><span class="level-item">旅行</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/"><span class="level-start"><span class="level-item">機器學習</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%B6%93%E9%A9%97%E8%B3%87%E6%BA%90/"><span class="level-start"><span class="level-item">經驗資源</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/"><span class="level-start"><span class="level-item">資訊安全</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%B3%87%E8%A8%8A%E8%AC%9B%E5%BA%A7/"><span class="level-start"><span class="level-item">資訊講座</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><figure class="media-left"><a class="image" href="/2023/05/26/ISC23-Europe-Hamburg/"><img src="/img/ISC23-Europe-Hamburg_files/image_1n.png" alt="ISC23 歐洲行 - 漢堡"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-05-26T09:00:00.000Z">2023-05-26</time></p><p class="title"><a href="/2023/05/26/ISC23-Europe-Hamburg/">ISC23 歐洲行 - 漢堡</a></p><p class="categories"><a href="/categories/%E6%97%85%E8%A1%8C/">旅行</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2023/05/25/ISC23-Europe-Lubeck/"><img src="/img/ISC23-Europe-Lubeck_files/image_13.png" alt="ISC23 歐洲行 - 呂北克"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-05-25T09:00:00.000Z">2023-05-25</time></p><p class="title"><a href="/2023/05/25/ISC23-Europe-Lubeck/">ISC23 歐洲行 - 呂北克</a></p><p class="categories"><a href="/categories/%E6%97%85%E8%A1%8C/">旅行</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2023/05/21/ISC23-Europe-in-competition/"><img src="/img/ISC23-Europe-in-competition_files/image_j.png" alt="ISC23 歐洲行 - 賽中及展覽參訪"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-05-21T09:00:00.000Z">2023-05-21</time></p><p class="title"><a href="/2023/05/21/ISC23-Europe-in-competition/">ISC23 歐洲行 - 賽中及展覽參訪</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2023/05/20/ISC23-Europe-pre-competition/"><img src="/img/ISC23-Europe-pre-competition_files/image_b.png" alt="ISC23 歐洲行 - 賽前準備及旅遊安排"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-05-20T09:00:00.000Z">2023-05-20</time></p><p class="title"><a href="/2023/05/20/ISC23-Europe-pre-competition/">ISC23 歐洲行 - 賽前準備及旅遊安排</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2019/09/13/%E5%AE%8C%E6%95%B4%E5%AD%B8%E7%BF%92%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%AF%A6%E9%8C%842%E2%80%94%E2%80%94%E5%AE%89%E8%A3%9D-Nvidia-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%92%B0%E5%A2%83/"><img src="https://img-blog.csdnimg.cn/20190117174859505.png?" alt="完整學習機器學習實錄2——安裝 Nvidia 機器學習環境"></a></figure><div class="media-content"><p class="date"><time dateTime="2019-09-13T22:31:13.000Z">2019-09-13</time></p><p class="title"><a href="/2019/09/13/%E5%AE%8C%E6%95%B4%E5%AD%B8%E7%BF%92%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%AF%A6%E9%8C%842%E2%80%94%E2%80%94%E5%AE%89%E8%A3%9D-Nvidia-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%92%B0%E5%A2%83/">完整學習機器學習實錄2——安裝 Nvidia 機器學習環境</a></p><p class="categories"><a href="/categories/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/">機器學習</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2023/05/"><span class="level-start"><span class="level-item">May 2023</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/09/"><span class="level-start"><span class="level-item">September 2019</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/01/"><span class="level-start"><span class="level-item">January 2019</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/12/"><span class="level-start"><span class="level-item">December 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/11/"><span class="level-start"><span class="level-item">November 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/08/"><span class="level-start"><span class="level-item">August 2018</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/05/"><span class="level-start"><span class="level-item">May 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/03/"><span class="level-start"><span class="level-item">March 2018</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/01/"><span class="level-start"><span class="level-item">January 2018</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2017/08/"><span class="level-start"><span class="level-item">August 2017</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/AIJT/"><span class="tag">AIJT</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ChatBot/"><span class="tag">ChatBot</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Firefox/"><span class="tag">Firefox</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/GCP/"><span class="tag">GCP</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/GPU/"><span class="tag">GPU</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/HITCON/"><span class="tag">HITCON</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Microsoft/"><span class="tag">Microsoft</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Myself/"><span class="tag">Myself</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/NTHU/"><span class="tag">NTHU</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Telegram/"><span class="tag">Telegram</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/TensorFlow/"><span class="tag">TensorFlow</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Web/"><span class="tag">Web</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8D%80%E5%A1%8A%E9%8F%88/"><span class="tag">區塊鏈</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%94%90%E9%B3%B3/"><span class="tag">唐鳳</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%AE%8C%E6%95%B4%E5%AD%B8%E7%BF%92%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%AF%A6%E9%8C%84/"><span class="tag">完整學習機器學習實錄</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%AF%A6%E9%A9%97%E6%95%99%E8%82%B2/"><span class="tag">實驗教育</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%BD%B1%E5%83%8F%E8%BE%A8%E8%AD%98/"><span class="tag">影像辨識</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/"><span class="tag">機器學習</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%A0%94%E8%A8%8E%E6%9C%83/"><span class="tag">研討會</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%B6%93%E9%A9%97%E5%88%86%E4%BA%AB/"><span class="tag">經驗分享</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%87%AA%E5%AD%B8/"><span class="tag">自學</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%B3%87%E5%AE%89/"><span class="tag">資安</span><span class="tag">3</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">Subscribe for updates</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.png" alt="William Mou" height="28"></a><p class="is-size-7"><span>&copy; 2026 William Mou</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-sourcetree"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax src="/js/insight.js" defer></script><script data-pjax>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

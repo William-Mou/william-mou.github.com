@@ -1,0 +1,2151 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>William Mou</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#3273dc"><meta name="application-name" content="William Mou Blog"><meta name="msapplication-TileImage" content="/img/logo.png"><meta name="msapplication-TileColor" content="#3273dc"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="William Mou Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="William-Mou&amp;#39;s Blog"><meta property="og:type" content="blog"><meta property="og:title" content="William Mou"><meta property="og:url" content="https://william-mou.github.io/"><meta property="og:site_name" content="William Mou"><meta property="og:description" content="William-Mou&amp;#39;s Blog"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://william-mou.github.io/img/og_image.png"><meta property="article:author" content="William Mou"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://william-mou.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://william-mou.github.io"},"headline":"William Mou","image":["https://william-mou.github.io/img/og_image.png"],"author":{"@type":"Person","name":"William Mou"},"publisher":{"@type":"Organization","name":"William Mou","logo":{"@type":"ImageObject","url":"https://william-mou.github.io/img/logo.png"}},"description":"William-Mou&#39;s Blog"}</script><link rel="icon" href="/img/logo.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.png" alt="William Mou" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/William-Mou"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2019-01-09T18:22:19.000Z" title="1/9/2019, 6:22:19 PM">2019-01-09</time></span><span class="level-item">Updated&nbsp;<time dateTime="2026-02-20T18:08:53.555Z" title="2/20/2026, 6:08:53 PM">2026-02-20</time></span><span class="level-item"><a class="link-muted" href="/categories/%E8%B3%87%E8%A8%8A%E8%AC%9B%E5%BA%A7/">資訊講座</a></span><span class="level-item">a minute read (About 113 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2019/01/09/GCPUG-Taipei-2019/">GCPUG Taipei 2019</a></p><div class="content"><h1 id="GCPUG-Taipei"><a href="#GCPUG-Taipei" class="headerlink" title="GCPUG Taipei"></a><a target="_blank" rel="noopener" href="https://www.meetup.com/GCPUG-Taipei/">GCPUG Taipei</a></h1><p>1&#x2F;9 (三) Google Taipei 101 Office 77F</p>
+<ul>
+<li>Airflow to Cloud Composer by Bruce Kuo &#x2F; Data Scientist @ Codementor</li>
+<li>當電子發票遇見 Google Cloud Function &#x2F; Cage Chung</li>
+</ul>
+<h2 id="介紹文章"><a href="#介紹文章" class="headerlink" title="介紹文章"></a>介紹文章</h2><p><a target="_blank" rel="noopener" href="https://leemeng.tw/a-story-about-airflow-and-data-engineering-using-how-to-use-python-to-catch-up-with-latest-comics-as-an-example.html">https://leemeng.tw/a-story-about-airflow-and-data-engineering-using-how-to-use-python-to-catch-up-with-latest-comics-as-an-example.html</a></p>
+<h1 id="當電子發票遇到-google-cloud-function"><a href="#當電子發票遇到-google-cloud-function" class="headerlink" title="當電子發票遇到 google cloud function"></a>當電子發票遇到 google cloud function</h1><ul>
+<li>電子發鰾</li>
+<li>google cloud function</li>
+<li>eionvio(?)</li>
+<li>demo</li>
+<li>tip</li>
+</ul>
+<p>電子發票規格<br>cloud function<br>cloud server &lt;-&gt; cloud functions &lt;-invoke-&gt; other APIs</p>
+<ul>
+<li>Triggers - Http<br><code>--trigger-http</code></li>
+<li>Triggers - Bucket<br><code>--trigger-bucket=</code></li>
+<li>Triggers - Topic<br><code>--trigger-Topic=</code></li>
+<li>Triggers - Event</li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2018-12-21T21:25:19.000Z" title="12/21/2018, 9:25:19 PM">2018-12-21</time></span><span class="level-item">Updated&nbsp;<time dateTime="2026-02-20T18:08:53.557Z" title="2/20/2026, 6:08:53 PM">2026-02-20</time></span><span class="level-item"><a class="link-muted" href="/categories/%E8%B3%87%E8%A8%8A%E8%AC%9B%E5%BA%A7/">資訊講座</a></span><span class="level-item">35 minutes read (About 5301 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2018/12/21/%E8%87%AA%E4%B8%BB%E5%AD%B8%E7%BF%92%E6%9A%A8%E7%A8%8B%E8%A8%AD%E6%95%99%E8%82%B2%E7%B6%93%E9%A9%97%E5%88%86%E4%BA%AB%E6%9C%83-%E3%80%8C%E5%8F%B0%E7%81%A3%E7%A4%BE%E6%9C%83%E5%89%B5%E6%96%B0%E7%99%BC%E5%B1%95%E8%B6%A8%E5%8B%A2%E3%80%8D/">自主學習暨程設教育經驗分享會-「台灣社會創新發展趨勢」</a></p><div class="content"><h1 id="自主學習暨程設教育經驗分享會-「台灣社會創新發展趨勢」"><a href="#自主學習暨程設教育經驗分享會-「台灣社會創新發展趨勢」" class="headerlink" title="自主學習暨程設教育經驗分享會 -「台灣社會創新發展趨勢」"></a>自主學習暨程設教育經驗分享會 -「台灣社會創新發展趨勢」</h1><p>Author : <a target="_blank" rel="noopener" href="https://www.facebook.com/profile.php?id=100002589148791">牟展佑</a> <a target="_blank" rel="noopener" href="http://williammou.info/">William Mou</a></p>
+<p><img src="https://i.imgur.com/xACFC2S.jpg"></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">【活動資訊】</span><br><span class="line">【主        題】：自主學習暨程設教育經驗分享會 -「台灣社會創新發展趨勢」</span><br><span class="line">【演   講   者】：唐鳳</span><br><span class="line">【時        間】：12/21 (五) 19:00 ~ 21:00 (18:30 開放進場)</span><br><span class="line">【地        點】：臺北科技大學 共同科館 B1 演講廳</span><br><span class="line">【人數上限】：160人</span><br><span class="line">【主辦單位】：教資中心 x 程式設計研究社</span><br><span class="line">----------</span><br><span class="line">唐鳳是誰？</span><br><span class="line"></span><br><span class="line">唐鳳，35歲入閣，成為行政院有史以來最年輕的政務委員，任內成功利用視訊直播等科技做為突破，代表中華民國參與聯合國會議，最高學歷只有國中肄業，14歲起在家自學，被譽為「臺灣電腦十大高手」，曾在矽谷創業，也是g0v零時政府的核心成員。透過本次「台灣社會創新發展趨勢」的分享，唐鳳亦將帶入其在自學、程式方面的自身經驗。</span><br><span class="line">本次活動為&quot;全程Q&amp;A&quot;，不論是對自學、程設教育、社會企業、開放政府... 有興趣的人皆歡迎參加。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h1 id="自由提問！"><a href="#自由提問！" class="headerlink" title="自由提問！"></a>自由提問！</h1><h1 id="對於網路上的假消息及不實訊息該如何處理呢？"><a href="#對於網路上的假消息及不實訊息該如何處理呢？" class="headerlink" title="對於網路上的假消息及不實訊息該如何處理呢？"></a>對於網路上的假消息及不實訊息該如何處理呢？</h1><h2 id="政府謠言的部分"><a href="#政府謠言的部分" class="headerlink" title="政府謠言的部分"></a>政府謠言的部分</h2><blockquote>
+<p>有爭議的言論受到關注，全世界都依樣<br>但是言論自由是台灣的核心價值，不能先審<br>即時處理爭議訊息可確保公共對話空間</p>
+</blockquote>
+<ul>
+<li>空間上難以被控制</li>
+<li>時間上盡力去協調</li>
+</ul>
+<p>入閣後希望盡力使各部會與民意交流，60分鐘內踹共，版面上不能平衡，但時間上可以平衡</p>
+<p>隔著 Video 難以說明，但是唐鳳每週三在空軍總部，任何人都可以來找我，有什麼事情都可以即時澄清。</p>
+<h2 id="其他謠言的部分"><a href="#其他謠言的部分" class="headerlink" title="其他謠言的部分"></a>其他謠言的部分</h2><p><a target="_blank" rel="noopener" href="https://cofacts.g0v.tw/">G0V謠言系統</a></p>
+<blockquote>
+<p>要跟長輩說明不容易，但是讓長輩自己去發現比較容易，這樣有助於處近家庭和諧</p>
+</blockquote>
+<p>這有點像是心靈的疫苗，在假訊息沒這麼強的時候，先讓大家有印象，之後再看到時就會有警惕</p>
+<p><a target="_blank" rel="noopener" href="https://tfc-taiwan.org.tw/"></a><br>完全獨立的中心，ifcn 國際事實確認網路，只要加入這個網路，就可以獲得演算法的設定權，類似於 mail 垃圾信的判斷機制。</p>
+<ol>
+<li>自發性舉報</li>
+<li>查證</li>
+<li>調整演算法<blockquote>
+<p>這並沒有違背言論自由，因為透過指定網址或是塗鴉牆還是能看到，不會有下架或事先審的問題</p>
+</blockquote>
+</li>
+</ol>
+<h1 id="老師您好，請問您對於網紅帶風向的看法？"><a href="#老師您好，請問您對於網紅帶風向的看法？" class="headerlink" title="老師您好，請問您對於網紅帶風向的看法？"></a>老師您好，請問您對於網紅帶風向的看法？</h1><h2 id="不要逆風而行"><a href="#不要逆風而行" class="headerlink" title="不要逆風而行"></a>不要逆風而行</h2><ul>
+<li>大家都是關心同一個議題的<ul>
+<li>經濟面</li>
+<li>政治面</li>
+<li>等等</li>
+</ul>
+</li>
+</ul>
+<h2 id="乘著這個風向，一同解決問題。"><a href="#乘著這個風向，一同解決問題。" class="headerlink" title="乘著這個風向，一同解決問題。"></a>乘著這個風向，一同解決問題。</h2><ul>
+<li>邀請會吵的朋友，不是有糖吃，而是進廚房。<ul>
+<li>讓大家獲得入場券，大家一起改善問題。</li>
+<li>會吵的朋友，不是有糖吃，會炒的朋友，進廚房。<blockquote>
+<p>對於風向，要乘風而起，不是逆風而飛</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="老師您好，請問您認為除軟體工程師以外，在各行各業需要具備何種程度的程式語言能力？"><a href="#老師您好，請問您認為除軟體工程師以外，在各行各業需要具備何種程度的程式語言能力？" class="headerlink" title="老師您好，請問您認為除軟體工程師以外，在各行各業需要具備何種程度的程式語言能力？"></a>老師您好，請問您認為除軟體工程師以外，在各行各業需要具備何種程度的程式語言能力？</h2><ul>
+<li>設計背景的朋友懂一點程設沒有不好</li>
+<li>建議使用 scratch or processing 等不會有這麼高的挫折感，一拿到就是會動的。</li>
+</ul>
+<h2 id="請問要如何維持自主學習的熱忱與動力？"><a href="#請問要如何維持自主學習的熱忱與動力？" class="headerlink" title="請問要如何維持自主學習的熱忱與動力？"></a>請問要如何維持自主學習的熱忱與動力？</h2><ul>
+<li>學習的初衷通常是想要弄懂一個東西，學會了一部分後就會認為「就這樣啊」<ul>
+<li>所以就像火箭一樣，一段一段發射需要獲得補充包。</li>
+</ul>
+</li>
+<li>舉例而言，研究一輛三輪自駕車<ul>
+<li>一開始是「好奇」，但是好奇過後</li>
+<li>我們可以嘗試去「創造」，例如三輪自駕車的表達與使用方式等</li>
+<li>透過這些創造我們會去學習新的領域，進而產生更多的好奇心</li>
+<li>如此產生一個循環！</li>
+</ul>
+</li>
+</ul>
+<h1 id="老師，請問您對於python使用率最近超過c-的看法"><a href="#老師，請問您對於python使用率最近超過c-的看法" class="headerlink" title="老師，請問您對於python使用率最近超過c++的看法"></a>老師，請問您對於python使用率最近超過c++的看法</h1><ul>
+<li>怎麼現在才超過（？）<ul>
+<li>代表想用程式改變生活的人越來越多</li>
+</ul>
+</li>
+<li>推薦使用 Sikuli 簡化生活解決一些生活中很冗的事情</li>
+</ul>
+<h1 id="老師您好，請問您認為除軟體工程師以外，在各行各業需要具備何種程度的程式語言能力？-1"><a href="#老師您好，請問您認為除軟體工程師以外，在各行各業需要具備何種程度的程式語言能力？-1" class="headerlink" title="老師您好，請問您認為除軟體工程師以外，在各行各業需要具備何種程度的程式語言能力？"></a>老師您好，請問您認為除軟體工程師以外，在各行各業需要具備何種程度的程式語言能力？</h1><ul>
+<li>會使用 Sikuli 就是很好的。</li>
+<li>透過檢視工作流程是冗的地方</li>
+<li>實現，工作流程再設計</li>
+<li>對於生活中覺得自己像是工作人的那部分，應該交給真正的工具做。</li>
+</ul>
+<h1 id="為何選舉不電子化？"><a href="#為何選舉不電子化？" class="headerlink" title="為何選舉不電子化？"></a>為何選舉不電子化？</h1><ul>
+<li>因為黨派在驗票的時候，要使各黨籍說服所有候選人，但密碼學拿以說服別人，這不是一個技術問題，是一個社會學問題。</li>
+<li>公投可能可以引進部分電子票，例如打孔的紙片，透過光學驗鈔機等技術，可以讓選務人員輕鬆一點，我認為這是一個未來可以改進的問題<blockquote>
+<p>中選會是獨立機關，以上言論還是以中選會為準…</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="請問臺灣和其他國家比較，開放政府的程度在什麼階段？"><a href="#請問臺灣和其他國家比較，開放政府的程度在什麼階段？" class="headerlink" title="請問臺灣和其他國家比較，開放政府的程度在什麼階段？"></a>請問臺灣和其他國家比較，開放政府的程度在什麼階段？</h1><ul>
+<li>transparency</li>
+<li>participation<ul>
+<li>公民參與<ul>
+<li>這對我們來說是因為大家認為民主是很新的東西</li>
+<li>大家很願意去做電子連署等等新興的事務</li>
+<li>對於這些新興事物有興趣是許多老牌民主國家難以達成的</li>
+</ul>
+</li>
+<li>公共政策參與平台<ul>
+<li>審計部門通常因為沒有先例等為由，所以不易放行</li>
+<li>透過公共政策參與平台，審計部可以詢問大家的疑慮</li>
+<li>透過這些疑慮，跑來問委員，解決疑慮，確保新的審計原則</li>
+</ul>
+</li>
+<li>一方面沒有擋住行政部創新</li>
+<li>一方面也沒有違反人民的疑慮</li>
+<li>這些是新興民主紅利。</li>
+</ul>
+</li>
+<li>accountability<ul>
+<li>給個交代，找得到人處理</li>
+</ul>
+</li>
+<li>inclusion <ul>
+<li>各種不同文化語言背景的朋友，都可以有接取的權利</li>
+</ul>
+</li>
+</ul>
+<h1 id="您認為台灣教育環境有哪些問題？應該如何改善？"><a href="#您認為台灣教育環境有哪些問題？應該如何改善？" class="headerlink" title="您認為台灣教育環境有哪些問題？應該如何改善？"></a>您認為台灣教育環境有哪些問題？應該如何改善？</h1><blockquote>
+<p>從下次開始，以素養導向，而非技能導向<br>與十年前的課綱相比，不再強調個人與個人的競爭力<br>過往如同透過技能畫許多跑道，鳴槍起跑<br>我們決定不再教小孩這種</p>
+</blockquote>
+<ul>
+<li>自發<ul>
+<li>想去了解</li>
+</ul>
+</li>
+<li>互動<ul>
+<li>與不同領域的朋友共同打怪</li>
+</ul>
+</li>
+<li>共好<ul>
+<li>不把別人當作工具人，互相學習、彼此討論<blockquote>
+<p>鳴槍起跑後，小孩轉身跑向自己的方向<br>只要是有興趣的人會跑向共同的方向<br>所有小孩可以跑向自己的目標，同時認識許多朋友</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="高等教育部分"><a href="#高等教育部分" class="headerlink" title="高等教育部分"></a>高等教育部分</h2><ul>
+<li>過往以學系為主</li>
+<li>新的以學程為主</li>
+</ul>
+<blockquote>
+<p>以後可能不再是某學系的畢業證書，而是一個技能樹，你拿著這顆畢業證書技能樹，可你說明你結合了什麼東西。</p>
+</blockquote>
+<blockquote>
+<p>以後每個學生把學校當作獲得資源的地方，教授等等不再是裁判。<br>希望大家救救上一代，讓家長別輸在終點</p>
+</blockquote>
+<h1 id="請問您覺得對岸在此次選舉在網軍上的操作的看法"><a href="#請問您覺得對岸在此次選舉在網軍上的操作的看法" class="headerlink" title="請問您覺得對岸在此次選舉在網軍上的操作的看法?"></a>請問您覺得對岸在此次選舉在網軍上的操作的看法?</h1><p>這個是目前的立法缺陷，已經立法希望盡快三讀通過，禁止境外資金資助廣告。</p>
+<h1 id="台灣政府對於區塊鏈或加密貨幣的發展，有哪些政策措施呀？"><a href="#台灣政府對於區塊鏈或加密貨幣的發展，有哪些政策措施呀？" class="headerlink" title="台灣政府對於區塊鏈或加密貨幣的發展，有哪些政策措施呀？"></a>台灣政府對於區塊鏈或加密貨幣的發展，有哪些政策措施呀？</h1><blockquote>
+<p>分兩部份討論</p>
+</blockquote>
+<h2 id="分散式帳本"><a href="#分散式帳本" class="headerlink" title="分散式帳本"></a>分散式帳本</h2><p>政府一直在用分散式帳本，舉例而言：</p>
+<ul>
+<li>大家可花很便宜2~3000買一個空氣盒子</li>
+<li>上傳到中研院老師的平台共享數據</li>
+<li>一眼就可以看到台灣空氣品質的地圖</li>
+</ul>
+<h3 id="其他國家"><a href="#其他國家" class="headerlink" title="其他國家"></a>其他國家</h3><blockquote>
+<p>在周圍亞洲，很多社會學家無法去挑戰政府，不要說 2000 個， 20個可能就要去喝茶，200個可能必須加入政府，再不加入政府可能就要被消失了。</p>
+</blockquote>
+<h3 id="台灣"><a href="#台灣" class="headerlink" title="台灣"></a>台灣</h3><h4 id="實際作為"><a href="#實際作為" class="headerlink" title="實際作為"></a>實際作為</h4><ul>
+<li>中央保持著打不過就加入的精神，不論如何，大家是一個夥伴關係</li>
+<li>中央已經將這個網路放到 github 上</li>
+<li>我們會將所有資料備份到國網中心上，讓所有人可以用相同的資料做預測，<br><a href="CI.taiwan.gov.tw">CI 網站連結</a></li>
+</ul>
+<h4 id="解決問題"><a href="#解決問題" class="headerlink" title="解決問題"></a>解決問題</h4><ul>
+<li>為什麼環團會相信國家這樣用他們的資料而不去竄改呢？<ol>
+<li>透過分散式帳本，做一個快照，讓國網中心若要竄改數字，民間就會知道了</li>
+<li>其實國網中心原本就不會竄改數字。</li>
+<li>這樣讓大家相信 CI 上面的資料，就是大家上傳的資料。</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>ap-buster 也是個非常有潛力的朋友</p>
+</blockquote>
+<h2 id="加密貨幣"><a href="#加密貨幣" class="headerlink" title="加密貨幣"></a>加密貨幣</h2><p>把加密貨幣交換法幣，是只有與洗錢相關才會受到管制，其他的不會受到限制<br>此外也衍伸一個議題：<a href="sandbox.org.tw">金融沙盒</a></p>
+<blockquote>
+<p>若無法修法，可以先花一年違法</p>
+</blockquote>
+<ul>
+<li>透過社會創新，帶領法律創新<blockquote>
+<p>法務部希望提醒大家不要資助恐怖份子、洗錢兩項，其他都是允許大家創新</p>
+</blockquote>
+</li>
+</ul>
+<h1 id="想請問一下，程式設計師的身份對於您參政議政有什麼幫助和影響呢？"><a href="#想請問一下，程式設計師的身份對於您參政議政有什麼幫助和影響呢？" class="headerlink" title="想請問一下，程式設計師的身份對於您參政議政有什麼幫助和影響呢？"></a>想請問一下，程式設計師的身份對於您參政議政有什麼幫助和影響呢？</h1><ul>
+<li>減少重複的事情，如果有一件事情是浪費同仁的青春的，大家都可以花更多時間去做有意義的事情</li>
+</ul>
+<p>舉例而言，sandstorm.io 就是一個不錯的選擇。</p>
+<blockquote>
+<p>程式設計，重要的是設計不是程式，重要的是設計，設計就是設想、計畫，這並不是程式的專利。</p>
+</blockquote>
+<h1 id="你覺得大學應該帶給學生什麼方面的教育？在你的理想狀況下，什麼樣的人適合就讀大學，什麼樣的人適合高中職或五專畢業後直接就業？"><a href="#你覺得大學應該帶給學生什麼方面的教育？在你的理想狀況下，什麼樣的人適合就讀大學，什麼樣的人適合高中職或五專畢業後直接就業？" class="headerlink" title="你覺得大學應該帶給學生什麼方面的教育？在你的理想狀況下，什麼樣的人適合就讀大學，什麼樣的人適合高中職或五專畢業後直接就業？"></a>你覺得大學應該帶給學生什麼方面的教育？在你的理想狀況下，什麼樣的人適合就讀大學，什麼樣的人適合高中職或五專畢業後直接就業？</h1><ul>
+<li><p>在我理想中，這兩個是不互相排斥的</p>
+</li>
+<li><p>高職已經改叫技術高中</p>
+</li>
+<li><p>新課綱設計時，高一去互轉都不需要付出太大代價</p>
+</li>
+<li><p>現在大學的選修，提早到高中辦理，因為少子女化，所以師資可以移到選修去用。</p>
+</li>
+<li><p>大家可以先去做一些事情兩年後，再進大學去學習，透過這樣的方式，讓大家在刑法上成年民法上未成年的兩年，去尋找自己的志願，創造大家並不需要同時念大學的意念。</p>
+</li>
+<li><p>大學的用途</p>
+<ul>
+<li>大學應該是一個地方的智庫，結合整個地方資源，提供給大學，透過大學與社會的結合，使大家是認識社會，而非成為一個象牙塔，明年會有個地方的國家型戰略計劃，讓大學成為如上所述，這樣謉大學而言能解決少子化等問題。</li>
+</ul>
+</li>
+</ul>
+<h1 id="未來是否應該學習一門新語言-很多新型態的語言慢慢誕生，例如Golang或Swift等等的，是否有必要去嘗試接觸新語言。"><a href="#未來是否應該學習一門新語言-很多新型態的語言慢慢誕生，例如Golang或Swift等等的，是否有必要去嘗試接觸新語言。" class="headerlink" title="未來是否應該學習一門新語言 很多新型態的語言慢慢誕生，例如Golang或Swift等等的，是否有必要去嘗試接觸新語言。"></a>未來是否應該學習一門新語言 很多新型態的語言慢慢誕生，例如Golang或Swift等等的，是否有必要去嘗試接觸新語言。</h1><ul>
+<li>周圍朋友學什麼，你就學什麼，因為語言多數時間不是寫給電腦看的，而是寫給人看的，彼此間討論，才能帶給語言更多得活力。</li>
+<li>如果你是看到新語言就去學的人，最後你的社群就是喜歡研究新語言的人，如果你是個喜歡學新語言的程式愛好者的話，歡迎跟我聯絡，因為我也是。</li>
+<li>若不是，去學習一個你周圍有人用的語言，加深加廣，對你而言是更好的。</li>
+<li></li>
+</ul>
+<h1 id="請問童年的霸凌是否對您未來的人生有任何影響？"><a href="#請問童年的霸凌是否對您未來的人生有任何影響？" class="headerlink" title="請問童年的霸凌是否對您未來的人生有任何影響？"></a>請問童年的霸凌是否對您未來的人生有任何影響？</h1><ul>
+<li>一定有重大的影響，而且一定是好的。<ul>
+<li>因為當年我曾經有被霸凌，但是我是以一個成年的思想去看待。</li>
+<li>理解他們家庭教育是有線性的經濟、線性的學習</li>
+</ul>
+</li>
+<li>對我而言，這些霸凌，是因為我的存在對他們有不舒服的部分。<ul>
+<li>也了解到他們是因為有拼經濟、拼第一名的思想。</li>
+<li>這也使我很早就跳脫線性學習拼命的迷霧。</li>
+</ul>
+</li>
+</ul>
+<h1 id="推廣開源的困難重重-希望一般課厭能簡單開源。-但從簡單的Github使用到同學們高傲的心，處處都是困難。-一般同學沒能力，但連Github都不知道怎麼使用，常常就算開源了也就直接把東西下載後交出去。-有能力的同學很多都抱有著『自己寫好就好，為什麼要開源或幫助他人。』這樣自私且高傲的心。"><a href="#推廣開源的困難重重-希望一般課厭能簡單開源。-但從簡單的Github使用到同學們高傲的心，處處都是困難。-一般同學沒能力，但連Github都不知道怎麼使用，常常就算開源了也就直接把東西下載後交出去。-有能力的同學很多都抱有著『自己寫好就好，為什麼要開源或幫助他人。』這樣自私且高傲的心。" class="headerlink" title="推廣開源的困難重重 希望一般課厭能簡單開源。 但從簡單的Github使用到同學們高傲的心，處處都是困難。 一般同學沒能力，但連Github都不知道怎麼使用，常常就算開源了也就直接把東西下載後交出去。 有能力的同學很多都抱有著『自己寫好就好，為什麼要開源或幫助他人。』這樣自私且高傲的心。"></a>推廣開源的困難重重 希望一般課厭能簡單開源。 但從簡單的Github使用到同學們高傲的心，處處都是困難。 一般同學沒能力，但連Github都不知道怎麼使用，常常就算開源了也就直接把東西下載後交出去。 有能力的同學很多都抱有著『自己寫好就好，為什麼要開源或幫助他人。』這樣自私且高傲的心。</h1><ul>
+<li>因為絕大部分人，是從開源社群學習<ul>
+<li>所以自己寫好就好，並不是不行</li>
+</ul>
+</li>
+<li>因為自己寫好要自己維護，當有開放給大家的覺悟後，就有更多時間去開發新的東西</li>
+<li>其實你並不需要透過道德的角度去說服，可以透過經濟的角度去分析。<ul>
+<li>如果你不開源出來，就要自己維護</li>
+<li>mozilla 就是 netscape 轉型成功的例子。<blockquote>
+<p>不一定要大公無私，可以先小私有公，讓他在開源的同時，體驗到助人為快樂之本。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="指導教授綁架學生的畢業證書的問題（不幫我做什麼就不簽名等），是否有改善的方法？"><a href="#指導教授綁架學生的畢業證書的問題（不幫我做什麼就不簽名等），是否有改善的方法？" class="headerlink" title="指導教授綁架學生的畢業證書的問題（不幫我做什麼就不簽名等），是否有改善的方法？"></a>指導教授綁架學生的畢業證書的問題（不幫我做什麼就不簽名等），是否有改善的方法？</h1><ul>
+<li>一般的談判方式，要有一個 <a target="_blank" rel="noopener" href="https://www.google.com/search?client=firefox-b-ab&q=batna">batna</a> </li>
+<li>歡迎大家多玩博弈理論的遊戲，可以透過策略訓練自己<ul>
+<li>但畢竟我沒有唸過大學，只是旁聽。</li>
+</ul>
+</li>
+</ul>
+<h1 id="政府在郷下與都市間如何解決資訊不對稱"><a href="#政府在郷下與都市間如何解決資訊不對稱" class="headerlink" title="政府在郷下與都市間如何解決資訊不對稱"></a>政府在郷下與都市間如何解決資訊不對稱</h1><ul>
+<li>讓中央公務員可以在地方工作</li>
+<li>透過實驗計畫建立新的方式</li>
+<li>透過網路參與到知識生產或意義生產</li>
+<li>透過這樣的方式，讓人流回需要創新的地方</li>
+</ul>
+<h1 id="老師的口才能力是如何培養的？"><a href="#老師的口才能力是如何培養的？" class="headerlink" title="老師的口才能力是如何培養的？"></a>老師的口才能力是如何培養的？</h1><ul>
+<li>每個星期講五場演講<br><a target="_blank" rel="noopener" href="https://ai.taiwan.gov.tw/">AI taiwan</a><br><a target="_blank" rel="noopener" href="https://ci.taiwan.gov.tw/">ci</a><br><a target="_blank" rel="noopener" href="https://bio.taiwan.gov.tw/">bio</a><br><a target="_blank" rel="noopener" href="https://smart.taiwan.gov.tw/">smart</a></li>
+<li>每次我被問倒，回去就會開一個網站來回答大家的問題</li>
+</ul>
+<blockquote>
+<p>要不要用義務教育都是你自己的選擇，只要你寫出你的實驗教育構想書，就可以用你想要的方式去完成你自己的教育</p>
+</blockquote>
+<p>我們也讓課綱開課的權利下放到各學校，這樣學校就可以開放許多特色專班、課程，只要與學系的課發會一起開發課程就可以了</p>
+<blockquote>
+<p>我們認為是社區與其工作者，和老師一起去討論與開發學習的方向</p>
+</blockquote>
+<h1 id="請問台灣5g發展的如何"><a href="#請問台灣5g發展的如何" class="headerlink" title="請問台灣5g發展的如何"></a>請問台灣5g發展的如何</h1><ol>
+<li>台灣在 5G 的應用，透過依照地方所需，開實驗室應用，來測試這樣的應用是否真的合用</li>
+<li>接下來會可能多達上百個場域，用類似的頻段，但因為空間有隔開，所以可以進行各種測試。</li>
+<li>舉例而言我很喜歡VR，這樣可以讓一個人可以在一個房間中去控制所有怪手，也可以快速累積機器學習資料，這樣可以錄下所有怪手判斷，這樣可以很容易培育出機器副駕駛等。</li>
+</ol>
+<blockquote>
+<p>全力支持，絕不主導owo</p>
+</blockquote>
+<h1 id="請問平常都幾點睡覺"><a href="#請問平常都幾點睡覺" class="headerlink" title="請問平常都幾點睡覺"></a>請問平常都幾點睡覺</h1><blockquote>
+<p>睡滿8小時<br>0點睡 8點起</p>
+</blockquote>
+<blockquote>
+<p>需要睡夠 8hr 才能夠使短期記憶寫入長期記憶。</p>
+</blockquote>
+<h1 id="想要精通某種程式語言，需要不斷的練習，-那麼有甚麼方法是最有效率的呢？"><a href="#想要精通某種程式語言，需要不斷的練習，-那麼有甚麼方法是最有效率的呢？" class="headerlink" title="想要精通某種程式語言，需要不斷的練習， 那麼有甚麼方法是最有效率的呢？"></a>想要精通某種程式語言，需要不斷的練習， 那麼有甚麼方法是最有效率的呢？</h1><p>挑一個大的專案，去學習與修改，當瞭解到自己的影響力非常大時，就能夠去支持自己。</p>
+<h1 id="facebook"><a href="#facebook" class="headerlink" title="facebook"></a>facebook</h1><blockquote>
+<p>搜尋而不是被動觀看<br><a target="_blank" rel="noopener" href="https://addons.mozilla.org/zh-TW/firefox/addon/news-feed-eradicator/">https://addons.mozilla.org/zh-TW/firefox/addon/news-feed-eradicator/</a></p>
+</blockquote>
+<blockquote>
+<p>我永遠都是 well intentioned。用FB不是被動的，而是我想要做什麼，才去用 fb</p>
+</blockquote>
+<blockquote>
+<p>sli.do 可以讓大家注意力放在彼此身上，讓按讚，留言等放在 sli.do 上，可以彼此關心，而非陷入自己的世界，這也是一種 social technology</p>
+</blockquote>
+<h1 id="台灣學子-到了高等教育還是有絕大部分的人-不清楚自己的未來在哪-請問講師-台灣的教育有什麼問題-與有沒有什麼解決辦法"><a href="#台灣學子-到了高等教育還是有絕大部分的人-不清楚自己的未來在哪-請問講師-台灣的教育有什麼問題-與有沒有什麼解決辦法" class="headerlink" title="台灣學子 到了高等教育還是有絕大部分的人 不清楚自己的未來在哪 請問講師 台灣的教育有什麼問題 與有沒有什麼解決辦法"></a>台灣學子 到了高等教育還是有絕大部分的人 不清楚自己的未來在哪 請問講師 台灣的教育有什麼問題 與有沒有什麼解決辦法</h1><blockquote>
+<p>教育本來就無法找到興趣，興趣只在孩子的心理。</p>
+</blockquote>
+<ul>
+<li>我們唯一能創照的是一個不扼殺孩子興趣的系統</li>
+<li>讓大家的學習有興趣的事物時不會有大量的成本</li>
+<li>社會獎賞的系統，<strong>不再是獎賞乖小孩，而是獎賞創新的孩子</strong>。</li>
+</ul>
+<blockquote>
+<p>過去把兩者放到同一個教育環境中，而現在讓教學工作者了解後，可以讓教師們理解與進入終身學習與創造的世界、熱情，對在地的社會脈絡進行直接的貢獻。</p>
+</blockquote>
+<h1 id="對於少子化造成的大學倒閉潮，政府需要怎麼因應？"><a href="#對於少子化造成的大學倒閉潮，政府需要怎麼因應？" class="headerlink" title="對於少子化造成的大學倒閉潮，政府需要怎麼因應？"></a>對於少子化造成的大學倒閉潮，政府需要怎麼因應？</h1><p>同上能夠</p>
+<ul>
+<li>運用學程</li>
+<li>與社會結合</li>
+<li>與學生學習</li>
+</ul>
+<p>的大學更能夠在這波少子化中生存</p>
+<h1 id="怎樣能成為你們的實習生？"><a href="#怎樣能成為你們的實習生？" class="headerlink" title="怎樣能成為你們的實習生？"></a>怎樣能成為你們的實習生？</h1><p><a target="_blank" rel="noopener" href="https://ray.pdis.nat.gov.tw/">https://ray.pdis.nat.gov.tw/</a><br>有 2&#x2F;3 的朋友要找出問題<br>有 1&#x2F;3 是要解決問題</p>
+<p>所以大家都可以來，暑假時關注 rich 職場體驗網</p>
+<h1 id="常使用套件或套件生成的程式碼-例如Pyhton的撰寫，常常會伴隨著大量的套件。-也常常被笑說Python是一般沒程式接處的人在學的。-套件的方便性有目共睹，資工的老師也說過『不要重造輪子』。-那到底應該如何看待使用套件這件事。"><a href="#常使用套件或套件生成的程式碼-例如Pyhton的撰寫，常常會伴隨著大量的套件。-也常常被笑說Python是一般沒程式接處的人在學的。-套件的方便性有目共睹，資工的老師也說過『不要重造輪子』。-那到底應該如何看待使用套件這件事。" class="headerlink" title="常使用套件或套件生成的程式碼 例如Pyhton的撰寫，常常會伴隨著大量的套件。 也常常被笑說Python是一般沒程式接處的人在學的。 套件的方便性有目共睹，資工的老師也說過『不要重造輪子』。 那到底應該如何看待使用套件這件事。"></a>常使用套件或套件生成的程式碼 例如Pyhton的撰寫，常常會伴隨著大量的套件。 也常常被笑說Python是一般沒程式接處的人在學的。 套件的方便性有目共睹，資工的老師也說過『不要重造輪子』。 那到底應該如何看待使用套件這件事。</h1><p>平常心。抱持著平常心來看待這件事情，使用套件是再平常不過的事情</p>
+<h1 id="聽說唐鳳老師小時候就在學程式語言，-那麼以前是如何自我學習程式語言呢？"><a href="#聽說唐鳳老師小時候就在學程式語言，-那麼以前是如何自我學習程式語言呢？" class="headerlink" title="聽說唐鳳老師小時候就在學程式語言， 那麼以前是如何自我學習程式語言呢？"></a>聽說唐鳳老師小時候就在學程式語言， 那麼以前是如何自我學習程式語言呢？</h1><p>我當初自己按鍵盤，不需要電腦也可以學會電腦怎麼想事情。<br>不過我那樣沒有多久，我媽就看我可憐，給我買了一台電腦。<br>當初我非常喜歡數學，但不喜歡算數，所以我把電腦看成一種工具。</p>
+<h1 id="有了新的教育方案-但師資的部分很多都還是以傳統觀念教導-有什麼辦法可以改善嗎"><a href="#有了新的教育方案-但師資的部分很多都還是以傳統觀念教導-有什麼辦法可以改善嗎" class="headerlink" title="有了新的教育方案 但師資的部分很多都還是以傳統觀念教導 有什麼辦法可以改善嗎"></a>有了新的教育方案 但師資的部分很多都還是以傳統觀念教導 有什麼辦法可以改善嗎</h1><ul>
+<li>希望大家不要對老師放棄希望，透過共同備課、線上等，通過重新訓練，可以讓學校的課發揮功能，以前老師只是國教館的單位，而現在則是老師需要有自己一套教法。</li>
+<li>很多老師也開始想要試試看新的一種教材方法。</li>
+</ul>
+<h1 id="台股有什麼好公司可以入手？"><a href="#台股有什麼好公司可以入手？" class="headerlink" title="台股有什麼好公司可以入手？"></a>台股有什麼好公司可以入手？</h1><p>我沒有做過這方面的工作</p>
+<h1 id="請問老師為什麼台灣要廢核能？那些反核的人都不吹冷氣嗎？"><a href="#請問老師為什麼台灣要廢核能？那些反核的人都不吹冷氣嗎？" class="headerlink" title="請問老師為什麼台灣要廢核能？那些反核的人都不吹冷氣嗎？"></a>請問老師為什麼台灣要廢核能？那些反核的人都不吹冷氣嗎？</h1><ul>
+<li>大家對於核能都有不同的看法，有空可以看看「能源轉型白皮書」</li>
+<li>透過開放資料的方式去公布在這個網站上。</li>
+<li>如果在場各位對於核子能有興趣的，可以投入第四代反應爐研究，解決核廢料、核擴散等</li>
+</ul>
+<blockquote>
+<p>雖然你很難改變大家的立場，但是可以和平的討論，來改變大家的感受。</p>
+</blockquote>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2018-11-13T18:16:53.000Z" title="11/13/2018, 6:16:53 PM">2018-11-13</time></span><span class="level-item">Updated&nbsp;<time dateTime="2026-02-20T18:08:53.555Z" title="2/20/2026, 6:08:53 PM">2026-02-20</time></span><span class="level-item"><a class="link-muted" href="/categories/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/">機器學習</a></span><span class="level-item">2 minutes read (About 270 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2018/11/13/CNN-%E5%AF%A6%E4%BD%9C%E7%B7%B4%E7%BF%92/">CNN-實作練習</a></p><div class="content"><h1 id="CNN-神經網路實作"><a href="#CNN-神經網路實作" class="headerlink" title="CNN 神經網路實作"></a>CNN 神經網路實作</h1><h6 id="tags-AI-Junior-Talk-人工智慧青年論壇-機器學習"><a href="#tags-AI-Junior-Talk-人工智慧青年論壇-機器學習" class="headerlink" title="tags: AI Junior Talk 人工智慧青年論壇 機器學習"></a>tags: <code>AI Junior Talk 人工智慧青年論壇</code> <code>機器學習</code></h6><blockquote>
+<p>比賽介紹 imagenet</p>
+</blockquote>
+<h1 id="神經網路介紹"><a href="#神經網路介紹" class="headerlink" title="神經網路介紹"></a>神經網路介紹</h1><h2 id="AlexNet-網路"><a href="#AlexNet-網路" class="headerlink" title="AlexNet 網路"></a>AlexNet 網路</h2><blockquote>
+<p>成功率提高至  83.6% 至此開始發展電腦視覺</p>
+</blockquote>
+<ul>
+<li>使用 ReLU</li>
+<li>LRN層（後來被淘汰，例如 BN）</li>
+<li>overlapping pooling</li>
+<li>Dropout</li>
+</ul>
+<h2 id="VGG16"><a href="#VGG16" class="headerlink" title="VGG16"></a>VGG16</h2><ul>
+<li>優點<ul>
+<li>相對淺</li>
+<li>構造簡單</li>
+<li>易入門</li>
+</ul>
+</li>
+<li>缺點<ul>
+<li>權重多</li>
+<li>肥(吃較多記憶體)</li>
+</ul>
+</li>
+<li>VGG16 paper</li>
+</ul>
+<h2 id="Google-Net"><a href="#Google-Net" class="headerlink" title="Google Net"></a>Google Net</h2><blockquote>
+<p>當年已經勝過 Google Net</p>
+</blockquote>
+<ul>
+<li>較為複雜</li>
+<li>由 Inception 組成</li>
+<li>神經網路具有分支<ul>
+<li>避免深層網路過多過長時，早期權重無法被修正</li>
+<li>可以直接以分支的 softmax 去反向傳播修正權重</li>
+</ul>
+</li>
+</ul>
+<h2 id="ResNet"><a href="#ResNet" class="headerlink" title="ResNet"></a>ResNet</h2><ul>
+<li>同 VGG16 構造較為簡單</li>
+<li>但是較深，所以新增捷徑</li>
+<li>透過捷徑反向傳播修正前面權重</li>
+<li>曾樹效果是有上限的</li>
+</ul>
+<p><img src="https://i.imgur.com/ikCd8vZ.png"></p>
+<ul>
+<li>優點：參數少</li>
+<li>缺點：使用者容易設定過多層</li>
+</ul>
+<p><img src="https://i.imgur.com/IHSPSKT.jpg"></p>
+<h2 id="預訓練權重應用"><a href="#預訓練權重應用" class="headerlink" title="預訓練權重應用"></a>預訓練權重應用</h2><p><a target="_blank" rel="noopener" href="https://www.kaggle.com/c/dogs-vs-cats">資料集來源</a><br>課程架構<br><img src="https://i.imgur.com/K5NLuGg.jpg"></p>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2018-08-24T21:20:19.000Z" title="8/24/2018, 9:20:19 PM">2018-08-24</time></span><span class="level-item">Updated&nbsp;<time dateTime="2026-02-20T18:08:53.556Z" title="2/20/2026, 6:08:53 PM">2026-02-20</time></span><span class="level-item"><a class="link-muted" href="/categories/%E8%B3%87%E8%A8%8A%E8%AC%9B%E5%BA%A7/">資訊講座</a></span><span class="level-item">16 minutes read (About 2325 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2018/08/24/Web-%E9%96%8B%E7%99%BC%E8%80%85%E6%8A%80%E8%83%BD%E6%A8%B9%E6%BC%94%E8%AC%9B/">Web 開發者技能樹演講</a></p><div class="content"><h1 id="Web-開發者技能樹演講-2018-08-24"><a href="#Web-開發者技能樹演講-2018-08-24" class="headerlink" title="Web 開發者技能樹演講 2018&#x2F;08&#x2F;24"></a>Web 開發者技能樹演講 2018&#x2F;08&#x2F;24</h1><p>原筆記網址：<a target="_blank" rel="noopener" href="https://hackmd.io/S_BIlfpyRxGJWiLb5E7Nvg?view">https://hackmd.io/S_BIlfpyRxGJWiLb5E7Nvg?view</a></p>
+<p><a target="_blank" rel="noopener" href="https://docs.google.com/presentation/d/e/2QANgcCBGbT_hNqwB1mcwXogq0qK3sZhsV4MKjyMZypSr6B-OpwM45Nx7Bibyv4YB6xu4p1ktabLmLzDOMSQ/askquestion?seriesId=66e91f97-35bd-44a0-960f-af8938f8656e">我要提問</a></p>
+<h2 id="關於我"><a href="#關於我" class="headerlink" title="關於我"></a>關於我</h2><ul>
+<li>宏碁</li>
+<li>摩茲工程師</li>
+<li>今年年初遭到裁員（自由的狐狸）</li>
+</ul>
+<h2 id="今天你將學到"><a href="#今天你將學到" class="headerlink" title="今天你將學到"></a>今天你將學到</h2><ul>
+<li>web 開發基礎</li>
+<li>前端技術</li>
+<li>後端技術</li>
+<li>開發及維護<ul>
+<li>以上的概要</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>看完就九死一生,不看就十死無生<br><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOOkq8htZelWEUUUMao9qkx5KuCnsqvYosrDfucGyHZMzVN7ul"><br>web 的好處：全公開標準<br>很多資源很多工作，不怕找不到工作</p>
+</blockquote>
+<h2 id="前端？後端？開發及維運？"><a href="#前端？後端？開發及維運？" class="headerlink" title="前端？後端？開發及維運？"></a>前端？後端？開發及維運？</h2><p><img src="https://cdn-images-1.medium.com/max/1600/1*qRmCzyBNzyE87_TE06oADA.png"></p>
+<h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h3><p>前端就是你看到很美的東西。</p>
+<h3 id="後端"><a href="#後端" class="headerlink" title="後端"></a>後端</h3><p>後端就是後面很醜的東西你看不到。</p>
+<h3 id="開發及維運"><a href="#開發及維運" class="headerlink" title="開發及維運"></a>開發及維運</h3><p>十萬個正妹及十萬個看不見的東西如何維護。當專案變大後，會變得相對重要。</p>
+<p>踏入 Web 這塊，你可以先選擇你要走前端還是後端。<br>如果你走後端，但又沒有走太深入，可以試試看走 DevOps（開發及維運）</p>
+<h2 id="Web-開發基礎"><a href="#Web-開發基礎" class="headerlink" title="Web 開發基礎"></a>Web 開發基礎</h2><ul>
+<li>資料結構及演算法</li>
+<li>HTTP &#x2F; HTTPS 和 Web API</li>
+<li>SSH 及簡單的命令列操作</li>
+<li>Git &#x2F; GitHub</li>
+</ul>
+<h2 id="資料結構與演算法"><a href="#資料結構與演算法" class="headerlink" title="資料結構與演算法"></a>資料結構與演算法</h2><p>可以自行 Google，總之很重要</p>
+<h2 id="HTTP-HTTPS-和-Web-API"><a href="#HTTP-HTTPS-和-Web-API" class="headerlink" title="HTTP &#x2F; HTTPS 和 Web API"></a>HTTP &#x2F; HTTPS 和 Web API</h2><h3 id="HTTP-協定-1-0-1-1-2，HTTPS加密"><a href="#HTTP-協定-1-0-1-1-2，HTTPS加密" class="headerlink" title="HTTP 協定 1.0&#x2F;1.1&#x2F;2，HTTPS加密"></a>HTTP 協定 1.0&#x2F;1.1&#x2F;2，HTTPS加密</h3><ul>
+<li>要寫 Web 要很清楚 HTTP 協定是甚麼</li>
+<li>要知道 HTTP 是怎麼加密的</li>
+</ul>
+<h3 id="HTTP-請求方法"><a href="#HTTP-請求方法" class="headerlink" title="HTTP 請求方法"></a>HTTP 請求方法</h3><h3 id="HTTP-狀態碼"><a href="#HTTP-狀態碼" class="headerlink" title="HTTP 狀態碼"></a>HTTP 狀態碼</h3><ul>
+<li>2XX：成功</li>
+<li>3XX：重新導向</li>
+<li>4XX：使用者錯誤</li>
+<li>5XX：伺服器錯誤<br>發送對的狀態碼給用戶很重要</li>
+</ul>
+<h2 id="Cookie-Cache"><a href="#Cookie-Cache" class="headerlink" title="Cookie &amp; Cache"></a>Cookie &amp; Cache</h2><h3 id="Cookie"><a href="#Cookie" class="headerlink" title="Cookie"></a>Cookie</h3><p>因為 HTTP 沒有狀態，因此 Cookie 被發明出來，可以用來記錄狀態</p>
+<h3 id="Cache"><a href="#Cache" class="headerlink" title="Cache"></a>Cache</h3><p>快取可以讓用戶在下次瀏覽時更加快速，也減輕伺服器負擔</p>
+<h2 id="SSH-及簡單的命令列操作"><a href="#SSH-及簡單的命令列操作" class="headerlink" title="SSH 及簡單的命令列操作"></a>SSH 及簡單的命令列操作</h2><h3 id="SSH-相關指令、金鑰控管"><a href="#SSH-相關指令、金鑰控管" class="headerlink" title="SSH 相關指令、金鑰控管"></a>SSH 相關指令、金鑰控管</h3><p>如題</p>
+<h3 id="Shell-Script（BASH-zsh-等）"><a href="#Shell-Script（BASH-zsh-等）" class="headerlink" title="Shell Script（BASH, zsh.. 等）"></a>Shell Script（BASH, zsh.. 等）</h3><p>可以透過 Shell Script 自動執行一些指令</p>
+<h3 id="Linux-服務及運作原理"><a href="#Linux-服務及運作原理" class="headerlink" title="Linux 服務及運作原理"></a>Linux 服務及運作原理</h3><p>要知道其原理，以及如何去開關一些服務，才能有效管理你的程式與服務</p>
+<h2 id="Git-GitHub-全球最大男性工程師交友網站"><a href="#Git-GitHub-全球最大男性工程師交友網站" class="headerlink" title="Git &#x2F; GitHub(全球最大男性工程師交友網站)"></a>Git &#x2F; GitHub(全球最大男性工程師交友網站)</h2><p>最近最流行的版本控制是 Git，但也有其他的版本控制軟體</p>
+<h3 id="個人"><a href="#個人" class="headerlink" title="個人"></a>個人</h3><p>可以透過版本控制來管理複雜的版本</p>
+<h3 id="團隊"><a href="#團隊" class="headerlink" title="團隊"></a>團隊</h3><p>把所有人寫的程式合起來，可以有效解決空間與時間的限制。</p>
+<h3 id="了解-git-的運作方式"><a href="#了解-git-的運作方式" class="headerlink" title="了解 git 的運作方式"></a>了解 git 的運作方式</h3><p>以下略，總之就是 Git，我相信大家都已經會了 OwO</p>
+<h3 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h3><p>GitHub 是用 issue 的方式來管理</p>
+<blockquote>
+<p>進階開始</p>
+</blockquote>
+<h2 id="Web-服務流程"><a href="#Web-服務流程" class="headerlink" title="Web 服務流程"></a>Web 服務流程</h2><blockquote>
+<p>有人會畫 Markdwon 流程圖嗎QQ<br>使用者 - 前端 - 後端</p>
+</blockquote>
+<h2 id="Web-前端技術的概要"><a href="#Web-前端技術的概要" class="headerlink" title="Web 前端技術的概要"></a>Web 前端技術的概要</h2><ul>
+<li>HTML：標題與目錄，一個簡單的 document 檔案：語法、元素、建立 DOM tree 和相關屬性</li>
+<li>CSS：網站的外觀與美化，用於潤飾網站，進階一點的內容有 Flexbox、Grid 等</li>
+<li>JavaScript：如何操作 DOM、事件傳遞、物件、Ajax&amp;XHR、ES6</li>
+<li>選修 jQuery：可以讓你寫 JS 的時候更簡單</li>
+</ul>
+<blockquote>
+<p>VBScript 已死 [name&#x3D;蔡孟達]</p>
+</blockquote>
+<h2 id="基礎練習"><a href="#基礎練習" class="headerlink" title="基礎練習"></a>基礎練習</h2><p>如果沒基礎，可以嘗試構思不同的響應式網頁（RWD）來練習，使用 JavaScript 加入互動</p>
+<p>如果不會可以在 GitHub 上找開源專案，找找 Good First Bug 可以解</p>
+<h2 id="進階"><a href="#進階" class="headerlink" title="進階"></a>進階</h2><ul>
+<li><strong>NPM</strong> &#x2F; <strong>Yarn</strong> 套件管理腳本，講者喜歡用 NPM，可是我是 Yarn 派的</li>
+<li><strong>PostCSS</strong> CSS 的前處理器，讓 CSS 更好管理</li>
+<li><strong>Bootstrap</strong> 響應式網頁的框架，可以快速開發出響應式網頁</li>
+<li><strong>Webpack</strong> 打包靜態網站所需要的資源</li>
+<li><strong>ESLint</strong> JavaScript 程式碼檢查工具</li>
+</ul>
+<h2 id="進階練習"><a href="#進階練習" class="headerlink" title="進階練習"></a>進階練習</h2><p>可以嘗試新增一個專案，讓自己充分了解並練習如何將複雜網站從開發到釋出的流程</p>
+<h2 id="高級"><a href="#高級" class="headerlink" title="高級"></a>高級</h2><ul>
+<li><p>熱門前端框架：</p>
+<ul>
+<li>React：開發者滿意度最高，可是他背後的公司(FB)很母湯，有問題可以問江俊廷</li>
+<li>Vue：壯哉我大 Vue，是最近最熱門的前端框架，有問題可以問陳威任&#x2F;姚韋辰（其實還有火柴）</li>
+<li>Angular：Google 出產，目前最冷門的ㄏ，Angular和 Angular2是不同的東西，Angular 已經過時了，時代的眼淚，千萬別搞錯ＸＤ</li>
+</ul>
+</li>
+<li><p>測試工具：單元測試、整合測試及功能測試</p>
+</li>
+<li><p><strong>伺服器端渲染</strong></p>
+</li>
+<li><p>更多：Canvas、HTML 5 Web API、WebGL、SVG</p>
+</li>
+</ul>
+<blockquote>
+<p>人家大神ni 前 Mozila 台灣區產品經理</p>
+</blockquote>
+<h2 id="Web-後端技術"><a href="#Web-後端技術" class="headerlink" title="Web 後端技術"></a>Web 後端技術</h2><ul>
+<li>Scripting：<strong>Python</strong>、Ruby、<del>PHP</del>、<strong>Node.js</strong></li>
+<li>Commercial：<strong>Java</strong>、<del>.Net</del></li>
+<li>New：<strong>Golang</strong>、<strong>Rust</strong>、<del>Kotlin</del>、<del>Swift</del></li>
+</ul>
+<h2 id="基礎練習-1"><a href="#基礎練習-1" class="headerlink" title="基礎練習"></a>基礎練習</h2><p>學習使用套件管理，開始練習簡單的輸入輸出、封裝及釋出專案<br>在 GitHub 上找技術開源專案,找找 Good First Bug 可以解</p>
+<h2 id="進階-1"><a href="#進階-1" class="headerlink" title="進階"></a>進階</h2><h3 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h3><h3 id="資料庫"><a href="#資料庫" class="headerlink" title="資料庫"></a>資料庫</h3><ul>
+<li>關連式：MySQL、PostgreSQL</li>
+<li>非關連式：NoSQL、MongoDB</li>
+<li>快取：Redis、Memcached</li>
+<li>授權及認證：OAuth、JWT<blockquote>
+<p>OAuth 介紹：<a target="_blank" rel="noopener" href="https://www.dcard.tw/f/tku/p/227852547">https://www.dcard.tw/f/tku/p/227852547</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="進階練習-1"><a href="#進階練習-1" class="headerlink" title="進階練習"></a>進階練習</h2><ul>
+<li>實作一個部落格 RESTful API 來完成<ul>
+<li>登入</li>
+<li>文章</li>
+</ul>
+</li>
+</ul>
+<h2 id="高級-1"><a href="#高級-1" class="headerlink" title="高級"></a>高級</h2><ul>
+<li>搜尋引擎：ElasticSearch、Solr<ul>
+<li>如果常規的資料庫無法應付的話，可以考慮用這個</li>
+</ul>
+</li>
+<li>訊息接收器：RabbitMQ、Kafka<ul>
+<li>不可能讓使用者在等待，所以會用 Message Queue</li>
+</ul>
+</li>
+<li>其他：Docker、Nginx、Apache、GraphQL、Graphic 資料庫<ul>
+<li>Docker：可以把系統環境包起來，讓你可以快速在任何地方建置起來你的服務，也可以提升安全性</li>
+<li>Nginx、Apache：網頁伺服器</li>
+</ul>
+</li>
+</ul>
+<h2 id="開發及維運（DevOps）"><a href="#開發及維運（DevOps）" class="headerlink" title="開發及維運（DevOps）"></a>開發及維運（DevOps）</h2><p><img src="https://cdn-images-1.medium.com/max/2000/1*EBXc9eJ1YRFLtkNI_djaAw.png" alt="DevOps"></p>
+<h2 id="基礎"><a href="#基礎" class="headerlink" title="基礎"></a>基礎</h2><p>不適合新手跳進來的領域</p>
+<ul>
+<li>作業系統概念：<ul>
+<li>I&#x2F;O 管理</li>
+<li>虛擬化</li>
+<li>記憶體和儲存空間</li>
+<li>檔案系統</li>
+<li>處理程序管理</li>
+<li>線程和並行處理</li>
+<li>Socket</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>網路和安全: <ul>
+<li>DNS</li>
+<li>HTTP</li>
+<li>HTTPS</li>
+<li>FTP</li>
+<li>SSL</li>
+<li>TLS</li>
+</ul>
+</li>
+<li>伺服器管理: Linux Server <ul>
+<li>Ubuntu：新手向（？</li>
+<li>Debian：穩定到爆的伺服器系統，但軟體都喜歡用舊一點的（因為穩定）</li>
+<li>CentOS：背後有大公司支援的伺服器系統，也滿穩的</li>
+<li>Red Hat Enterprise Linux（RHEL）：大公司支援的，但超貴，</li>
+<li>OpenSUSE：大蜥蜴（？ 是變色龍!</li>
+</ul>
+</li>
+</ul>
+<h2 id="基礎練習-2"><a href="#基礎練習-2" class="headerlink" title="基礎練習"></a>基礎練習</h2><ul>
+<li>安裝或是使用已有的 Linux Server</li>
+<li>練習命令列操作：Shell Script、文字編輯、編譯 App、調校系統效能、監控管理程序、網路管理指令</li>
+</ul>
+<h2 id="進階-2"><a href="#進階-2" class="headerlink" title="進階"></a>進階</h2><ul>
+<li>架設服務<ul>
+<li>Web Server</li>
+<li>Cache</li>
+<li>Proxy</li>
+<li>負載平衡</li>
+<li>防火牆</li>
+</ul>
+</li>
+<li>如何擴展服務<ul>
+<li>容器（Docker）</li>
+<li>組態管理（Ansible）</li>
+<li>架構管理（Terraform）</li>
+</ul>
+</li>
+<li>學習持續整合與持續發佈(佈署)<blockquote>
+<p>example: <a target="_blank" rel="noopener" href="https://www.booking.com/">某訂房網站</a>：完成開發後送到雲端上，若有問題則自動下架，回到前一個版本。</p>
+</blockquote>
+</li>
+<li>監控:<ul>
+<li>紀錄檔</li>
+<li>基礎設施</li>
+<li>應用程式</li>
+</ul>
+</li>
+<li>雲端服務廠商: <ul>
+<li>AWS（Amazon）</li>
+<li>GCP（Google）</li>
+<li>Azure（Microsoft）</li>
+<li>Heroku：和上面的有點差別，滿陽春的，但勝在方便和快速</li>
+</ul>
+</li>
+</ul>
+<h2 id="額外資源"><a href="#額外資源" class="headerlink" title="額外資源"></a>額外資源</h2><blockquote>
+<p>持續學習,持續進步!(謝謝)(…)<br>Mozila 講很多～</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://www.freecodecamp.org/">Free Code Camp</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/gothinkster/realworld">RealWorld</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/donnemartin/system-design-primer">系統設計入門</a></p>
+<p><a target="_blank" rel="noopener" href="https://goo.gl/D77a4K">JavaScript Testing in 2018</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/donnemartin/system-design-primer/blob/master/README-zh-TW.md">系統設計入門(繁中)</a></p>
+<h2 id="提問："><a href="#提問：" class="headerlink" title="提問："></a>提問：</h2><blockquote>
+<p>Ｑ：我想知道現在 Web 工程師寫網頁時通常都在哪個瀏覽器上測試OuO<br>Ａ：Google Chrome 先測，Firefox 和 Safari Mobile 。<br>先測當前版本，往前往後兩個</p>
+</blockquote>
+<blockquote>
+<p>Ｑ：台灣 Firefox 社群最近有哪些坑，有哪些適合後端開發者關注的？<br>Ａ：<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Rust">Rust</a></p>
+</blockquote>
+<blockquote>
+<p>Ｑ：有什麼推薦的 GitHub 開源專案或 Good First Bug 嗎？<br>哪裡容易找到 Good First Bug 呢？</p>
+</blockquote>
+<h1 id="Python-網路爬蟲"><a href="#Python-網路爬蟲" class="headerlink" title="Python 網路爬蟲"></a>Python 網路爬蟲</h1><h2 id="今天你將會學到"><a href="#今天你將會學到" class="headerlink" title="今天你將會學到"></a>今天你將會學到</h2><ul>
+<li>什麼是爬蟲</li>
+<li>Python 虛擬環境</li>
+<li>用爬蟲抓取網頁內容的程式</li>
+<li>用爬蟲抓取 <a target="_blank" rel="noopener" href="https://icook.tw/">iCook</a> 最新食譜並建檔</li>
+</ul>
+<h2 id="什麼是網路爬蟲"><a href="#什麼是網路爬蟲" class="headerlink" title="什麼是網路爬蟲"></a>什麼是網路爬蟲</h2><ul>
+<li>自動抓取網頁內容的程式</li>
+<li>代替人進行重複且繁瑣的資料收集工作且不出錯</li>
+<li>例如:收集十萬筆Google搜尋結果的標題</li>
+</ul>
+<h2 id="為什麼要學習-Python"><a href="#為什麼要學習-Python" class="headerlink" title="為什麼要學習 Python"></a>為什麼要學習 Python</h2><ul>
+<li><p>使用時機</p>
+<ul>
+<li>大數據資料分析和呈現</li>
+<li>人工智慧模型訓練</li>
+<li>ex: 熱門話題分析、價格歷史波動和預測</li>
+</ul>
+</li>
+<li><p>Python 易於上手，且在各領域被廣泛使用</p>
+</li>
+</ul>
+<h2 id="建立開發環境"><a href="#建立開發環境" class="headerlink" title="建立開發環境"></a>建立開發環境</h2><ul>
+<li>Python3、Pip3</li>
+<li>VirtualEnv <a target="_blank" rel="noopener" href="https://www.openfoundry.org/tw/tech-column/8516-pythons-virtual-environment-and-multi-version-programming-tools-virtualenv-and-pythonbrew">學習資源</a></li>
+<li>Requests</li>
+<li>BeautifulSoup4 (bs4)</li>
+<li>requirements.txt</li>
+</ul>
+<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><ul>
+<li>瀏覽器開發者工具</li>
+<li>處理登入狀態</li>
+<li>前端動態渲染內容</li>
+<li>其他爬蟲常用框架或是涵式庫</li>
+<li>使用爬蟲的正確禮儀</li>
+<li><strong>構思甚麼是你&#x2F;你想的第一個爬蟲</strong>?</li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2018-08-03T21:28:18.000Z" title="8/3/2018, 9:28:18 PM">2018-08-03</time></span><span class="level-item">Updated&nbsp;<time dateTime="2026-02-20T18:08:53.557Z" title="2/20/2026, 6:08:53 PM">2026-02-20</time></span><span class="level-item"><a class="link-muted" href="/categories/%E7%B6%93%E9%A9%97%E8%B3%87%E6%BA%90/">經驗資源</a></span><span class="level-item">4 minutes read (About 538 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2018/08/03/%E5%BD%B1%E5%83%8F%E8%BE%A8%E8%AD%98-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E9%80%A3%E7%B5%90/">影像辨識/機器學習連結</a></p><div class="content"><h1 id="影像辨識-機器學習連結"><a href="#影像辨識-機器學習連結" class="headerlink" title="影像辨識&#x2F;機器學習連結"></a>影像辨識&#x2F;機器學習連結</h1><h6 id="tags-機器學習"><a href="#tags-機器學習" class="headerlink" title="tags: 機器學習"></a>tags: <code>機器學習</code></h6><h2 id="活動主旨"><a href="#活動主旨" class="headerlink" title="活動主旨"></a>活動主旨</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://hackmd.io/Oi6UJDmxQkiTq8CKEx3gSQ">活動綱要</a></li>
+</ul>
+<h2 id="會議記錄"><a href="#會議記錄" class="headerlink" title="會議記錄"></a>會議記錄</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://hackmd.io/R09YhQ5UR6WSQnODlPhApA?view">機器學習會議</a></li>
+</ul>
+<h2 id="學習紀錄"><a href="#學習紀錄" class="headerlink" title="學習紀錄"></a>學習紀錄</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://hackmd.io/s/Hktwr1y14#">Super Resolution 進度報告</a></li>
+<li><a target="_blank" rel="noopener" href="https://hackmd.io/Jy4VaAfaTd-FGgViSM-H2w">panda</a></li>
+<li><a target="_blank" rel="noopener" href="https://hackmd.io/47E7WnBFTeCMtTKx2ykujw?view">神經網路共筆</a></li>
+<li><a target="_blank" rel="noopener" href="https://hackmd.io/P2aRbutfQRa6njIxW7819w?view">甚麼是機器學習by一毛</a></li>
+<li><a target="_blank" rel="noopener" href="https://hackmd.io/eLLSYomHTuiTVAH5Gl8aWw?both">sklearn簡易教學</a></li>
+<li><a target="_blank" rel="noopener" href="https://hackmd.io/Jy4VaAfaTd-FGgViSM-H2w?view">貓雄?熊貓?傻傻分不清楚</a></li>
+<li><a target="_blank" rel="noopener" href="https://hackmd.io/ONy0OobJT-quViDjSdX7kw?view">機器學習-線性回歸之簡單線性回歸</a></li>
+<li></li>
+</ul>
+<h2 id="資源"><a href="#資源" class="headerlink" title="資源"></a>資源</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://hackmd.io/A7XMxmA6TV2Oi0Biv5grDg?both">數據預處理</a></li>
+<li><a target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1QU68LLGKjsSHBimMI8VfkLU3lSwFPxHK">&#x3D;&#x3D;<strong>大量資源</strong>&#x3D;&#x3D;</a></li>
+<li><a target="_blank" rel="noopener" href="https://hackmd.io/s/Bym8vliEQ#Tensorflow-GPU-%E7%92%B0%E5%A2%83%E9%85%8D%E7%BD%AE">詳盡的tensorflow安裝教學by海豹</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/William-Mou/Thoughtful-Machine-Learning-with-Python">範例</a></li>
+<li><a target="_blank" rel="noopener" href="https://technews.tw/2017/10/05/ai-machine-learning-and-deep-learning/">名詞解釋</a></li>
+</ul>
+<blockquote>
+<p>[name&#x3D;廖勗宏]</p>
+</blockquote>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://moocs.nccu.edu.tw/course/123/intro">數據分析</a></li>
+</ul>
+<h2 id="線上教學"><a href="#線上教學" class="headerlink" title="線上教學"></a>線上教學</h2><ul>
+<li><p><a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ">Sentdex Youtube的教學</a></p>
+<ul>
+<li><strong>全英文</strong></li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.kaggle.com/">Kaggle</a></p>
+<ul>
+<li>企業和研究者可在其上發布數據，統計學者和數據挖掘專家可在其上進行競賽以產生最好的模型</li>
+</ul>
+</li>
+<li><p><a href="">Data+</a></p>
+<ul>
+<li>(找不到網址…)</li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/21277368">如何學習的參考文章</a></p>
+<ul>
+<li>聽說五天學完機器學習</li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.youtube.com/channel/UC2ggjtuuWvxrHHHiaDH1dlQ">李宏毅</a></p>
+<ul>
+<li>待補充</li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/">莫凡</a></p>
+<ul>
+<li>待補充</li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://hahow.in/courses/597df7e2acc137070007013c/main?curriculum=5a1e1758a2c4b000589ddbdd">&#x3D;&#x3D;付費&#x3D;&#x3D;Python 資料分析＆機器學習入門</a></p>
+<ul>
+<li>Hahow</li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.udemy.com/machinelearningchinese/learn/v4/content">&#x3D;&#x3D;付費&#x3D;&#x3D;机器学习 A-Z (Machine Learning A-Z in Chinese) </a></p>
+<ul>
+<li>Udemy</li>
+</ul>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://developers.google.com/machine-learning/crash-course/ml-intro">Google Machine Learning </a></p>
+</li>
+</ul>
+<hr>
+<h2 id="推薦書單"><a href="#推薦書單" class="headerlink" title="推薦書單"></a>推薦書單</h2><blockquote>
+<p>[name&#x3D; 海豹]</p>
+</blockquote>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://www.books.com.tw/products/0010764445">初探機器學習：使用Python</a> 海豹曰: 「序都是幹話」</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.books.com.tw/products/0010769150">精通機器學習：使用Python</a></p>
+</li>
+</ul>
+<blockquote>
+<p>[name&#x3D; 黃俊諺]</p>
+</blockquote>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://www.books.com.tw/products/0010728558">Python機器學習</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://www.books.com.tw/products/0010761759">Deep Learning：用Python進行深度學習的基礎理論實作</a></p>
+</li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2018-05-25T23:27:41.000Z" title="5/25/2018, 11:27:41 PM">2018-05-25</time></span><span class="level-item">Updated&nbsp;<time dateTime="2026-02-20T18:08:53.555Z" title="2/20/2026, 6:08:53 PM">2026-02-20</time></span><span class="level-item"><a class="link-muted" href="/categories/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></span><span class="level-item">5 minutes read (About 750 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2018/05/25/Black-Hat-Asia-%E5%B9%B4%E6%9C%83%E5%8F%83%E8%88%87%E5%BF%83%E5%BE%97-By-Adr/">Black Hat Asia 年會參與心得 By Adr</a></p><div class="content"><h1 id="Black-Hat-Asia-年會參與心得-By-Adr"><a href="#Black-Hat-Asia-年會參與心得-By-Adr" class="headerlink" title="Black Hat Asia 年會參與心得 By Adr"></a>Black Hat Asia 年會參與心得 By Adr</h1><blockquote>
+<p>Author : William Mou</p>
+</blockquote>
+<h2 id="關於故事"><a href="#關於故事" class="headerlink" title="關於故事"></a>關於故事</h2><h3 id="分析評審口味-ouo"><a href="#分析評審口味-ouo" class="headerlink" title="分析評審口味 ouo"></a>分析評審口味 ouo</h3><ul>
+<li><p>HITCON TALK</p>
+<ul>
+<li>APT</li>
+<li>網站漏洞</li>
+<li>滲透</li>
+</ul>
+</li>
+<li><p>Black Hat 專案大概類型</p>
+<ul>
+<li>整合網站分析工具&#x2F;VPS服務測試工具</li>
+<li>假網路基地台&#x2F;偵測假網路基地台</li>
+<li>藍牙設備測試工具</li>
+<li>機器學習偵測惡意程式</li>
+<li>一些知名到爛掉的專案 ex:Flare VM</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>挑選審稿委員一直很愛的題目<br>挑選以前從未被選上的冷門題目</p>
+</blockquote>
+<h3 id="自動化程式碼的編譯器（機器碼層級混淆）"><a href="#自動化程式碼的編譯器（機器碼層級混淆）" class="headerlink" title="自動化程式碼的編譯器（機器碼層級混淆）"></a>自動化程式碼的編譯器（機器碼層級混淆）</h3><blockquote>
+<p>夠冷門<br>對大部分人來說挺髒不想摸的領域</p>
+</blockquote>
+<ul>
+<li>Sum Up:怎麼提高題目被錄取的機會<ul>
+<li>整合某個領域的技術成一篇稿件，整理得相當完美接近精華的境界<br>eg:筆記小神童</li>
+<li>你的題目有夠冷門，冷到可以唱Let It Go，並且整合的夠完善可以讓聽眾耳目一新</li>
+<li>研究擁有重大突破，輾壓全場</li>
+<li>趁研討會打架時投稿。（黑暗兵法）</li>
+</ul>
+</li>
+</ul>
+<h3 id="研究方式"><a href="#研究方式" class="headerlink" title="研究方式"></a>研究方式</h3><ul>
+<li>養成訂閱資安推播文章，有趣的文章會由固定的資安專家推播</li>
+<li>外國很多資安專家總是很大嘴巴的愛把研究進度&#x2F;新的研究成果貼在推特上 XDD<ul>
+<li>SubTee</li>
+<li>與他的朋友</li>
+</ul>
+</li>
+</ul>
+<h2 id="投稿專案細節–讓後門再次偉大"><a href="#投稿專案細節–讓後門再次偉大" class="headerlink" title="投稿專案細節–讓後門再次偉大"></a>投稿專案細節–讓後門再次偉大</h2><h3 id="前導"><a href="#前導" class="headerlink" title="前導"></a>前導</h3><ul>
+<li>C++ Calling convention<ul>
+<li>由C++經由編譯器轉成組合語言，可以由組合語言猜測c++語法</li>
+<li>若習慣使用IDA Pro反推c++，則可以如下隱藏實際要用的function</li>
+<li>–&gt; 干擾研究人員辨別惡意程式</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">__ASM</span><br><span class="line">    psuh 0</span><br><span class="line">    呼叫 fun1</span><br><span class="line">    </span><br><span class="line">    fun1:</span><br><span class="line">        呼叫message_box</span><br></pre></td></tr></table></figure>
+<h3 id="防毒軟體"><a href="#防毒軟體" class="headerlink" title="防毒軟體"></a>防毒軟體</h3><ul>
+<li>使用特徵碼辨別惡意程式</li>
+<li>藉由adr寫的C#，在得到機械碼後，可以將函數位置更改</li>
+</ul>
+<h3 id="成品"><a href="#成品" class="headerlink" title="成品"></a>成品</h3><ul>
+<li>藉由__ASM替換或轉換呼叫，就可以做到大程度破壞原程式碼的邏輯<ul>
+<li>插入垃圾程式碼</li>
+<li>混淆程式碼邏輯</li>
+</ul>
+</li>
+</ul>
+<h2 id="克服問題"><a href="#克服問題" class="headerlink" title="克服問題"></a>克服問題</h2><h3 id="克服英文口說障礙"><a href="#克服英文口說障礙" class="headerlink" title="克服英文口說障礙"></a>克服英文口說障礙</h3><ul>
+<li>練到背起來</li>
+<li>台灣人英文其實沒這ㄇ爛</li>
+</ul>
+<h3 id="事前練習"><a href="#事前練習" class="headerlink" title="事前練習"></a>事前練習</h3><ul>
+<li><p>每一頁投影片大概要提到什麼重點</p>
+</li>
+<li><p>用英文句子練習這一頁怎麼解釋</p>
+</li>
+<li><p>相信自己英文沒那麼差</p>
+</li>
+<li><p>即使你英文講得很爛，大部分老外會很尊重的聽完你的分享</p>
+<ul>
+<li>但僅限於社群分享</li>
+</ul>
+</li>
+<li><p>把不尊重的外國人當Son Of Bitch，上面不適用於學術論文場合</p>
+</li>
+</ul>
+<h2 id="跨國投稿分享"><a href="#跨國投稿分享" class="headerlink" title="跨國投稿分享"></a>跨國投稿分享</h2><ul>
+<li>在Speaker晚宴認識一堆大神朋友潮棒der<ul>
+<li><del>當你有一堆大神朋友，自己看起來也像大神了</del></li>
+</ul>
+</li>
+<li>有些很酷的想法或很ㄎㄧㄤ的作為<ul>
+<li>奇怪ㄉ帽子</li>
+<li>現場酒品</li>
+<li>神奇的吊牌</li>
+</ul>
+</li>
+<li>對於參與研討會的心態也跟台灣不ㄧ太一樣<ul>
+<li>問問題很多</li>
+<li>歡迎討論</li>
+</ul>
+</li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2018-03-21T21:23:25.000Z" title="3/21/2018, 9:23:25 PM">2018-03-21</time></span><span class="level-item">Updated&nbsp;<time dateTime="2026-02-20T18:08:53.556Z" title="2/20/2026, 6:08:53 PM">2026-02-20</time></span><span class="level-item"><a class="link-muted" href="/categories/%E8%B3%87%E8%A8%8A%E8%AC%9B%E5%BA%A7/">資訊講座</a></span><span class="level-item">22 minutes read (About 3308 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2018/03/21/%E5%8D%80%E5%A1%8A%E9%8F%88%E6%87%89%E7%94%A8%E5%A0%B4%E6%99%AF%E9%AB%98%E5%B3%B0%E6%9C%83/">區塊鏈應用場景高峰會</a></p><div class="content"><h1 id="區塊鏈應用場景高峰會-Block-Chain-Insight"><a href="#區塊鏈應用場景高峰會-Block-Chain-Insight" class="headerlink" title="區塊鏈應用場景高峰會 &amp; Block Chain Insight"></a>區塊鏈應用場景高峰會 &amp; Block Chain Insight</h1><h6 id="tags-資訊講座-區塊鏈"><a href="#tags-資訊講座-區塊鏈" class="headerlink" title="tags: 資訊講座 區塊鏈"></a>tags: <code>資訊講座</code> <code>區塊鏈</code></h6><p><a target="_blank" rel="noopener" href="https://events.panmedia.asia/events/e1802071527412593"><img src="https://i.imgur.com/isd1R2i.png"></a></p>
+<blockquote>
+<p>能源、醫療、食安、與區塊鏈</p>
+</blockquote>
+<p><img src="https://i.imgur.com/4x1Bi5e.png"></p>
+<h2 id="泛科知識-總編輯-致詞"><a href="#泛科知識-總編輯-致詞" class="headerlink" title="泛科知識 總編輯 致詞"></a>泛科知識 總編輯 致詞</h2><blockquote>
+<p>感謝中油國光合辦</p>
+</blockquote>
+<h2 id="區塊鏈應用與服務創新議題-（Reki吳李祺-博士）"><a href="#區塊鏈應用與服務創新議題-（Reki吳李祺-博士）" class="headerlink" title="區塊鏈應用與服務創新議題 （Reki吳李祺 博士）"></a>區塊鏈應用與服務創新議題 （Reki吳李祺 博士）</h2><blockquote>
+<p>與大家分享區塊鏈研究成果</p>
+</blockquote>
+<h3 id="前言-比特幣與區塊鏈"><a href="#前言-比特幣與區塊鏈" class="headerlink" title="前言 比特幣與區塊鏈"></a>前言 比特幣與區塊鏈</h3><ul>
+<li>關於資策會</li>
+<li>虛擬貨幣(Crypto Currrencies)<ul>
+<li>虛擬貨幣&#x3D;火車</li>
+<li>區塊鏈&#x3D;鐵軌</li>
+</ul>
+</li>
+<li>區塊鏈的核心概念<ul>
+<li>共享帳本</li>
+<li>智能合約</li>
+<li>個人隱私</li>
+<li>共享網路</li>
+</ul>
+</li>
+<li>這情形 10,25 年前遇過<ul>
+<li>雲端計算</li>
+<li>Internet<blockquote>
+<p>當每一個新的科技與概念出現，都經歷過「這是什麼？」</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>What is Blockchain<ul>
+<li>Block chain is a Distributed Ledger<ul>
+<li>分散式帳簿</li>
+<li>Bitcoin</li>
+<li>萊特幣</li>
+</ul>
+</li>
+<li>Block is World Computer<ul>
+<li>If a surver has missed..</li>
+<li>We would like to create a world computer to be a world surver</li>
+</ul>
+</li>
+<li>Blockchain is a smart contract</li>
+<li>Block is a Enterprise Solution<ul>
+<li>Hyperledger<ul>
+<li>分散式帳本專案</li>
+<li>區塊鏈專案</li>
+</ul>
+</li>
+<li>Enterprise ethereum alliance<ul>
+<li>希望有一個公開的環境供企業使用</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="本文：區塊鏈於產業的應用"><a href="#本文：區塊鏈於產業的應用" class="headerlink" title="本文：區塊鏈於產業的應用"></a>本文：區塊鏈於產業的應用</h3><ul>
+<li>Public or Enterprise(private)<blockquote>
+<p>公有鏈 vs 私有鏈（企業解決方案）</p>
+</blockquote>
+<ul>
+<li>國際概況:ECO System</li>
+<li>我國樣貌：</li>
+</ul>
+</li>
+<li>創新主題應用：<ul>
+<li>公義眾籌<ul>
+<li>不可竄改</li>
+<li>金流追朔</li>
+<li>透明信任</li>
+</ul>
+</li>
+<li>紅利點數交換<ul>
+<li>兌換合約</li>
+<li>追溯驗證</li>
+<li>低營運成本<ul>
+<li>發行成本見低</li>
+<li>即時交易清算</li>
+<li>合約執行，簡化清算流程</li>
+<li>點數彈性轉移</li>
+<li>消費軌跡透明易稽核</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>電子票券（企業授權給使用者使用的手段）<ul>
+<li>授權發行</li>
+<li>周邊效益</li>
+<li>C2C互動<ul>
+<li>票券安全防偽</li>
+<li>資訊共享又保障隱私性</li>
+<li>介面統一，串連周邊</li>
+<li>個人靈活轉讓</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>主題發展：勢不可擋</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>以下工商</p>
+<ul>
+<li>應用共創中心（Chaincenter）<ul>
+<li>區塊鏈創新服務推動<br>  產業發展議題與技術規格需求</li>
+<li>Go-Labs<ul>
+<li>產業結盟</li>
+<li>實證規劃：<ul>
+<li>法律詢問</li>
+<li>情境研究</li>
+<li>技術顧問</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>區塊鏈產業聯盟／協會<ul>
+<li>建立典範</li>
+<li>產業共識</li>
+<li>政策建言<blockquote>
+<ul>
+<li>106研究報告：洞察區塊鏈</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h3><ul>
+<li>In the future<ul>
+<li>Blockchain is not Bubble</li>
+<li>新的技術出來時，我們習慣用已知的事情說明他</li>
+<li>然而，新技術已經用不同的邏輯來思考了</li>
+</ul>
+</li>
+<li>數位世界中的資產交易-數位資產<ul>
+<li>Cypto Kitties</li>
+</ul>
+</li>
+<li>改變-從資訊分享到價值轉移<ul>
+<li>網際網路(Web 2.0)<ul>
+<li>資訊分享</li>
+<li>傳遞複製</li>
+</ul>
+</li>
+<li>區塊鏈(Web 3.0)<ul>
+<li>價值轉移</li>
+<li>信賴機制</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Blockchain:The Trust Machine</li>
+</ul>
+<h2 id="共識科技"><a href="#共識科技" class="headerlink" title="共識科技"></a>共識科技</h2><ul>
+<li><p>代幣去中心化應用</p>
+<ul>
+<li>避免資料被單一平台控制</li>
+<li>分散風險 資料不易不見</li>
+<li></li>
+</ul>
+</li>
+<li><p>ICO</p>
+<ul>
+<li>ICO 區塊鏈上的募資手段(方便<ul>
+<li>募集有價值的虛擬貨幣作為全新的募資手段</li>
+<li>公司給予楙買者公司發行的代幣，可在區塊鏈上自由分割、移動、交易</li>
+<li>目前95%以上公司發行代幣使用Ethereum平台，ETH為通用貨幣</li>
+</ul>
+</li>
+<li>2017年3~12月ICO金額已達到70億美元，超越VC投資總和3億美元</li>
+<li>2018每年ICO更達到13億元</li>
+<li>ICO代幣市值500億美元</li>
+<li>委內瑞拉都想發行石油幣</li>
+</ul>
+</li>
+<li><p>ETHEREUN ERC-20TOKEN</p>
+<ul>
+<li>乙太幣支持智能合約 叫比特幣優秀<ul>
+<li>（比特幣也有智能合約系統</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>中心化交易所</p>
+<ul>
+<li>但是代幣交易所可能被駭客攻擊</li>
+<li>不能確定交易對象</li>
+<li>規則不確定 因人而異</li>
+<li>礦工決定交易是否成功</li>
+<li>交易不一定成功 不成功還得付手續費</li>
+</ul>
+</li>
+<li><p>混合式去中心話</p>
+<ul>
+<li>包含中心化的安全</li>
+<li>還有去中心化的速度</li>
+</ul>
+</li>
+<li><p>ps 歌手登記創作音樂要去國家圖書管~~</p>
+</li>
+<li><p>音樂的區塊鏈應用</p>
+<ul>
+<li>買公播權</li>
+<li>創作不易被偷 不會消失</li>
+</ul>
+</li>
+</ul>
+<h2 id="分布式能源-運用區塊鏈科技釋放再生能源大潛力"><a href="#分布式能源-運用區塊鏈科技釋放再生能源大潛力" class="headerlink" title="分布式能源 運用區塊鏈科技釋放再生能源大潛力"></a>分布式能源 運用區塊鏈科技釋放再生能源大潛力</h2><ul>
+<li>DTCO Compay Profile<ul>
+<li>過去<ul>
+<li>2016生技新藥：IPSeeds</li>
+<li>2017健康醫療產業：phrOS</li>
+<li>2018協助原住民社區建立自己的數位身份：IDGO</li>
+</ul>
+</li>
+<li>業務<ul>
+<li>提供智能合約設計</li>
+<li>提供能源區塊鏈改善</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>能源問題<ul>
+<li>Extreme Weather, Climate Change PM2.5</li>
+<li>看遠一點 放眼未來</li>
+<li>電網 設備都是屬於19世紀留下的</li>
+<li>傳統的無法支持現在的綠能</li>
+<li>無法創新 因為只有他一家而且算是獨佔事業</li>
+</ul>
+</li>
+</ul>
+<h2 id="文化娛樂產業區塊鏈生態"><a href="#文化娛樂產業區塊鏈生態" class="headerlink" title="文化娛樂產業區塊鏈生態"></a>文化娛樂產業區塊鏈生態</h2><ul>
+<li>Bitmark 數位資產<ul>
+<li>區塊鏈可以解決娛樂產業的問題<ul>
+<li>盜版</li>
+<li>無限量發行「限量」虛寶</li>
+<li>創作分潤不夠透明</li>
+</ul>
+</li>
+<li>區塊鏈可以創造娛樂產業的機會<ul>
+<li>利用區塊鏈作群募</li>
+<li>確時執行限量發行</li>
+<li>創造社群</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="健康醫療金融服務區塊鏈應用"><a href="#健康醫療金融服務區塊鏈應用" class="headerlink" title="健康醫療金融服務區塊鏈應用"></a>健康醫療金融服務區塊鏈應用</h2><h3 id="前言-現況"><a href="#前言-現況" class="headerlink" title="前言-現況"></a>前言-現況</h3><ul>
+<li>作者<ul>
+<li>黃家煦 博士</li>
+<li>睿富金融科技／吉立生技</li>
+</ul>
+</li>
+<li>區塊鏈應用發展的現況<ul>
+<li>先有數據才有AI</li>
+<li>Blcokchain Startups</li>
+</ul>
+</li>
+<li>台灣電子病歷管理現況<ul>
+<li>電子病例交換中心<ul>
+<li>中央健保署</li>
+<li>憑證中心</li>
+<li>甲醫院</li>
+<li>乙醫院</li>
+</ul>
+</li>
+<li>健康存摺</li>
+<li>台灣醫療費用支付的現況</li>
+</ul>
+</li>
+<li>健康醫療服務為何需要區塊鏈？<ol>
+<li>去中心化與識別化-落實個資保護與資料管理</li>
+<li>醫療資訊即時交互與互信-不需重複檢查</li>
+<li>病例可惜與即時性醫療資訊-緊急治療與急救</li>
+<li>個人病歷成為個人資產-國際通用</li>
+<li>實踐共享經濟-健保ICO</li>
+</ol>
+</li>
+</ul>
+<h3 id="如何應用區塊鏈於醫療領域"><a href="#如何應用區塊鏈於醫療領域" class="headerlink" title="如何應用區塊鏈於醫療領域"></a>如何應用區塊鏈於醫療領域</h3><ul>
+<li>DR.PAY區塊鏈方案-混合式區塊鏈<ul>
+<li>醫院方</li>
+<li>區塊鏈</li>
+<li>第三方軟體</li>
+</ul>
+</li>
+<li>DR.PAY區塊鏈方案-Hybrid Blockchain</li>
+<li>DR.PAY醫療數位金融服務平台<ul>
+<li>案件登入</li>
+<li>病患醫療分期支付</li>
+<li>醫院代表接收</li>
+</ul>
+</li>
+<li>DR.PAY生物辨識機制<ul>
+<li>診所客戶-通過DR.PAY KIOSK<ul>
+<li>人臉辨識</li>
+<li>指紋辨識</li>
+<li>健康辨識</li>
+</ul>
+</li>
+<li>DR.PAY綜合信評機制<ul>
+<li>社群網路平等</li>
+<li>健康紀錄平等</li>
+<li>財務紀錄平等</li>
+<li>最終憑膽紀錄</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>DR.PAY所包蘭的服務<ul>
+<li>客戶查詢</li>
+<li>合約資料</li>
+<li>醫療紀錄</li>
+<li>電子支付</li>
+<li>建立中-跨境第三方支付</li>
+<li>合約與交易紀錄</li>
+</ul>
+</li>
+<li>嬌寵醫生(寵物醫療)+DR.PAY(四月上市)</li>
+</ul>
+<h3 id="結論-1"><a href="#結論-1" class="headerlink" title="結論"></a>結論</h3><ol>
+<li>區塊鏈是好工具，善用工具創造產業價值</li>
+<li>資料（數據）是王道，得資料者得天下</li>
+<li>健保資料庫是公有財，開放共享經濟</li>
+<li>擁抱ICO，再創台灣資訊產業的榮景</li>
+</ol>
+<h2 id="奧丁丁OwlTing-工商QQ"><a href="#奧丁丁OwlTing-工商QQ" class="headerlink" title="奧丁丁OwlTing 工商ＱＱ"></a>奧丁丁OwlTing 工商ＱＱ</h2><ul>
+<li>OwlTing Services in one page<ul>
+<li>BLockchain<ul>
+<li>OutNet</li>
+<li>Outchain</li>
+</ul>
+</li>
+<li>不斷拜訪生產者</li>
+</ul>
+</li>
+</ul>
+<h2 id="關鍵對談：區塊鏈法治議題"><a href="#關鍵對談：區塊鏈法治議題" class="headerlink" title="關鍵對談：區塊鏈法治議題"></a>關鍵對談：區塊鏈法治議題</h2><blockquote>
+<p>在新的法律中，「電子簽章法」「金融電子沙盒」「金融創新實驗條例」等等，公司認為有哪裡需要調整的？</p>
+</blockquote>
+<pre><code>* 台灣是個守法的國家，但是無法就是違法，政府法律可能限制新創的開發，建議參考其他國家的法律
+* 很多事情政府要管，先做了再說，之後就很難受，希望政府能夠將細則講清楚，使業者得以遵循與討論
+* 可能不該比較鄰近國家，可以比較墨西哥，看看合法後，我們能變成什麼樣子，台灣法律仍然是極權的管制，而這與實際上民主的風情不相符。企業應自己自律，不是在搞破壞或騙人家可以先做。
+* 使用加密貨幣的人，通常都是去中心化的信仰者。但若要跟隨政府腳步，那等法律出來就不用做了。在台灣，我們的法律應該是一個負面表列，現在政府沒有立法ICO到底能不能做，那應該憑良心快點做。你說虛擬貨幣剛出來的時候，中國做了再說，不合法在繞過它，而這也是台灣相對的一個缺點。另外，虛擬貨幣沒有地方可以追溯，政府很難管理，建議列出一些規範或方向，讓企業盡量去遵守
+</code></pre>
+<blockquote>
+<p>在目前政府的整個法令，有無需要建立一個區塊鏈的標準或消費者保護機制？或說國外是否有一個好的機制可供借鏡</p>
+</blockquote>
+<pre><code>* 關於這個問題，政府就算定了，也不一定有用。那你說以太坊是一個組織嗎？不是。整個以太坊是一個共識，政府要來規範，必須要有技術、要有社群，區塊鏈才能繼續走下去。
+而國外的還是以民間為主，社群導向，而政府的動作是相對慢的，其實我還是不看好政府ＱＱ
+* 我們這個虛擬世界的區塊鏈，早晚是要跟實體世界接軌，所以我們還是要遵守政府的一些規則。
+而日本政府是可以借鏡的對象，透過良性的監管，合理地在資安制定一些規則，希望台灣政府可以往日本這樣的方向，而不是往中國大陸的方向
+* 我覺得做一個技術標準是相當困難的事情，畢竟區塊鏈是跨國的技術，你要制訂標準誰會聽呢？我們又不是汽車製造大國，所以我認為關於技術，要與時俱進，而關於保護消費者，我認為依然是要沿用的。
+* 我之前就是做政府的標案，大概理解一些政府的想法。應該是訂大方向，而不該訂細節。區塊鏈架構也是，我們應該用獎勵的方式，訂定雙方的平衡等，而不該往所有細節訂定
+關於個資法：若有特殊需求等等，需要取得個人的紙本簽名，提醒各同業需要小心
+</code></pre>
+<blockquote>
+<p>自由提問時間：</p>
+</blockquote>
+<ul>
+<li><p>國家有本來的用途，但是若失去稅金、去中心化後，政府如何經營？</p>
+<ul>
+<li>政府存在也不過是短短的時間，</li>
+<li>網路和區塊鏈形容成多中心化，它可以使企業往前走，而比特幣是不是只是一個貨幣，我想這跟台灣是不是一個國家是同樣的問題。</li>
+<li>你想一個人的生活環境，只有區塊鏈能活嗎？我們還是要生活，而在做區塊鏈的同時，仍要與生活結合，而政府可以從其中課稅，沒問題。</li>
+</ul>
+</li>
+<li><p>ICO是一個特殊的管道，若經過ICO後，併購等等仍然需要利用ICO嗎？</p>
+</li>
+<li><p>投資人角度，是因為投機嗎，還是因為長期投資，而這樣的</p>
+<ul>
+<li><p>我覺得ICO在多中心化有巨大的貢獻，我們知道公司在集資是多大的辛苦。</p>
+</li>
+<li><p>台灣一個新創公司很難拿到錢，我覺得這是一個很偉大的發明。現在所有的ICO是天使融資，因為ICO沒有限制投資的門檻，雖然現在90%ICO都可能會倒，你也知道IPO 90%的新創公司都會倒，那你在ICO中投注，那你之後也可以享受很好的生活。說個故事我到台灣所有的創投去拜訪，三個月只找了20多家，而在ICO之後，只要你做得好，全世界每個角度的人都可以看到你，投資你。</p>
+</li>
+</ul>
+</li>
+<li><p>科技日新月異，關於量子電腦的產生，也許新的硬體會使區塊鏈崩潰？</p>
+<ul>
+<li>量子電腦仍然是電腦，其實他的算力還是不會比挖礦機好。挖礦機高度平行化的單元，兩台屌打100台天河二號。而若新的電腦出現，算法本身是一種共識，仍是可以改的。</li>
+</ul>
+</li>
+<li><p>我們現在好不容易有一種監理沙河，我們從科技的角度當然是希望他月開放越好，但政府和民眾都有疑慮，我有個狂想，是不是能像以前加工出口區的方式，個點開放，若真的很成功，再拓展到其他城市，不知道這樣想法是否可行？畢竟歷來想要發展新科技，都要有個破口？</p>
+<ul>
+<li>這是一個好想法，政府也想過了，但又回到一個基本的問題，台灣太過 <del>民粹</del> ，哪個地區要給產業嘗試，再說台灣土地又太貴，而居民不一定會同意，如同博弈法，當地居民有可能不同意，受到非常大的限制。</li>
+</ul>
+</li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2018-03-13T23:33:42.000Z" title="3/13/2018, 11:33:42 PM">2018-03-13</time></span><span class="level-item">Updated&nbsp;<time dateTime="2026-02-20T18:08:53.556Z" title="2/20/2026, 6:08:53 PM">2026-02-20</time></span><span class="level-item"><a class="link-muted" href="/categories/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></span><span class="level-item">21 minutes read (About 3127 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2018/03/13/Taiwan-Cyber-Security-Summit-2018-%E5%8F%B0%E7%81%A3%E8%B3%87%E5%AE%89%E5%A4%A7%E6%9C%83/">Taiwan Cyber Security Summit 2018 台灣資安大會</a></p><div class="content"><h1 id="IP-cam-資安標準制定與推動的經歷"><a href="#IP-cam-資安標準制定與推動的經歷" class="headerlink" title="IP cam 資安標準制定與推動的經歷"></a>IP cam 資安標準制定與推動的經歷</h1><h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><ul>
+<li>物聯網的資安威脅<ul>
+<li>HP研究：七成物聯網有被駭風險</li>
+<li>經家中螢幕跳出FBI付款通通知</li>
+</ul>
+</li>
+<li>資安產業對ICT產業的衝擊<ul>
+<li>路由器網路攝影安全性不足，友訊遭美國政府告上法院</li>
+<li>華碩路由器被美國稽核20年，看如何確保物聯網安全</li>
+<li>旗下產品為DDoS打手，中國豪邁召回產品</li>
+</ul>
+</li>
+</ul>
+<h3 id="計畫介紹"><a href="#計畫介紹" class="headerlink" title="計畫介紹"></a>計畫介紹</h3><blockquote>
+<p>政府委任資策會通動此計劃<br>協助廠商提升資安，推動產業發展</p>
+</blockquote>
+<ul>
+<li>IOT 資安提升推動方案<ul>
+<li>標準推動 ➡️ 制度建立 ➡️ 產業提升 <ul>
+<li>標準推動：參照國際資安標準</li>
+<li>制度建立：推動檢測紀錄 </li>
+<li>產業提升：輔導廠商提升資安品質</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>建立產業的資安要求，並期望能協助產業發展</p>
+</blockquote>
+<ul>
+<li>影像監控系列與資安標準說明<ul>
+<li>資安標準發展與流程</li>
+<li>資安發展該念：<ul>
+<li>產業需求搜集 ➡️ 選擇標準標的物 ➡️ 標的特性分析 ➡️ 標的物重要資產 ➡️ 資安威脅分析 ➡️ 資安標準需求 ➡️ 標準測試規範底稿</li>
+</ul>
+</li>
+<li>資安實務流程：<ul>
+<li>撰寫標準草稿 ➡️ 編列代表 ➡️ 專家會議 ➡️ 公開招標</li>
+</ul>
+</li>
+<li>標準框架：<br>  <img src="https://i.imgur.com/zh6Co84.jpg"></li>
+<li>資安標準與分級（一）<br>  <code>針對 IP CAM 的 5大安全構面訂定20大分項安全要求，並依照「一班消費」、「商用」與「關鍵任務」等應用領域訂定產品資安分級。適用不同廠商定位與使用者需求。</code><ul>
+<li>資訊安全</li>
+<li>系統安全</li>
+<li>通訊安全</li>
+<li>身份識別與授權安全</li>
+<li>隱私保護</li>
+</ul>
+</li>
+<li>不合規問題案例<br>  <img src="https://i.imgur.com/vqUVmeM.jpg"></li>
+</ul>
+</li>
+<li>實測常見不合規項目<ul>
+<li>為用防拆螺絲可輕鬆破壞外殼</li>
+<li>XSS injection弱點</li>
+<li>預設未加密</li>
+<li>明碼傳輸</li>
+</ul>
+</li>
+<li>認證制度架構：<ul>
+<li>透過第三方檢測</li>
+</ul>
+</li>
+<li>產品認證時程推動</li>
+</ul>
+<h3 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h3><ul>
+<li>資訊安全檢測不能達到 100%的安全，但可建立產品的資安基準，讓廠商與使用者有所依循</li>
+<li>資安的提昇要資建立資安意識，不以通過檢測為目的，而是隨時注意資訊安全提升廠商資安能力。</li>
+</ul>
+<h2 id="Response-Before-Incident：制敵機先！主動式資安事件處理"><a href="#Response-Before-Incident：制敵機先！主動式資安事件處理" class="headerlink" title="Response Before Incident：制敵機先！主動式資安事件處理"></a>Response Before Incident：制敵機先！主動式資安事件處理</h2><blockquote>
+<p>系統、surver 無法通通保持最新</p>
+</blockquote>
+<p><img src="https://i.imgur.com/wNJqoO9.jpg"></p>
+<h3 id="網站安全"><a href="#網站安全" class="headerlink" title="網站安全"></a>網站安全</h3><blockquote>
+<p>選擇套件的同時，你就要承擔它存在的風險<br><img src="https://i.imgur.com/jCu6YYe.jpg"></p>
+</blockquote>
+<p><img src="https://i.imgur.com/lEXcAEs.jpg"></p>
+<h3 id="系統安全-thrusted-zone"><a href="#系統安全-thrusted-zone" class="headerlink" title="系統安全 thrusted zone"></a>系統安全 thrusted zone</h3><p><code>CPU重新隔一塊，儲存私密資訊</code></p>
+<blockquote>
+<p>建立好的防守比攻擊更困難</p>
+</blockquote>
+<h2 id="New-trend-of-user-identity-from-cloud-giants-today"><a href="#New-trend-of-user-identity-from-cloud-giants-today" class="headerlink" title="New trend of user identity from cloud giants today"></a>New trend of user identity from cloud giants today</h2><h3 id="In-the-past"><a href="#In-the-past" class="headerlink" title="In the past"></a>In the past</h3><ul>
+<li><p>user</p>
+<ul>
+<li>Facebook:2.12B</li>
+<li>Google:2B</li>
+<li>Apple iCloud:782M</li>
+<li>Microsoft Offive 365:120M</li>
+</ul>
+</li>
+<li><p>How to identify who is who?</p>
+<ul>
+<li>IP</li>
+<li>Passwords</li>
+</ul>
+</li>
+<li><p>problem of ID&#x2F;Passwords</p>
+<ul>
+<li>強制修改、後與前不重複<br>  <code>一但密碼常換</code><ul>
+<li>過多</li>
+<li>易忘</li>
+</ul>
+</li>
+<li>換密碼麻煩，不方便<br>  <code>一但密碼不換</code><ul>
+<li>釣魚</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Data breach is worst than what we can inagine</p>
+<ul>
+<li>2015 - 2017 資料外洩 &gt; 4.2B<blockquote>
+<p>90% Data breach is from ID&#x2F;Password phishing<br>   data source : <a target="_blank" rel="noopener" href="https://www.riskbasedsecurity.com/">Risk Based Security</a><br>&#x3D;&#x3D;could security ： ID&#x2F;Password 儼然成為最薄弱的防線&#x3D;&#x3D;</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="What-Next"><a href="#What-Next" class="headerlink" title="What Next?"></a>What Next?</h3><ul>
+<li><p>No Password </p>
+<ul>
+<li>指紋驗證</li>
+<li>綠色的銀行近月上市</li>
+</ul>
+</li>
+<li><p>2nd Factor Authentication</p>
+<ul>
+<li>驗證碼</li>
+<li>雙證件</li>
+</ul>
+</li>
+<li><p>Options of passeordless &amp; 2-step login</p>
+<ul>
+<li>Microsoft <ul>
+<li>Widows:Hello login (No Password )</li>
+<li>Azure：MFA(2nd factor authentication)</li>
+</ul>
+</li>
+<li>Google<ul>
+<li>OTP-SMS and Google Authenticator</li>
+<li>FIDO U2F key</li>
+<li>Phone login</li>
+</ul>
+</li>
+<li>Facebook <ul>
+<li>OTP - SMS, Facebook Authenticator, Google Authenticator, etc.</li>
+<li>FIDO U2F Key</li>
+</ul>
+</li>
+<li>Apple <ul>
+<li>MacOS:Apple watch or third party phone login (No Password)</li>
+<li>SMS OTP<blockquote>
+<p>Email OTP<br> SMS OTP</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Problem for SMS and one-time password 2-step login</p>
+<ul>
+<li>Not user friendly for everyone</li>
+<li>Third party APP is complicatrd to setup</li>
+<li>SMS isn’t security, it could be Interception.</li>
+</ul>
+</li>
+<li><p>Bitcoin Wallet was hached Video </p>
+</li>
+<li><p>New trend todat &amp; tomorrow</p>
+<ul>
+<li>Windows Hello Passworldless login</li>
+<li>FIDO - base hardware security key for 2nd factor Authentication<ul>
+<li>Windows - USB &amp; NFC &amp; BLE</li>
+<li>MAcOS - USB &amp; BLE</li>
+<li>Android BLE &amp; NFC</li>
+<li>IOS -BLE</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Advantage to use FIDO-based produt</p>
+<ul>
+<li>google, facebook, Lenovo, Paypal, Gotrust, etc. All member</li>
+<li>Open standard</li>
+<li>手機硬體中做互聯互通</li>
+</ul>
+</li>
+</ul>
+<h3 id="END"><a href="#END" class="headerlink" title="END"></a>END</h3><p><img src="https://i.imgur.com/RVEO3bN.jpg"></p>
+<h2 id="網路自動化機器人辨識與防護"><a href="#網路自動化機器人辨識與防護" class="headerlink" title="網路自動化機器人辨識與防護"></a>網路自動化機器人辨識與防護</h2><ul>
+<li>自動化程式類別<ul>
+<li>暴力密碼猜測<ul>
+<li>以限速避免</li>
+</ul>
+</li>
+<li>網路蜘蛛-起始URL去爬每個子link<ul>
+<li>檢視hyperlink</li>
+<li>檢視cookie </li>
+<li>自動生成白名單</li>
+</ul>
+</li>
+<li>網路爬蟲-搜集廠商數據➡️對營運造成影響<ul>
+<li>透過檢視user-Agent 快速進行爬蟲模式效果管理</li>
+</ul>
+</li>
+<li>自動化網頁機器人<ul>
+<li>檢測應用程式行為，搭配rat limit、使用者輸入辨識等，進行防護</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>暴力密碼的測試<ol>
+<li>下載對應檔案內容：<a target="_blank" rel="noopener" href="https://drive.google.com/drive/folders/1dODxIpFLRyuMhsGPEm6j-HqMn2JnwTSH">https://drive.google.com/drive/folders/1dODxIpFLRyuMhsGPEm6j-HqMn2JnwTSH</a></li>
+<li>開啟Burp Suite Community Edition <a target="_blank" rel="noopener" href="https://t0data.gitbooks.io/burpsuite/content/chapter3.html">使用方式</a></li>
+<li>設定Burp Suite 攔截 Proxy：127.0.0.1:8080</li>
+<li>設定Firefox 路經 Proxy：127.0.0.1:8080</li>
+<li>開啟intercept 攔截request 內容</li>
+<li>用正確帳號密碼登入後，得到正確的Respone內容</li>
+<li>點選action -&gt; send to intruder</li>
+<li>add $ 參數 $</li>
+<li>更改成 暴力破解 cluster bomb</li>
+<li>payload引入參數集</li>
+<li>option更改比對內容為正確的Respone內容</li>
+<li>勾選掉Exclude HTTP headers</li>
+<li>Start attack</li>
+</ol>
+</li>
+<li>網路蜘蛛的測試<ol>
+<li>開啟websphinx.jar 可直接網路蜘蛛 (含 graph)</li>
+</ol>
+</li>
+<li>網路爬蟲</li>
+</ul>
+<h2 id="Mcafee"><a href="#Mcafee" class="headerlink" title="Mcafee"></a>Mcafee</h2><ul>
+<li>多維度與人工智慧進階威脅分析<ul>
+<li>快速過濾<ul>
+<li>特徵碼</li>
+<li>信譽</li>
+<li>模擬</li>
+</ul>
+</li>
+<li>動態分析<ul>
+<li>沙箱觀察</li>
+<li>沙箱迴避</li>
+</ul>
+</li>
+<li>靜態程式碼分析<ul>
+<li>消除混淆碼</li>
+<li>反組譯並揭露執行碼</li>
+<li>比對同類家族</li>
+</ul>
+</li>
+<li>人工智慧分析<ul>
+<li>多維度的分析病毒代碼</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>自適應進階威脅聯防架構<ol>
+<li>收到包含可疑代碼之附件</li>
+<li>送往surver確認</li>
+<li>進入沙箱確診</li>
+<li>即時傳回端點</li>
+<li>於TIE比對過去存在的攻擊</li>
+<li>SIEM儲存與管理IOC</li>
+</ol>
+</li>
+<li>人工智能安全管理解決方案<br><code>最佳化威脅與合理的安全管理(ESM+UBA)</code><ul>
+<li>AI與智能分析<ul>
+<li>即時進行分析</li>
+</ul>
+</li>
+<li>可執行的</li>
+<li>整合式安全管理</li>
+</ul>
+</li>
+<li>政府案例分享</li>
+<li>CASB-skyhigh<ul>
+<li>自動識別<ul>
+<li>個資</li>
+<li>PCI</li>
+<li>Shadow Apps</li>
+</ul>
+</li>
+<li>控制</li>
+<li>保護<ul>
+<li>DRM</li>
+<li>加密</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>單一控制點-無摩擦部署<ul>
+<li>於雲端架設單一consol</li>
+<li>不需於每台Device部署</li>
+<li>建立Sky Link 透過API 可採去監控阻擋等訪滬措施</li>
+</ul>
+</li>
+</ul>
+<h2 id="量子時代下的重裝駭客"><a href="#量子時代下的重裝駭客" class="headerlink" title="量子時代下的重裝駭客"></a>量子時代下的重裝駭客</h2><ul>
+<li>何謂量子力學<ul>
+<li>描述圍觀物質（原子，亞原子粒子）行為的物理學理論<ul>
+<li>一種數學模型</li>
+<li>一種描述物理世界的方法</li>
+<li>一種模擬世界或人腦的方式</li>
+</ul>
+</li>
+<li>量子力學的歷史<ul>
+<li>薛丁格波動方程式</li>
+<li>不確定性理論</li>
+<li>波函數塌縮</li>
+<li>迪拉克方程式</li>
+</ul>
+</li>
+<li>量子特性：<ul>
+<li>量子態疊加<ul>
+<li>經典比特 | 0 | 1 |</li>
+<li>量子比特 |0&gt; |1&gt;</li>
+</ul>
+</li>
+<li>量子糾纏</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>何為量子電腦<ul>
+<li>是一種使用量子邏輯進行通用計算的裝置<ul>
+<li>物質分子和化學反應的模擬</li>
+<li>快速解決一些傳統電腦需要長時間解決的問題</li>
+</ul>
+</li>
+<li>涼子特性<ul>
+<li>量子疊加</li>
+<li>兩子糾纏</li>
+</ul>
+</li>
+<li>量子Gate<ul>
+<li>Unitary</li>
+</ul>
+</li>
+<li>量子霸權<ul>
+<li>處理器要達到49量子為元</li>
+<li>雙涼子為元錯誤率低於0.5%</li>
+<li>屆時運算能力將會超越世界上所有電腦，具有解決傳統電鬧所解決不了問題的能力</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="http://ocw.aca.ntu.edu.tw/ntu-ocw/index.php/ocw/cou/100S221/1">台大開放式課程-量子力學</a></p>
+</blockquote>
+<ul>
+<li>量子電腦哪裡找？<ul>
+<li>Quantum Gate 類型的<ul>
+<li>IBM有提供實驗性機器與API</li>
+<li>Microsoft VS + Q#,Python</li>
+<li>Rigetti python(Quil)+Quantum Visual Machine</li>
+</ul>
+</li>
+<li>Quantum Annealing 類型的<ul>
+<li>D-Wave + quantum machine instruction(QMI)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Quantum Gate<ul>
+<li>Hadamard gate</li>
+<li>Controlll not</li>
+<li>Swap gate<blockquote>
+<p>qiskit-sdk ( python3 )<br>Try ‘local simulator’</p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="駭客如何用量子電腦做壞事"><a href="#駭客如何用量子電腦做壞事" class="headerlink" title="駭客如何用量子電腦做壞事"></a>駭客如何用量子電腦做壞事</h3><ul>
+<li><p>他可以做啥？</p>
+<ul>
+<li>植樹分解 </li>
+<li>對稱式演算法孤寂</li>
+<li>量子金鑰傳輸 ( QKD )</li>
+<li>量子比特幣（qBitcoin）</li>
+<li>量子數位簽章</li>
+<li>:smile: Quantum machine learing</li>
+<li>Traveling Salesman Problem</li>
+</ul>
+</li>
+<li><p>質數分解</p>
+<ul>
+<li>質數分解困難度為基礎ＧＧ</li>
+<li>short algorithm</li>
+</ul>
+</li>
+<li><p>RSA </p>
+<ul>
+<li>仰賴質因數分解的困難度</li>
+<li>私鑰可以快速被算出</li>
+<li>傳統RSA是 non quantum-safe</li>
+</ul>
+</li>
+<li><p>橢圓曲線密碼</p>
+</li>
+<li><p>對稱式演算法攻擊</p>
+<ul>
+<li>Grover’s Search Algorithm</li>
+</ul>
+</li>
+<li><p>其實我 ( gasgas ) 從頭到尾只想用量子電腦挖比特幣:smile:</p>
+<ul>
+<li>proof-of-work可以算快一點</li>
+<li>讓授權交易的橢圓曲線千張可以偽造&#x2F;取代</li>
+</ul>
+</li>
+<li><p>晴天霹靂的 Hash function!</p>
+<blockquote>
+<p>Quantum Lower Bound for the Collision Problem<br>Quantan attack at Bitcoin, and how to protect against them</p>
+</blockquote>
+</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://hackmd.io/qJ_nxz77TjaNNbU4A2Gv1A?both">下兩篇By Jeffery Lin</a></p>
+<h2 id="金融數位化時代下的資訊風險與控制管理"><a href="#金融數位化時代下的資訊風險與控制管理" class="headerlink" title="金融數位化時代下的資訊風險與控制管理"></a>金融數位化時代下的資訊風險與控制管理</h2><p>-為什麼需要煞車？風險管理用來控管快速成長<br>-資訊風險管理：對資訊系統仰賴度提高、所處的環境越來越複雜（駭客、員工盜取資料、仍要符合政府法規）資訊風險管理協助管理重要資訊<br>-新興科技：GDPR、Fintech，需要評估導入新興科技的風險，挑戰更勝過去<br>-注意面向：安全性、可用性、效能（不彰導致使用者抱怨影響聲譽、可能會影響可用性）、法遵</p>
+<p>-資訊風險管理( IT Risk Management) vs資訊安全管理( IT Security Management)</p>
+<p>資訊風險管理( IT Risk Management)：找作業流程的風險、確保監控風險、Like 家教、協助組織通過稽核</p>
+<p>資訊安全管理( IT Security Management)：確保資訊無外流、無沒權限人取得access</p>
+<p>-好處：降低資訊風險管理發生的機率和影響、有效跨部門溝通、協助風控化繁為簡<br>-技巧：風險管理矩陣（要知道自己目標）、自行查核（找出問題）、風險註冊</p>
+<h2 id="FinTech-–-金融科技的美麗與哀愁"><a href="#FinTech-–-金融科技的美麗與哀愁" class="headerlink" title="FinTech – 金融科技的美麗與哀愁"></a>FinTech – 金融科技的美麗與哀愁</h2><p>-演進：1991-Internet, 1995-ebay, 1998- paypal, 2007-iPhone, 2009-bitcoin, 2014-Apple Pay<br>-最多 Fintech 用戶地區：中國、印度（發展快速、偽幣問題）<br> 最多 Fimtech 使用年齡層：Y世代<br>-台灣概況：行動支付、跨境支付、P2P借貸、機器人理財、虛擬貨幣<br>-Apple Pay 代碼化（Tokenization）技術：商家、收單機構看不到卡號（減少偽卡）</p>
+<p>-信用卡側錄裝置(Card Skimmer Device)：不一定是店家所為<br>QRCode  支付：偷換店家QRCode<br>-行動銀行：惡意app（bankbot) 覆蓋在正常行動銀行app上，騙取帳密，還可攔截簡訊<br>-SWIFT 系統金融犯罪（釣魚信件、水坑攻擊植入後門，再找SWIFT帳密進行攻擊）<br>-區塊鏈<br>-Smart Contract<br>-資安風險：交易所、Smart Contract 漏洞、盜取 private key<br>-金融電子化：駭客只要能控制資訊流，就能控制金流<br>-控制好權限（雙重認證）</p>
+<p>圖片後補</p>
+<h2 id="AI"><a href="#AI" class="headerlink" title="AI"></a>AI</h2><blockquote>
+<p>AI會取代我嗎？<br>如果你問這個問題，代表你不了解AI，那未來就會被取代</p>
+</blockquote>
+<h3 id="資安現況"><a href="#資安現況" class="headerlink" title="資安現況"></a>資安現況</h3><ul>
+<li><p>資安產業鏈：<br><img src="https://i.imgur.com/BAmne1F.jpg"></p>
+</li>
+<li><p>資安產業中使用AI的三個層次</p>
+<ol>
+<li>Malware識別惡意程式：識別黑名單機制<ul>
+<li>可以漏判</li>
+<li>低錯誤率</li>
+</ul>
+</li>
+<li>Icident識別攻擊活動：人為書寫規則</li>
+<li>Situation調查攻擊案情：找到駭客攻擊TPP、計劃等等<ul>
+<li>不只知道這是兇刀，還要知道他是怎麼來的</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h3 id="資安現況Demo"><a href="#資安現況Demo" class="headerlink" title="資安現況Demo"></a>資安現況Demo</h3><p><a target="_blank" rel="noopener" href="http://10.18.0.10:5601/app/kibana#/discover?_g=(refreshInterval:(display:Off,pause:!f,value:0),time:(from:'2017-08-14T04:56:48.510Z',mode:absolute,to:'2017-08-14T09:12:53.617Z'))&_a=(columns:!('@timestamp',event_data.TargetServerName,event_data.SubjectUserName,event_id,event_data.CommandLine),filters:!(),index:winlogbeat,interval:auto,query:(query_string:(analyze_wildcard:!t,query:'event_id:4688%20AND%20beat.hostname:%22EP1-PC%22')),sort:!('@timestamp',desc))">Demo網站</a></p>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/default.aspx">event_id</a></p>
+<ul>
+<li>連出去 4648：不保證有成功</li>
+<li>被連 <ul>
+<li>4624成功</li>
+<li>4625失敗</li>
+</ul>
+</li>
+<li>4688 CMD任何指令被記錄於此</li>
+</ul>
+</li>
+<li><p>106：TaskRegisteredEvent</p>
+</li>
+<li><p>200：ActionStart, with PE name</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd317756(v=vs.85).aspx">切換 UTF-8 編碼：chcp 65001</a></p>
+</li>
+<li><p>winlogbeat:Realtime傳送終端log to surver</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://peihsinsu.gitbooks.io/docker-note-book/content/bigdata-lek.html">Docker+kibana</a></p>
+</li>
+<li></li>
+</ul>
+<blockquote>
+<p>兩面刃：網管與駭客都喜歡用的平行移動工具</p>
+<ul>
+<li>psexec.exe</li>
+</ul>
+</blockquote>
+<h3 id="資安現況解決方案"><a href="#資安現況解決方案" class="headerlink" title="資安現況解決方案"></a>資安現況解決方案</h3><blockquote>
+<p>工人智慧 -&gt; 人工智慧</p>
+</blockquote>
+<ul>
+<li>AI判斷異常指令</li>
+<li>神奇圖形化介面</li>
+<li>判斷問題等級</li>
+<li>快速勾勒回傳report</li>
+<li>產生脈絡圖</li>
+</ul>
+<blockquote>
+<p>cycarrier</p>
+</blockquote>
+<ul>
+<li>節省專家繁瑣的日誌分析時間</li>
+<li>系統引導人類做決策</li>
+<li>累積更豐富的專家情資來讓平台自動Hunting</li>
+<li>無人能取代的專家，彼此相輔相成</li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2018-03-10T17:43:14.000Z" title="3/10/2018, 5:43:14 PM">2018-03-10</time></span><span class="level-item">Updated&nbsp;<time dateTime="2026-02-20T18:08:53.556Z" title="2/20/2026, 6:08:53 PM">2026-02-20</time></span><span class="level-item"><a class="link-muted" href="/categories/SITCON/">SITCON</a></span><span class="level-item">5 minutes read (About 704 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2018/03/10/SITOCN-2018-%E8%AD%B0%E7%A8%8B%E7%AD%86%E8%A8%98/">SITOCN 2018 議程筆記</a></p><div class="content"><p><img src="https://i.imgur.com/yJfo63u.png"></p>
+<h2 id="由淺入坑區塊鏈～從認識架構到應用智能合約！-牟展佑"><a href="#由淺入坑區塊鏈～從認識架構到應用智能合約！-牟展佑" class="headerlink" title="由淺入坑區塊鏈～從認識架構到應用智能合約！ - 牟展佑"></a>由淺入坑區塊鏈～從認識架構到應用智能合約！ - 牟展佑</h2><ul>
+<li>簡報連結: <a target="_blank" rel="noopener" href="https://speakerdeck.com/williammou/you-qian-ru-keng-qu-kuai-lian-cong-ren-shi-jia-gou-dao-ying-yong-zhi-neng-he-yue">點我</a></li>
+</ul>
+<h3 id="開場影片"><a href="#開場影片" class="headerlink" title="開場影片"></a>開場影片</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://youtu.be/5r8kJCE1S1s">『發現芬特克！比特幣 &amp; 區塊鏈原理大解析』芬特克 FinTech EP1</a></li>
+</ul>
+<h3 id="講者資訊"><a href="#講者資訊" class="headerlink" title="講者資訊"></a>講者資訊</h3><ul>
+<li>松資活動&#x2F;總務</li>
+<li>學長推坑SITCON</li>
+<li>偏好將資訊結合金融領域</li>
+<li>願在成為工具人之前成長茁壯(?</li>
+</ul>
+<h3 id="Part-0-銀行、中心化、比特幣到去中心化"><a href="#Part-0-銀行、中心化、比特幣到去中心化" class="headerlink" title="Part 0 銀行、中心化、比特幣到去中心化"></a>Part 0 銀行、中心化、比特幣到去中心化</h3><h4 id="貨幣"><a href="#貨幣" class="headerlink" title="貨幣"></a>貨幣</h4><ul>
+<li>以物易物&gt;金銀銅鐵錫&gt;法幣&gt;信用卡</li>
+<li>法定貨幣缺點: 中心化</li>
+</ul>
+<h3 id="Part-1-區塊鏈架構"><a href="#Part-1-區塊鏈架構" class="headerlink" title="Part 1 區塊鏈架構"></a>Part 1 區塊鏈架構</h3><h4 id="數位簽章-電腦的帳本"><a href="#數位簽章-電腦的帳本" class="headerlink" title="數位簽章(電腦的帳本)"></a>數位簽章(電腦的帳本)</h4><ul>
+<li>雜湊(hash)演算法SHA-256</li>
+<li>交易事件加密(簽章)</li>
+</ul>
+<h4 id="加密"><a href="#加密" class="headerlink" title="加密"></a>加密</h4><ul>
+<li>對稱加密: 相同鑰匙加密解密</li>
+<li>非對稱加密: 分為私鑰和公鑰，私鑰加密公鑰解密</li>
+</ul>
+<blockquote>
+<p>礦工收到: 紀錄 簽章</p>
+</blockquote>
+<ol>
+<li>SHA-256(紀錄) &gt;雜湊1</li>
+<li>用私鑰加密</li>
+<li>加密雜湊 &gt;簽章</li>
+<li>用公鑰解密 &gt;雜湊</li>
+<li>SHA-256(紀錄) &gt; 雜湊2</li>
+<li>驗證 雜湊1 &#x3D;&#x3D; 雜湊2</li>
+</ol>
+<h4 id="去中心化"><a href="#去中心化" class="headerlink" title="去中心化"></a>去中心化</h4><ol>
+<li>把元改成BTC(加密)</li>
+<li>把需要根付換成支付(數位簽章)</li>
+<li>確認支付量(無法查詢餘額故每筆交易都以過去的交易作為基礎)</li>
+<li>交易雙方的名字改成帳號(避免重名)</li>
+<li>轉帳紀錄存於各節點</li>
+</ol>
+<h4 id="一致性問題"><a href="#一致性問題" class="headerlink" title="一致性問題"></a>一致性問題</h4><ul>
+<li>避免紀錄竄改-&gt;區塊相連</li>
+<li>紀錄同步-&gt;產生新區塊</li>
+<li>避免重複使用-&gt;每筆交易會和前一個來源一起加密</li>
+</ul>
+<h4 id="如何實現"><a href="#如何實現" class="headerlink" title="如何實現"></a>如何實現</h4><ul>
+<li>hash 區塊 &gt; hash值前72位為0 &gt; 挖到礦</li>
+<li>CPU &gt; GPU &gt; 礦機 &gt; 一堆礦機(礦場)</li>
+</ul>
+<h4 id="獎勵機制"><a href="#獎勵機制" class="headerlink" title="獎勵機制"></a>獎勵機制</h4><ol>
+<li>挖到得到 12.5BTC(2017)</li>
+<li>交易手續費</li>
+</ol>
+<h4 id="算力過剩"><a href="#算力過剩" class="headerlink" title="算力過剩"></a>算力過剩</h4><ul>
+<li>調整難度</li>
+</ul>
+<h4 id="同時產生區塊"><a href="#同時產生區塊" class="headerlink" title="同時產生區塊?"></a>同時產生區塊?</h4><ul>
+<li>保留最長的區塊</li>
+</ul>
+<h4 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h4><p>*　利用SHA-256 &amp; 非對稱加密製作數字簽名<br>*　利用區塊練儲存交易紀錄<br>*　設置外的工作控制單位時間生產數<br>*　將一定數量比特幣發給礦工，促進成長<br>*　轉帳不依賴任何銀行或政府機構<br>*　比特幣網路內總量不超過2100萬個比特幣</p>
+<h4 id="交易方式"><a href="#交易方式" class="headerlink" title="交易方式"></a>交易方式</h4><ul>
+<li>場外交易:信任的人</li>
+<li>場內交易:交易所(bitoex、maicoin）</li>
+</ul>
+<h3 id="Part-2-從比特幣到以太坊"><a href="#Part-2-從比特幣到以太坊" class="headerlink" title="Part 2 從比特幣到以太坊"></a>Part 2 從比特幣到以太坊</h3><ul>
+<li>把數字改成文字</li>
+</ul>
+<h4 id="Etherenum"><a href="#Etherenum" class="headerlink" title="Etherenum"></a>Etherenum</h4><ul>
+<li>智能合約</li>
+<li>快速驗證(1min以下)</li>
+<li>有錢就可做到無窮迴圈(有錢就是任性?)</li>
+<li>目前無專用礦機</li>
+</ul>
+<h5 id="智能合約"><a href="#智能合約" class="headerlink" title="智能合約"></a>智能合約</h5><ul>
+<li>Browser-</li>
+<li></li>
+<li>Geth:讓我們能夠執行合約..等</li>
+<li>Mist:錢包</li>
+</ul>
+<p><code>智能合約的應用 ex:勞基法 老闆有智能合約 -&gt;加班的錢放入智能合約-&gt;判斷要給錢給員工(員工加班)還是退還老闆(員工放假)</code></p>
+<h3 id="Part-3-區塊練3-0"><a href="#Part-3-區塊練3-0" class="headerlink" title="Part 3 區塊練3.0"></a>Part 3 區塊練3.0</h3></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2018-01-19T13:20:00.000Z" title="1/19/2018, 1:20:00 PM">2018-01-19</time></span><span class="level-item">Updated&nbsp;<time dateTime="2026-02-20T18:08:53.555Z" title="2/20/2026, 6:08:53 PM">2026-02-20</time></span><span class="level-item"><a class="link-muted" href="/categories/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/">資訊安全</a></span><span class="level-item">27 minutes read (About 4088 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2018/01/19/HITCON-FreeTalk-2018-%E6%9A%A2%E8%AB%87-CPU-%E8%99%95%E7%90%86%E5%99%A8%E7%9A%84%E6%AD%B7%E5%8F%B2%E5%8C%85%E8%A2%B1/">HITCON FreeTalk 2018 暢談 CPU 處理器的歷史包袱</a></p><div class="content"><h1 id="HITCON-FreeTalk-2018-暢談-CPU-處理器的歷史包袱-共同筆記"><a href="#HITCON-FreeTalk-2018-暢談-CPU-處理器的歷史包袱-共同筆記" class="headerlink" title="HITCON FreeTalk 2018 暢談 CPU 處理器的歷史包袱 共同筆記"></a>HITCON FreeTalk 2018 暢談 CPU 處理器的歷史包袱 共同筆記</h1><blockquote>
+<p>主辦單位:社團法人台灣駭客協會(HITCON)<br>時間: 2018&#x2F;01&#x2F;19(五) 13:20 - 17:00<br>報名網址: <a target="_blank" rel="noopener" href="https://hitcon.kktix.cc/events/hitconfreetalk20180119">https://hitcon.kktix.cc/events/hitconfreetalk20180119</a><br>直播網址: <a target="_blank" rel="noopener" href="https://www.facebook.com/HITCON/">https://www.facebook.com/HITCON/</a></p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">議程表:</span><br><span class="line">12：50 - 13：20  報到</span><br><span class="line">13：20 - 13：30  開場</span><br><span class="line">13：30 - 14：00  Spectre &amp; Meltdown 漏洞原理說明與 POC 剖析（講師：Bletchley）</span><br><span class="line">14：00 - 14：30  從晶片設計角度看硬體安全（講師：中原大學 黃世旭教授）</span><br><span class="line">14：30 - 15：00  下午茶交流</span><br><span class="line">15：00 - 15：30  Spectre &amp; Meltdown 漏洞的修補策略與 risk mitigation（講師：gasgas）</span><br><span class="line">15：30 - 16：00  詭譎多變威脅下的資安應變與治理（講師：林宏嘉協理）</span><br><span class="line">16：00 - 17：00  Panel Discussion</span><br></pre></td></tr></table></figure>
+<p>歡迎大家針對這次的議題作共筆！</p>
+<h2 id="一、Spectre-Meltdown-漏洞原理說明與-POC-剖析-講師-Bletchley"><a href="#一、Spectre-Meltdown-漏洞原理說明與-POC-剖析-講師-Bletchley" class="headerlink" title="一、Spectre &amp; Meltdown 漏洞原理說明與 POC 剖析 (講師: Bletchley) "></a><a target="_blank" rel="noopener" href="https://drive.google.com/file/d/1E2VXtXTTD4_-IR6sbRvP9MiADKo41zvu/view?usp=sharing==">一、Spectre &amp; Meltdown 漏洞原理說明與 POC 剖析 (講師: Bletchley) </a></h2><h3 id="Overview-of-Meltdown-and-Spectre"><a href="#Overview-of-Meltdown-and-Spectre" class="headerlink" title="Overview of Meltdown and Spectre"></a>Overview of Meltdown and Spectre</h3><ul>
+<li>Threat: adversary who can execute low privilege code can read unpermitted memory region</li>
+<li>Impact:<ul>
+<li>Meltdown: Most Intel Processors</li>
+<li>Spectre: Intel, AMD, ARM processors</li>
+</ul>
+</li>
+<li>Reason:<ul>
+<li>INconsistent between processor architecture and microarchitecture(cache)</li>
+<li>Lack of permission checking when CPU optimization</li>
+</ul>
+</li>
+<li>Website: meltdownattack.com</li>
+</ul>
+<p>Execute low privilege code can read unpermitted memory region</p>
+<p>Google 研究團隊發布漏洞的網站 - <a target="_blank" rel="noopener" href="https://meltdownattack.com/">https://meltdownattack.com</a></p>
+<p>CPU Architecture 中，frontend 是作 fetch and decode 的部分，接著才交給 backend 去做 execution，其中 code (record) buffer 也在這邊</p>
+<h3 id="out-of-order-execution"><a href="#out-of-order-execution" class="headerlink" title="out-of-order execution"></a>out-of-order execution</h3><p>有時候處理器為了加速，會偷跑排在後面的指令，例如後面指令可能是一個加法指令，而且已經在 register 中，就可能會被選為偷跑項目</p>
+<p>但有時候偷跑會發生出錯，一旦出錯，有可能被處理器丟棄，不會 commit 到  CPU 的輸出結果中(memory write)</p>
+<h3 id="speculative-execution"><a href="#speculative-execution" class="headerlink" title="speculative execution"></a>speculative execution</h3><p>這個是 branch instruction 的一種執行方法，會去猜測 condition instrcution 的成立與否，如果猜對了，就會 commit 到 CPU 的 memory</p>
+<p>偷跑動作的時候，會去存取記憶體，subsytem cache 不知道是偷跑的，所以還是會把獨進來的資料做處理，這就是漏洞</p>
+<h3 id="Flush-Reload-Attack"><a href="#Flush-Reload-Attack" class="headerlink" title="Flush + Reload Attack"></a>Flush + Reload Attack</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var = array[ secret* cache_line_size ]</span><br></pre></td></tr></table></figure>
+<p>256 accesses time helps discover one byte data ()</p>
+<h3 id="CVEs"><a href="#CVEs" class="headerlink" title="CVEs"></a>CVEs</h3><ul>
+<li>CVE-2017-5753</li>
+<li>CVE-2017-5715</li>
+<li>CVE-2017-5754</li>
+</ul>
+<h3 id="Inside-the-CPU"><a href="#Inside-the-CPU" class="headerlink" title="Inside the CPU"></a>Inside the CPU</h3><ul>
+<li><p>Frontend</p>
+</li>
+<li><p>Execution Engine</p>
+<ul>
+<li>Reorder Buffer<ul>
+<li>重排序缓冲区</li>
+</ul>
+</li>
+<li>Execution Unit<ul>
+<li>CPU執行單位</li>
+</ul>
+</li>
+<li>漏洞的緣由<ul>
+<li>CPU 偷跑後面順序可以先執行的指令</li>
+<li>若發現偷跑的指令不合</li>
+<li>不commit偷跑資料回cpu</li>
+<li>但Cpu cache 仍留存資料</li>
+<li>可是於memory與cpu中無法觀察之</li>
+<li>可利用預執行cache資料</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>attack-meltdown</p>
+<ul>
+<li>Attack想法<ul>
+<li>設一array</li>
+<li>若讀取過的array[x]會存於cache</li>
+<li>cache資料的讀取時間&lt;memory讀取時間</li>
+<li>統計時間即可洩漏曾讀取過的值</li>
+<li>256 accesse can discover a Byte.</li>
+</ul>
+</li>
+<li>Meldown Attack Steps<ul>
+<li>Cpu預先執行超出權限的資料</li>
+<li>即使資料永遠不會被程式讀取</li>
+<li>仍然有機會預先儲存於cache中<br>  <img src="https://i.imgur.com/h9b0t23.png"></li>
+</ul>
+</li>
+</ul>
+<p>  <img src="https://i.imgur.com/ehHen5p.png"></p>
+<p>  <img src="https://i.imgur.com/PqGLl1E.png"></p>
+</li>
+<li><p>attack-spectre</p>
+<ul>
+<li>Attack想法<ul>
+<li>No cache:array1_size,array2</li>
+</ul>
+  <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> (x&lt;array1_size )</span><br><span class="line">    y = array2[array1[x]*<span class="number">256</span>];</span><br></pre></td></tr></table></figure>
+<ul>
+<li>if後執行較慢</li>
+<li>連續數執行後</li>
+<li>Cpu預先執行第二行 </li>
+<li>帶入不進入的if x</li>
+<li>會預先執行而得到y值存於cache</li>
+</ul>
+</li>
+<li>spectre Attack Steps<br>  <img src="https://i.imgur.com/VVCC1HN.png"><br>  <img src="https://i.imgur.com/tam7j6C.png"><br>  <img src="https://i.imgur.com/a6dJQIa.png"><br>  <img src="https://i.imgur.com/0SdQq3X.png"></li>
+</ul>
+</li>
+</ul>
+<h3 id="文獻連結"><a href="#文獻連結" class="headerlink" title="文獻連結"></a>文獻連結</h3><p><a target="_blank" rel="noopener" href="https://github.com/IAIK/meltdown">Meltdown Proof-of-Concept</a><br><a target="_blank" rel="noopener" href="https://github.com/crozone/SpectrePoC">Spectre POC</a><br><a target="_blank" rel="noopener" href="https://www.facebook.com/ENISAEUAGENCY/photos/pb.260742884030702.-2207520000.1516342064./1316708825100764">main differences between Meltdown and Spectre</a></p>
+<blockquote>
+<p>筆者按</p>
+<ul>
+<li>Branch predCiition兩種變形<ul>
+<li>out-of-order execution &#x3D; 預測下一個要執行的程序並預處理</li>
+<li>speculative execution &#x3D; 在分支時預測下個要執行的分之進行預處理</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="討論"><a href="#討論" class="headerlink" title="討論"></a>討論</h3><blockquote>
+<p>array &#x3D; [ secret * cache_line_size]<br>read all array and count how many element loaded to cache &#x3D; secret value<br>看不出來這兩個漏洞的差異啊，好像都是同一個方法</p>
+</blockquote>
+<blockquote>
+<p>[name&#x3D;CK] 雖然漏洞被區分為兩種，他們概念都以out-of-order execution為核心。可以把Spectre看成Meltdown的擴充，比較大的差異是Spectre加入branch prediction做攻擊。</p>
+</blockquote>
+<blockquote>
+<p>[name&#x3D;Ethen] 之前我看到Meltdown的特點不只是讀取數據，還可以打破隔離(寫入)，沒介紹到…<br>如果按照上面的比較表兩邊都是僅讀取，只是讀取範圍不一樣（kernel space v.s. user space any process），那為什麼Maltdown可以直接傷到虛擬化環境？ring -1不是單純讀取kernel就可以跳進去的啊</p>
+</blockquote>
+<blockquote>
+<p>[name&#x3D;Austin]Guset攻擊Host的部份是屬於Spectre-Variant2的範疇，它其實是利用從Guest program去推敲kvm.ko, vmlinux的記憶體位置，在將資料流至user space。雖然Guset跟Host看起來是分離的，其實有很多共用的特性，可以這樣去推敲記憶體位置</p>
+</blockquote>
+<blockquote>
+<p>[name&#x3D;Austin]我的理解沒錯的話，Spectre跟Meltdown的差異在於後者使用了Out of order execution，兩者都有使用speculative execution(branch prediction)，另外講者沒有提到的是到底如何取得secret的資料，根據POC code給的<br>char <em>secret &#x3D; “The Magic Words are Squeamish Ossifrage.”;<br>malicious_x &#x3D; (size_t)( secret - (char</em>) array1 );<br>當我們推敲出array &#x3D; [ array1[x] * cache_line_size] 裡面array1[x]的值後，其實就可以推導secret的內容：<br>array1[x] &#x3D; addrress of array1 + offset x &#x3D;  addrress of array1 + address of secret - address of array1 &#x3D; address of secret &#x3D; ‘T‘</p>
+</blockquote>
+<blockquote>
+<p>[name&#x3D;Ethen] 站在攻擊者的立場，Meltdown對我來說會是一個不錯的攻擊輔助資訊，我可以拿到核心記憶體中的帳號密碼或知道有開啟什麼服務輔助我攻擊，但這僅限於當下的作業系統，如果能夠寫入或直接提權那會好用的多<br>單純推敲kvm.ko能做的事情有限，如果hypervisor沒有放出可攻擊的服務或權限，我會很難往上打，頂多去讀其他虛擬機器試圖利用其他虛擬機上的服務弱點去一台一台打，這樣就沒那麼好用了</p>
+</blockquote>
+<h2 id="二、從晶片設計角度看硬體安全（講師：中原大學-黃世旭教授）"><a href="#二、從晶片設計角度看硬體安全（講師：中原大學-黃世旭教授）" class="headerlink" title="二、從晶片設計角度看硬體安全（講師：中原大學 黃世旭教授）"></a>二、從晶片設計角度看硬體安全（講師：中原大學 黃世旭教授）</h2><h3 id="邏輯化簡漏洞"><a href="#邏輯化簡漏洞" class="headerlink" title="邏輯化簡漏洞"></a>邏輯化簡漏洞</h3><ul>
+<li>進行邏輯化簡時<ul>
+<li>Don’t care的部分可能會產生非預期的值</li>
+<li>或Dont’ care的輸入會輸出&#x3D;預期的答案</li>
+</ul>
+</li>
+</ul>
+<p><img src="https://i.imgur.com/CA5dtZO.png"><br><img src="https://i.imgur.com/mbzR21U.png"><br><img src="https://i.imgur.com/ciuOAU3.png"><br><img src="https://i.imgur.com/3kw7LuB.png"><br><img src="https://i.imgur.com/clOH3xr.png"><br><img src="https://i.imgur.com/tbuWeSK.png"><br><img src="https://i.imgur.com/aoRWXDQ.png"><br><img src="https://i.imgur.com/8dxdomi.jpg"><br><img src="https://i.imgur.com/Rtaehhz.jpg"><br><img src="https://i.imgur.com/csIKMVv.jpg"></p>
+<h3 id="out-of-order-executed"><a href="#out-of-order-executed" class="headerlink" title="out of order executed"></a>out of order executed</h3><p>將無前後關係的排成同時運作<br>降低使用運算時間</p>
+<p><img src="https://i.imgur.com/2t5eT8g.png"></p>
+<h3 id="branch-executed"><a href="#branch-executed" class="headerlink" title="branch executed"></a>branch executed</h3><p><img src="https://i.imgur.com/hLIw94w.png"><br>    可以與cache無關：透過時間差取得之前的key</p>
+<h3 id="meltdown-spectre-探討"><a href="#meltdown-spectre-探討" class="headerlink" title="meltdown &amp; spectre 探討"></a>meltdown &amp; spectre 探討</h3><pre><code>* 同上
+</code></pre>
+<h3 id="設計硬體安全的困難"><a href="#設計硬體安全的困難" class="headerlink" title="設計硬體安全的困難"></a>設計硬體安全的困難</h3><p><img src="https://i.imgur.com/qxM5kzX.png"></p>
+<h3 id="結語"><a href="#結語" class="headerlink" title="結語"></a>結語</h3><p><img src="https://i.imgur.com/CyPJNmi.png"></p>
+<h3 id="其他大大的筆記"><a href="#其他大大的筆記" class="headerlink" title="其他大大的筆記"></a><a target="_blank" rel="noopener" href="https://hackmd.io/EwBgRiDskJwGwFpgGZmICx0gVgTAjAGaJyEAccAhmPiHAMb71A==?both">其他大大的筆記</a></h3><p>現代CPU設計由於Multithread &amp; Multicore的因素CPU執行指令運算之前需要peak一下CPU的狀態與看預算時需求的Memory是否會產生lock，這個過程會在CPU的底層做(注意到這裡OS已無法管理，指令並須被執行除非CPU drop這個指令，CPU drop會通知回OS)</p>
+<p>利用這個方法去看CPU Handle的記憶體區段Peak其他區域的記憶體位置(OS無法阻擋)，或者CPU上的Memory管理機制重新回Initial state<br><img src="https://i.imgur.com/eXEUSuc.png"></p>
+<p>在邏輯電路裡設計狀態機(FSM)時傳統訓練方法有don’t care condition可能會造成電路運行時產生你所不期望的狀態循環，例如重回initial state，所以設計時不太應該使用don’t care(雖然可以節省電路成本與最邏輯複雜度最佳化)，但為了安全性，應當把所有組合列出，額外去處理不期望的例外。</p>
+<p>PUF -&gt; physical unclonable function<br><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Physical_unclonable_function">Some basic description about PUF</a></p>
+<p>電路最佳化問題<br>    - 電路複雜度<br>    - 電路成本<br>    - Data Store(Cache &amp; Register )漏電問題<br>    - 面積</p>
+<p>Intel identified the vulnerabilities as:</p>
+<p>CVE-2017-5705 – Multiple buffer overflows in kernel in Intel ME Firmware allowing an attacker with local access to the system to execute arbitrary code.</p>
+<p>CVE-2017-5708 – Multiple privilege escalations in kernel in Intel ME Firmware allowing unauthorized processes to access privileged content via unspecified vector.</p>
+<p>CVE-2017-5711 &amp; CVE-2017-5712 – Multiple buffer overflows in Active Management Technology (AMT) in ME Firmware allowing attacker with local access to the system to execute arbitrary code with AMT execution privilege.</p>
+<p>CVE-2017-5706 – Multiple buffer overflows in kernel in Intel SPS Firmware 4.0 allow attacker with local access to the system to execute arbitrary code.</p>
+<p>CVE-2017-5709 -Multiple privilege escalations in kernel in Intel SPS Firmware 4.0 allows unauthorized process to access privileged content via unspecified vector.</p>
+<p>CVE-2017-5707 –  Multiple buffer overflows in kernel in Intel TXE Firmware 3.0 allow attacker with local access to the system to execute arbitrary code.</p>
+<p>CVE-2017-5710 – Multiple privilege escalations in kernel in Intel TXE Firmware 3.0 allows unauthorized process to access privileged content via unspecified vector.</p>
+<p>原文:<br><a target="_blank" rel="noopener" href="https://meltdownattack.com/meltdown.pdf">https://meltdownattack.com/meltdown.pdf</a></p>
+<h2 id="三、Spectre-Meltdown-漏洞的修補策略與-risk-mitigation（講師：gasgas）"><a href="#三、Spectre-Meltdown-漏洞的修補策略與-risk-mitigation（講師：gasgas）" class="headerlink" title="三、Spectre &amp; Meltdown 漏洞的修補策略與 risk mitigation（講師：gasgas）"></a>三、Spectre &amp; Meltdown 漏洞的修補策略與 risk mitigation（講師：gasgas）</h2><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><ul>
+<li>你認為得資訊安全？<ul>
+<li>降低風險，而不可能100%修補</li>
+<li>Risk &#x3D; Vulnerable X Threat X Asset</li>
+<li>風險 ＝ 資安漏洞 Ｘ 駭客進不進得來 Ｘ 資產價值</li>
+</ul>
+</li>
+</ul>
+<h3 id="該怎麼做？"><a href="#該怎麼做？" class="headerlink" title="該怎麼做？"></a>該怎麼做？</h3><ul>
+<li>漏洞因應流程：<ul>
+<li>資訊盤點 ➡️ 漏動檢查 ➡️ 測試機測試 ➡️<br>系統備份 ➡️ DRP演練 ➡️ 進行修補 ➡️ 持續觀察</li>
+</ul>
+</li>
+<li>漏洞檢查：<ul>
+<li>Unix：GitHub大大提供</li>
+<li>Windows：微軟大大提供新的PowerShell你可以檢查是  否已更新</li>
+<li>Mac：Apple官網提供</li>
+<li>瀏覽器運行：javascript等程式<ul>
+<li><a target="_blank" rel="noopener" href="https://xlab.tencent.com/special/spectre/spectre_check.html">https://xlab.tencent.com/special/spectre/spectre_check.html</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>漏洞修補：<ul>
+<li>CPU Level修補：Firmware Update<ul>
+<li>程式千萬別看錯執行錯，變磚機率爆高！</li>
+<li>目前還不是 CPU Microcode 修補的好時機，可能都只是暫時修補，後續的修補應該會比較全面也比較安全。</li>
+</ul>
+</li>
+<li>Bios Level修補：notebook機器為主的修補方式<ul>
+<li>修補會是個比較好的選擇 (其中也包含 CPU Microcode)，變磚機率低一點點。</li>
+<li><blockquote>
+<p>[name&#x3D;Wisely] BIOS Update 目前只能修補其中一個 Spectre 的弱點</p>
+</blockquote>
+</li>
+<li>Amazon (AWS)&#x2F;(VMware) 已修補完畢</li>
+</ul>
+</li>
+<li>OS Level修補：見官網</li>
+<li>Application Level修補：<ul>
+<li>程式重新編譯</li>
+</ul>
+<p>  <code>* 未重新 comliler 的程式還是有機會有風險</code></p>
+<ul>
+<li>Google Retpoline：GCC，LLVM版本<br>  徹底分支</li>
+<li>Visual Studio 2017 version 15.5 &#x2F;Qsperctre<br>  lfence ：系統執行到此會停止預先運算</li>
+</ul>
+</li>
+<li>安全最大風險Brower：<br>   <code> 使用javascript打包poc放在網路上,瀏覽器看了,記憶體的資料就被偷了</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="提醒"><a href="#提醒" class="headerlink" title="提醒"></a>提醒</h3><ul>
+<li>修補一定要從官方下載</li>
+<li>前漏洞衍伸 ➡️ skyfall and solace：不好修</li>
+</ul>
+<h3 id="討論-1"><a href="#討論-1" class="headerlink" title="討論"></a>討論</h3><blockquote>
+<p>[name&#x3D;Ethen] 不對啊，目前的弱點需要讀取變數&#x2F;建立陣列&#x2F;評估cache速度，這些在JS &#x2F; Java翻譯成實際執行在CPU上的native code不太可能還包在同一個分支中，他是怎麼有辦法說這樣是可以攻擊的？有成功案例嗎？</p>
+</blockquote>
+<blockquote>
+<p>[name&#x3D;Austin]如果JS注入的code(browser-&gt;OS-&gt;CPU)是在同一個process或可控制的process就可以互相做存取，簡單的範例影片在這：<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=RbHbFkh6eeE">https://www.youtube.com/watch?v=RbHbFkh6eeE</a></p>
+</blockquote>
+<blockquote>
+<p>[name&#x3D;Ethen] 這個影片看起來是在本機端執行原生程式，來撈取另一個程式的記憶體內容，好像不是JS &#x2F; Java?<br>即便都在同一顆CPU上，但直譯語言被翻過去到CPU上應該會有多不少東西，如Java有GC的動作，也沒有指標可直接讀取，這些東西混進去會導致執行不是連貫的或不是同一個分支，影響分析結果<br>[name&#x3D;gasgas] 是..這樣的測試會有很多干擾, 也會大大地影響到結果.  所以只能參考用. 這個javascript POC 目前爭議還很大..XDDD</p>
+</blockquote>
+<p>..</p>
+<h2 id="四、詭譎多變威脅下的資安應變與治理（講師：林宏嘉協理）"><a href="#四、詭譎多變威脅下的資安應變與治理（講師：林宏嘉協理）" class="headerlink" title="四、詭譎多變威脅下的資安應變與治理（講師：林宏嘉協理）"></a>四、詭譎多變威脅下的資安應變與治理（講師：林宏嘉協理）</h2><h3 id="概念-觀念"><a href="#概念-觀念" class="headerlink" title="概念 &amp; 觀念"></a>概念 &amp; 觀念</h3><ul>
+<li>對應新的威脅與正確的認知<ul>
+<li>can’t stop all attack</li>
+<li>Human Experience and Behaviors</li>
+<li>Detect in mobile<br>Defence in deep</li>
+</ul>
+</li>
+<li>Attacker Decision Cycle:<ul>
+<li>Observe</li>
+<li>Orient</li>
+<li>Decide</li>
+<li>Act</li>
+</ul>
+</li>
+<li>加速決策 &amp; 擺脫困境<ul>
+<li>Maximize Visibility(<br>最大化可視性<ul>
+<li>internal</li>
+<li>external</li>
+</ul>
+</li>
+<li>reduce manual step(and error)<br>  減少手動步驟（錯誤）</li>
+<li>Maximize human impact<br>  善用人力資源</li>
+</ul>
+</li>
+</ul>
+<h3 id="使用者影響"><a href="#使用者影響" class="headerlink" title="使用者影響"></a>使用者影響</h3><ul>
+<li>受影響的CPU <ul>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Skylake%E5%BE%AE%E6%9E%B6%E6%A7%8B">skylake</a>後影響微小</li>
+<li><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Skylake%E5%BE%AE%E6%9E%B6%E6%A7%8B">skylake</a>前依照軟體有不同影響</li>
+</ul>
+</li>
+</ul>
+<h3 id="簡報節錄"><a href="#簡報節錄" class="headerlink" title="簡報節錄"></a>簡報節錄</h3><p><img src="https://i.imgur.com/apVcqmo.png"><br><img src="https://i.imgur.com/HC3W2Ub.png"><br><img src="https://i.imgur.com/lxJai5g.png"><br><img src="https://i.imgur.com/7TOL4jO.png"><br><img src="https://i.imgur.com/RDod5Hh.png"><br><img src="https://i.imgur.com/HXZym0q.png"><br><img src="https://i.imgur.com/yICCZBi.png"><br><img src="https://i.imgur.com/VsUoHeV.png"><br><img src="https://i.imgur.com/2qCPUwL.png"><br><img src="https://i.imgur.com/MsgRd49.png"><br><img src="https://i.imgur.com/GN73nvP.png"><br><img src="https://i.imgur.com/f542V3X.png"><br><img src="https://i.imgur.com/rlxt6Fu.png"><br><img src="https://i.imgur.com/ZzNLapH.png"><br><img src="https://i.imgur.com/9Bs6R0X.png"><br><img src="https://i.imgur.com/v0yjLSI.png"><br><img src="https://i.imgur.com/LHARo2D.png"><br><img src="https://i.imgur.com/lbn4VjD.png"></p>
+<h2 id="Panel-問題（歡迎大家先來填寫）"><a href="#Panel-問題（歡迎大家先來填寫）" class="headerlink" title="Panel 問題（歡迎大家先來填寫）"></a>Panel 問題（歡迎大家先來填寫）</h2><p>1.面對 zero day attack，如何偵查與預防<br>2.arm64 為何也會有同樣的問題~目前的解法是什麼??<br>3.今年剛舉辦的 CES 2018 上所展示的最新型筆電，同樣也使用 Intel 第八代 CPU，是否有受此次漏洞影響？畢竟很多人會猶豫是否要再等待下一代的 CPU 再購買，謝謝。<br>  gasgas回答: 8th Gen Intel CPU 一樣有這三個漏洞, 一樣需要修補, 請參考<a target="_blank" rel="noopener" href="https://hothardware.com/news/intel-8th-gen-core-cpus-10-slowdown-javascript-spectre-meltdown-patches">https://hothardware.com/news/intel-8th-gen-core-cpus-10-slowdown-javascript-spectre-meltdown-patches</a><br>  <code> 第八代正在賣，第九代再測試，第十代正在做，可能等到第十一代才沒有</code></p>
+<p>4.依據 ITHOME 的訊息(<a target="_blank" rel="noopener" href="https://www.ithome.com.tw/news/120312)%EF%BC%8C">https://www.ithome.com.tw/news/120312)，</a> 目前透過OS更新的方式為針對 meltdown 的弱點修補，請問關於 Spectre 漏洞是否有 OS 或是 firmware 的修補連結嗎?	<br>5.問題一：目前全世界尚無發生災情，如果BIOS更新會拖慢電腦效能，那公司內部先發佈KB4056892更新檔的有效阻擋程度。 問題二：台灣國內有哪些資安網站可即時發佈及提供解決方案。	<br>6.如何能更有效率的檢查並修補該漏洞	<br>7.如何進行CPU攻擊	<br>8.對於晶片出包的問題，未來是否有更好的因應方式？如果來不及修補該如何自保？	<br>9.想請問針對Meltdown &amp; Spectre 漏洞，對於一般做為系統、網站伺服器之主機有何影響，如果不更新作業系統只單靠防火牆進行過濾控管(EX:限定某幾個ip可以連線)可以避免被駭客入侵嗎?	<br>10.為什麼對一般使用者電腦影響較低，對雲端業者卻衝擊很大? 作業系統修補，成效如何?會對微軟的效能有重大影響嗎？ 雲端的衝擊有何應對之道?	<br>11.這次Meltdown和Spectre更新檔有其必要更新嗎?看一些報導上說更新後的問題還比較多。	<br>12.除了CPU外，其它的GPU或TPU等，是否應該也會如此呢？該如何因應處理？	<br>13.針對微軟官方說明網頁:<a target="_blank" rel="noopener" href="https://support.microsoft.com/en-us/help/4072698/windows-server-guidance-to-protect-against-the-speculative-execution">https://support.microsoft.com/en-us/help/4072698/windows-server-guidance-to-protect-against-the-speculative-execution</a> 請問其中的 To enable the fix 部分所提到的機碼是否為安裝了微軟的 Patch，且新增這三個機碼就可修補  CVE-2017-5715、CVE-2017-5753和CVE-2017-5754 三個漏洞嗎?還是除了進行以上步驟後，仍需更新Server硬體製造商給的 BIOS 才能阻擋攻擊呢?(微軟官方建議還是要更新硬體BIOS才能完整修補漏洞，但如果只上OS Patch 就能有效防禦的話，是否就可以不用急著更新BIOS了)<br>14.如果在虛擬主機上，Host端打上了Patch，但是Guest端沒有打上，這樣在Guest端能引發攻擊嗎？<br>15.Variant2 Branch target injection, hacker是如何對Branch history buffer進行訓練以及達到修改目的地位置，使得它會進行推測執行然後執行到hacker的gadget? 跟ROP(Return oriented programming)的攻擊方式是一樣的嗎？<br>16.對於因CPU漏洞修補而造成其他系統運作的問題時，在整個產業生態系統方面是否有更好的解決方式，以避免MIS人員害怕系統出問題而不願意修補漏洞?<br>17.如何評估修補前與修補後的效能差異?網路上有人說差異不大，也有人說差異滿多的，是否有較客觀的評估方法?<br>18.CPU層級的弱點需要靠明確的指令碼來利用，我的理解是只有在Native code已經可以執行的情況下可以藉此竊取資料或提權，不過可以看到各大瀏覽器在第一時間就做了修補。想請問是否代表這個弱點可以在不使用native code的情況下利用？</p>
+</div></article></div><nav class="pagination" role="navigation" aria-label="pagination"><div class="pagination-previous"><a href="/">Previous</a></div><div class="pagination-next"><a href="/page/3/">Next</a></div><ul class="pagination-list is-hidden-mobile"><li><a class="pagination-link" href="/">1</a></li><li><a class="pagination-link is-current" href="/page/2/">2</a></li><li><a class="pagination-link" href="/page/3/">3</a></li></ul></nav></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/me.jpeg" alt="William Mou"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">William Mou</p><p class="is-size-6 is-block">HPC engineer</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>NTHU CS, Taiwan</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives/"><p class="title">22</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories/"><p class="title">7</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags/"><p class="title">22</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/William-Mou" target="_blank" rel="me noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/William-Mou"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Facebook" href="https://www.facebook.com/william.mou1024/"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Telegram" href="https://t.me/WilliamMou"><i class="fab fa-telegram"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://www.nthu.edu.tw/hotNews/content/1023" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">ASC</span></span><span class="level-right"><span class="level-item tag">www.nthu.edu.tw</span></span></a></li><li><a class="level is-mobile" href="https://sitcon.org/2020/agenda/bb4fc171-920f-48de-b411-ec0095306491" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">PVE</span></span><span class="level-right"><span class="level-item tag">sitcon.org</span></span></a></li><li><a class="level is-mobile" href="https://sitcon.org" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">SITCON</span></span><span class="level-right"><span class="level-item tag">sitcon.org</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Blockchain/"><span class="level-start"><span class="level-item">Blockchain</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/SITCON/"><span class="level-start"><span class="level-item">SITCON</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%97%85%E8%A1%8C/"><span class="level-start"><span class="level-item">旅行</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/"><span class="level-start"><span class="level-item">機器學習</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%B6%93%E9%A9%97%E8%B3%87%E6%BA%90/"><span class="level-start"><span class="level-item">經驗資源</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/"><span class="level-start"><span class="level-item">資訊安全</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%B3%87%E8%A8%8A%E8%AC%9B%E5%BA%A7/"><span class="level-start"><span class="level-item">資訊講座</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><figure class="media-left"><a class="image" href="/2023/05/26/ISC23-Europe-Hamburg/"><img src="/img/ISC23-Europe-Hamburg_files/image_1n.png" alt="ISC23 歐洲行 - 漢堡"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-05-26T09:00:00.000Z">2023-05-26</time></p><p class="title"><a href="/2023/05/26/ISC23-Europe-Hamburg/">ISC23 歐洲行 - 漢堡</a></p><p class="categories"><a href="/categories/%E6%97%85%E8%A1%8C/">旅行</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2023/05/25/ISC23-Europe-Lubeck/"><img src="/img/ISC23-Europe-Lubeck_files/image_13.png" alt="ISC23 歐洲行 - 呂北克"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-05-25T09:00:00.000Z">2023-05-25</time></p><p class="title"><a href="/2023/05/25/ISC23-Europe-Lubeck/">ISC23 歐洲行 - 呂北克</a></p><p class="categories"><a href="/categories/%E6%97%85%E8%A1%8C/">旅行</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2023/05/21/ISC23-Europe-in-competition/"><img src="/img/ISC23-Europe-in-competition_files/image_j.png" alt="ISC23 歐洲行 - 賽中及展覽參訪"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-05-21T09:00:00.000Z">2023-05-21</time></p><p class="title"><a href="/2023/05/21/ISC23-Europe-in-competition/">ISC23 歐洲行 - 賽中及展覽參訪</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2023/05/20/ISC23-Europe-pre-competition/"><img src="/img/ISC23-Europe-pre-competition_files/image_b.png" alt="ISC23 歐洲行 - 賽前準備及旅遊安排"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-05-20T09:00:00.000Z">2023-05-20</time></p><p class="title"><a href="/2023/05/20/ISC23-Europe-pre-competition/">ISC23 歐洲行 - 賽前準備及旅遊安排</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2019/09/13/%E5%AE%8C%E6%95%B4%E5%AD%B8%E7%BF%92%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%AF%A6%E9%8C%842%E2%80%94%E2%80%94%E5%AE%89%E8%A3%9D-Nvidia-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%92%B0%E5%A2%83/"><img src="https://img-blog.csdnimg.cn/20190117174859505.png?" alt="完整學習機器學習實錄2——安裝 Nvidia 機器學習環境"></a></figure><div class="media-content"><p class="date"><time dateTime="2019-09-13T22:31:13.000Z">2019-09-13</time></p><p class="title"><a href="/2019/09/13/%E5%AE%8C%E6%95%B4%E5%AD%B8%E7%BF%92%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%AF%A6%E9%8C%842%E2%80%94%E2%80%94%E5%AE%89%E8%A3%9D-Nvidia-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%92%B0%E5%A2%83/">完整學習機器學習實錄2——安裝 Nvidia 機器學習環境</a></p><p class="categories"><a href="/categories/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/">機器學習</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2023/05/"><span class="level-start"><span class="level-item">May 2023</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/09/"><span class="level-start"><span class="level-item">September 2019</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/01/"><span class="level-start"><span class="level-item">January 2019</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/12/"><span class="level-start"><span class="level-item">December 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/11/"><span class="level-start"><span class="level-item">November 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/08/"><span class="level-start"><span class="level-item">August 2018</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/05/"><span class="level-start"><span class="level-item">May 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/03/"><span class="level-start"><span class="level-item">March 2018</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/01/"><span class="level-start"><span class="level-item">January 2018</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2017/08/"><span class="level-start"><span class="level-item">August 2017</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/AIJT/"><span class="tag">AIJT</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ChatBot/"><span class="tag">ChatBot</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Firefox/"><span class="tag">Firefox</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/GCP/"><span class="tag">GCP</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/GPU/"><span class="tag">GPU</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/HITCON/"><span class="tag">HITCON</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Microsoft/"><span class="tag">Microsoft</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Myself/"><span class="tag">Myself</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/NTHU/"><span class="tag">NTHU</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Telegram/"><span class="tag">Telegram</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/TensorFlow/"><span class="tag">TensorFlow</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Web/"><span class="tag">Web</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8D%80%E5%A1%8A%E9%8F%88/"><span class="tag">區塊鏈</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%94%90%E9%B3%B3/"><span class="tag">唐鳳</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%AE%8C%E6%95%B4%E5%AD%B8%E7%BF%92%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%AF%A6%E9%8C%84/"><span class="tag">完整學習機器學習實錄</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%AF%A6%E9%A9%97%E6%95%99%E8%82%B2/"><span class="tag">實驗教育</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%BD%B1%E5%83%8F%E8%BE%A8%E8%AD%98/"><span class="tag">影像辨識</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/"><span class="tag">機器學習</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%A0%94%E8%A8%8E%E6%9C%83/"><span class="tag">研討會</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%B6%93%E9%A9%97%E5%88%86%E4%BA%AB/"><span class="tag">經驗分享</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%87%AA%E5%AD%B8/"><span class="tag">自學</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%B3%87%E5%AE%89/"><span class="tag">資安</span><span class="tag">3</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">Subscribe for updates</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.png" alt="William Mou" height="28"></a><p class="is-size-7"><span>&copy; 2026 William Mou</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-sourcetree"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax src="/js/insight.js" defer></script><script data-pjax>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

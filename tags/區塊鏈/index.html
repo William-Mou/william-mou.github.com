@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta><title>Tag: 區塊鏈 - William Mou</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#3273dc"><meta name="application-name" content="William Mou Blog"><meta name="msapplication-TileImage" content="/img/logo.png"><meta name="msapplication-TileColor" content="#3273dc"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="William Mou Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="William-Mou&amp;#39;s Blog"><meta property="og:type" content="blog"><meta property="og:title" content="William Mou"><meta property="og:url" content="https://william-mou.github.io/"><meta property="og:site_name" content="William Mou"><meta property="og:description" content="William-Mou&amp;#39;s Blog"><meta property="og:locale" content="en_US"><meta property="og:image" content="https://william-mou.github.io/img/og_image.png"><meta property="article:author" content="William Mou"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://william-mou.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://william-mou.github.io"},"headline":"William Mou","image":["https://william-mou.github.io/img/og_image.png"],"author":{"@type":"Person","name":"William Mou"},"publisher":{"@type":"Organization","name":"William Mou","logo":{"@type":"ImageObject","url":"https://william-mou.github.io/img/logo.png"}},"description":"William-Mou&#39;s Blog"}</script><link rel="icon" href="/img/logo.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link data-pjax rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.7.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link data-pjax rel="stylesheet" href="/css/default.css"><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.png" alt="William Mou" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/William-Mou"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags/">Tags</a></li><li class="is-active"><a href="#" aria-current="page">區塊鏈</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2018-03-21T21:23:25.000Z" title="3/21/2018, 9:23:25 PM">2018-03-21</time></span><span class="level-item">Updated&nbsp;<time dateTime="2026-02-20T18:08:53.556Z" title="2/20/2026, 6:08:53 PM">2026-02-20</time></span><span class="level-item"><a class="link-muted" href="/categories/%E8%B3%87%E8%A8%8A%E8%AC%9B%E5%BA%A7/">資訊講座</a></span><span class="level-item">22 minutes read (About 3308 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2018/03/21/%E5%8D%80%E5%A1%8A%E9%8F%88%E6%87%89%E7%94%A8%E5%A0%B4%E6%99%AF%E9%AB%98%E5%B3%B0%E6%9C%83/">區塊鏈應用場景高峰會</a></p><div class="content"><h1 id="區塊鏈應用場景高峰會-Block-Chain-Insight"><a href="#區塊鏈應用場景高峰會-Block-Chain-Insight" class="headerlink" title="區塊鏈應用場景高峰會 &amp; Block Chain Insight"></a>區塊鏈應用場景高峰會 &amp; Block Chain Insight</h1><h6 id="tags-資訊講座-區塊鏈"><a href="#tags-資訊講座-區塊鏈" class="headerlink" title="tags: 資訊講座 區塊鏈"></a>tags: <code>資訊講座</code> <code>區塊鏈</code></h6><p><a target="_blank" rel="noopener" href="https://events.panmedia.asia/events/e1802071527412593"><img src="https://i.imgur.com/isd1R2i.png"></a></p>
+<blockquote>
+<p>能源、醫療、食安、與區塊鏈</p>
+</blockquote>
+<p><img src="https://i.imgur.com/4x1Bi5e.png"></p>
+<h2 id="泛科知識-總編輯-致詞"><a href="#泛科知識-總編輯-致詞" class="headerlink" title="泛科知識 總編輯 致詞"></a>泛科知識 總編輯 致詞</h2><blockquote>
+<p>感謝中油國光合辦</p>
+</blockquote>
+<h2 id="區塊鏈應用與服務創新議題-（Reki吳李祺-博士）"><a href="#區塊鏈應用與服務創新議題-（Reki吳李祺-博士）" class="headerlink" title="區塊鏈應用與服務創新議題 （Reki吳李祺 博士）"></a>區塊鏈應用與服務創新議題 （Reki吳李祺 博士）</h2><blockquote>
+<p>與大家分享區塊鏈研究成果</p>
+</blockquote>
+<h3 id="前言-比特幣與區塊鏈"><a href="#前言-比特幣與區塊鏈" class="headerlink" title="前言 比特幣與區塊鏈"></a>前言 比特幣與區塊鏈</h3><ul>
+<li>關於資策會</li>
+<li>虛擬貨幣(Crypto Currrencies)<ul>
+<li>虛擬貨幣&#x3D;火車</li>
+<li>區塊鏈&#x3D;鐵軌</li>
+</ul>
+</li>
+<li>區塊鏈的核心概念<ul>
+<li>共享帳本</li>
+<li>智能合約</li>
+<li>個人隱私</li>
+<li>共享網路</li>
+</ul>
+</li>
+<li>這情形 10,25 年前遇過<ul>
+<li>雲端計算</li>
+<li>Internet<blockquote>
+<p>當每一個新的科技與概念出現，都經歷過「這是什麼？」</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>What is Blockchain<ul>
+<li>Block chain is a Distributed Ledger<ul>
+<li>分散式帳簿</li>
+<li>Bitcoin</li>
+<li>萊特幣</li>
+</ul>
+</li>
+<li>Block is World Computer<ul>
+<li>If a surver has missed..</li>
+<li>We would like to create a world computer to be a world surver</li>
+</ul>
+</li>
+<li>Blockchain is a smart contract</li>
+<li>Block is a Enterprise Solution<ul>
+<li>Hyperledger<ul>
+<li>分散式帳本專案</li>
+<li>區塊鏈專案</li>
+</ul>
+</li>
+<li>Enterprise ethereum alliance<ul>
+<li>希望有一個公開的環境供企業使用</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="本文：區塊鏈於產業的應用"><a href="#本文：區塊鏈於產業的應用" class="headerlink" title="本文：區塊鏈於產業的應用"></a>本文：區塊鏈於產業的應用</h3><ul>
+<li>Public or Enterprise(private)<blockquote>
+<p>公有鏈 vs 私有鏈（企業解決方案）</p>
+</blockquote>
+<ul>
+<li>國際概況:ECO System</li>
+<li>我國樣貌：</li>
+</ul>
+</li>
+<li>創新主題應用：<ul>
+<li>公義眾籌<ul>
+<li>不可竄改</li>
+<li>金流追朔</li>
+<li>透明信任</li>
+</ul>
+</li>
+<li>紅利點數交換<ul>
+<li>兌換合約</li>
+<li>追溯驗證</li>
+<li>低營運成本<ul>
+<li>發行成本見低</li>
+<li>即時交易清算</li>
+<li>合約執行，簡化清算流程</li>
+<li>點數彈性轉移</li>
+<li>消費軌跡透明易稽核</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>電子票券（企業授權給使用者使用的手段）<ul>
+<li>授權發行</li>
+<li>周邊效益</li>
+<li>C2C互動<ul>
+<li>票券安全防偽</li>
+<li>資訊共享又保障隱私性</li>
+<li>介面統一，串連周邊</li>
+<li>個人靈活轉讓</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>主題發展：勢不可擋</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>以下工商</p>
+<ul>
+<li>應用共創中心（Chaincenter）<ul>
+<li>區塊鏈創新服務推動<br>  產業發展議題與技術規格需求</li>
+<li>Go-Labs<ul>
+<li>產業結盟</li>
+<li>實證規劃：<ul>
+<li>法律詢問</li>
+<li>情境研究</li>
+<li>技術顧問</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>區塊鏈產業聯盟／協會<ul>
+<li>建立典範</li>
+<li>產業共識</li>
+<li>政策建言<blockquote>
+<ul>
+<li>106研究報告：洞察區塊鏈</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h3><ul>
+<li>In the future<ul>
+<li>Blockchain is not Bubble</li>
+<li>新的技術出來時，我們習慣用已知的事情說明他</li>
+<li>然而，新技術已經用不同的邏輯來思考了</li>
+</ul>
+</li>
+<li>數位世界中的資產交易-數位資產<ul>
+<li>Cypto Kitties</li>
+</ul>
+</li>
+<li>改變-從資訊分享到價值轉移<ul>
+<li>網際網路(Web 2.0)<ul>
+<li>資訊分享</li>
+<li>傳遞複製</li>
+</ul>
+</li>
+<li>區塊鏈(Web 3.0)<ul>
+<li>價值轉移</li>
+<li>信賴機制</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Blockchain:The Trust Machine</li>
+</ul>
+<h2 id="共識科技"><a href="#共識科技" class="headerlink" title="共識科技"></a>共識科技</h2><ul>
+<li><p>代幣去中心化應用</p>
+<ul>
+<li>避免資料被單一平台控制</li>
+<li>分散風險 資料不易不見</li>
+<li></li>
+</ul>
+</li>
+<li><p>ICO</p>
+<ul>
+<li>ICO 區塊鏈上的募資手段(方便<ul>
+<li>募集有價值的虛擬貨幣作為全新的募資手段</li>
+<li>公司給予楙買者公司發行的代幣，可在區塊鏈上自由分割、移動、交易</li>
+<li>目前95%以上公司發行代幣使用Ethereum平台，ETH為通用貨幣</li>
+</ul>
+</li>
+<li>2017年3~12月ICO金額已達到70億美元，超越VC投資總和3億美元</li>
+<li>2018每年ICO更達到13億元</li>
+<li>ICO代幣市值500億美元</li>
+<li>委內瑞拉都想發行石油幣</li>
+</ul>
+</li>
+<li><p>ETHEREUN ERC-20TOKEN</p>
+<ul>
+<li>乙太幣支持智能合約 叫比特幣優秀<ul>
+<li>（比特幣也有智能合約系統</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>中心化交易所</p>
+<ul>
+<li>但是代幣交易所可能被駭客攻擊</li>
+<li>不能確定交易對象</li>
+<li>規則不確定 因人而異</li>
+<li>礦工決定交易是否成功</li>
+<li>交易不一定成功 不成功還得付手續費</li>
+</ul>
+</li>
+<li><p>混合式去中心話</p>
+<ul>
+<li>包含中心化的安全</li>
+<li>還有去中心化的速度</li>
+</ul>
+</li>
+<li><p>ps 歌手登記創作音樂要去國家圖書管~~</p>
+</li>
+<li><p>音樂的區塊鏈應用</p>
+<ul>
+<li>買公播權</li>
+<li>創作不易被偷 不會消失</li>
+</ul>
+</li>
+</ul>
+<h2 id="分布式能源-運用區塊鏈科技釋放再生能源大潛力"><a href="#分布式能源-運用區塊鏈科技釋放再生能源大潛力" class="headerlink" title="分布式能源 運用區塊鏈科技釋放再生能源大潛力"></a>分布式能源 運用區塊鏈科技釋放再生能源大潛力</h2><ul>
+<li>DTCO Compay Profile<ul>
+<li>過去<ul>
+<li>2016生技新藥：IPSeeds</li>
+<li>2017健康醫療產業：phrOS</li>
+<li>2018協助原住民社區建立自己的數位身份：IDGO</li>
+</ul>
+</li>
+<li>業務<ul>
+<li>提供智能合約設計</li>
+<li>提供能源區塊鏈改善</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>能源問題<ul>
+<li>Extreme Weather, Climate Change PM2.5</li>
+<li>看遠一點 放眼未來</li>
+<li>電網 設備都是屬於19世紀留下的</li>
+<li>傳統的無法支持現在的綠能</li>
+<li>無法創新 因為只有他一家而且算是獨佔事業</li>
+</ul>
+</li>
+</ul>
+<h2 id="文化娛樂產業區塊鏈生態"><a href="#文化娛樂產業區塊鏈生態" class="headerlink" title="文化娛樂產業區塊鏈生態"></a>文化娛樂產業區塊鏈生態</h2><ul>
+<li>Bitmark 數位資產<ul>
+<li>區塊鏈可以解決娛樂產業的問題<ul>
+<li>盜版</li>
+<li>無限量發行「限量」虛寶</li>
+<li>創作分潤不夠透明</li>
+</ul>
+</li>
+<li>區塊鏈可以創造娛樂產業的機會<ul>
+<li>利用區塊鏈作群募</li>
+<li>確時執行限量發行</li>
+<li>創造社群</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="健康醫療金融服務區塊鏈應用"><a href="#健康醫療金融服務區塊鏈應用" class="headerlink" title="健康醫療金融服務區塊鏈應用"></a>健康醫療金融服務區塊鏈應用</h2><h3 id="前言-現況"><a href="#前言-現況" class="headerlink" title="前言-現況"></a>前言-現況</h3><ul>
+<li>作者<ul>
+<li>黃家煦 博士</li>
+<li>睿富金融科技／吉立生技</li>
+</ul>
+</li>
+<li>區塊鏈應用發展的現況<ul>
+<li>先有數據才有AI</li>
+<li>Blcokchain Startups</li>
+</ul>
+</li>
+<li>台灣電子病歷管理現況<ul>
+<li>電子病例交換中心<ul>
+<li>中央健保署</li>
+<li>憑證中心</li>
+<li>甲醫院</li>
+<li>乙醫院</li>
+</ul>
+</li>
+<li>健康存摺</li>
+<li>台灣醫療費用支付的現況</li>
+</ul>
+</li>
+<li>健康醫療服務為何需要區塊鏈？<ol>
+<li>去中心化與識別化-落實個資保護與資料管理</li>
+<li>醫療資訊即時交互與互信-不需重複檢查</li>
+<li>病例可惜與即時性醫療資訊-緊急治療與急救</li>
+<li>個人病歷成為個人資產-國際通用</li>
+<li>實踐共享經濟-健保ICO</li>
+</ol>
+</li>
+</ul>
+<h3 id="如何應用區塊鏈於醫療領域"><a href="#如何應用區塊鏈於醫療領域" class="headerlink" title="如何應用區塊鏈於醫療領域"></a>如何應用區塊鏈於醫療領域</h3><ul>
+<li>DR.PAY區塊鏈方案-混合式區塊鏈<ul>
+<li>醫院方</li>
+<li>區塊鏈</li>
+<li>第三方軟體</li>
+</ul>
+</li>
+<li>DR.PAY區塊鏈方案-Hybrid Blockchain</li>
+<li>DR.PAY醫療數位金融服務平台<ul>
+<li>案件登入</li>
+<li>病患醫療分期支付</li>
+<li>醫院代表接收</li>
+</ul>
+</li>
+<li>DR.PAY生物辨識機制<ul>
+<li>診所客戶-通過DR.PAY KIOSK<ul>
+<li>人臉辨識</li>
+<li>指紋辨識</li>
+<li>健康辨識</li>
+</ul>
+</li>
+<li>DR.PAY綜合信評機制<ul>
+<li>社群網路平等</li>
+<li>健康紀錄平等</li>
+<li>財務紀錄平等</li>
+<li>最終憑膽紀錄</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>DR.PAY所包蘭的服務<ul>
+<li>客戶查詢</li>
+<li>合約資料</li>
+<li>醫療紀錄</li>
+<li>電子支付</li>
+<li>建立中-跨境第三方支付</li>
+<li>合約與交易紀錄</li>
+</ul>
+</li>
+<li>嬌寵醫生(寵物醫療)+DR.PAY(四月上市)</li>
+</ul>
+<h3 id="結論-1"><a href="#結論-1" class="headerlink" title="結論"></a>結論</h3><ol>
+<li>區塊鏈是好工具，善用工具創造產業價值</li>
+<li>資料（數據）是王道，得資料者得天下</li>
+<li>健保資料庫是公有財，開放共享經濟</li>
+<li>擁抱ICO，再創台灣資訊產業的榮景</li>
+</ol>
+<h2 id="奧丁丁OwlTing-工商QQ"><a href="#奧丁丁OwlTing-工商QQ" class="headerlink" title="奧丁丁OwlTing 工商ＱＱ"></a>奧丁丁OwlTing 工商ＱＱ</h2><ul>
+<li>OwlTing Services in one page<ul>
+<li>BLockchain<ul>
+<li>OutNet</li>
+<li>Outchain</li>
+</ul>
+</li>
+<li>不斷拜訪生產者</li>
+</ul>
+</li>
+</ul>
+<h2 id="關鍵對談：區塊鏈法治議題"><a href="#關鍵對談：區塊鏈法治議題" class="headerlink" title="關鍵對談：區塊鏈法治議題"></a>關鍵對談：區塊鏈法治議題</h2><blockquote>
+<p>在新的法律中，「電子簽章法」「金融電子沙盒」「金融創新實驗條例」等等，公司認為有哪裡需要調整的？</p>
+</blockquote>
+<pre><code>* 台灣是個守法的國家，但是無法就是違法，政府法律可能限制新創的開發，建議參考其他國家的法律
+* 很多事情政府要管，先做了再說，之後就很難受，希望政府能夠將細則講清楚，使業者得以遵循與討論
+* 可能不該比較鄰近國家，可以比較墨西哥，看看合法後，我們能變成什麼樣子，台灣法律仍然是極權的管制，而這與實際上民主的風情不相符。企業應自己自律，不是在搞破壞或騙人家可以先做。
+* 使用加密貨幣的人，通常都是去中心化的信仰者。但若要跟隨政府腳步，那等法律出來就不用做了。在台灣，我們的法律應該是一個負面表列，現在政府沒有立法ICO到底能不能做，那應該憑良心快點做。你說虛擬貨幣剛出來的時候，中國做了再說，不合法在繞過它，而這也是台灣相對的一個缺點。另外，虛擬貨幣沒有地方可以追溯，政府很難管理，建議列出一些規範或方向，讓企業盡量去遵守
+</code></pre>
+<blockquote>
+<p>在目前政府的整個法令，有無需要建立一個區塊鏈的標準或消費者保護機制？或說國外是否有一個好的機制可供借鏡</p>
+</blockquote>
+<pre><code>* 關於這個問題，政府就算定了，也不一定有用。那你說以太坊是一個組織嗎？不是。整個以太坊是一個共識，政府要來規範，必須要有技術、要有社群，區塊鏈才能繼續走下去。
+而國外的還是以民間為主，社群導向，而政府的動作是相對慢的，其實我還是不看好政府ＱＱ
+* 我們這個虛擬世界的區塊鏈，早晚是要跟實體世界接軌，所以我們還是要遵守政府的一些規則。
+而日本政府是可以借鏡的對象，透過良性的監管，合理地在資安制定一些規則，希望台灣政府可以往日本這樣的方向，而不是往中國大陸的方向
+* 我覺得做一個技術標準是相當困難的事情，畢竟區塊鏈是跨國的技術，你要制訂標準誰會聽呢？我們又不是汽車製造大國，所以我認為關於技術，要與時俱進，而關於保護消費者，我認為依然是要沿用的。
+* 我之前就是做政府的標案，大概理解一些政府的想法。應該是訂大方向，而不該訂細節。區塊鏈架構也是，我們應該用獎勵的方式，訂定雙方的平衡等，而不該往所有細節訂定
+關於個資法：若有特殊需求等等，需要取得個人的紙本簽名，提醒各同業需要小心
+</code></pre>
+<blockquote>
+<p>自由提問時間：</p>
+</blockquote>
+<ul>
+<li><p>國家有本來的用途，但是若失去稅金、去中心化後，政府如何經營？</p>
+<ul>
+<li>政府存在也不過是短短的時間，</li>
+<li>網路和區塊鏈形容成多中心化，它可以使企業往前走，而比特幣是不是只是一個貨幣，我想這跟台灣是不是一個國家是同樣的問題。</li>
+<li>你想一個人的生活環境，只有區塊鏈能活嗎？我們還是要生活，而在做區塊鏈的同時，仍要與生活結合，而政府可以從其中課稅，沒問題。</li>
+</ul>
+</li>
+<li><p>ICO是一個特殊的管道，若經過ICO後，併購等等仍然需要利用ICO嗎？</p>
+</li>
+<li><p>投資人角度，是因為投機嗎，還是因為長期投資，而這樣的</p>
+<ul>
+<li><p>我覺得ICO在多中心化有巨大的貢獻，我們知道公司在集資是多大的辛苦。</p>
+</li>
+<li><p>台灣一個新創公司很難拿到錢，我覺得這是一個很偉大的發明。現在所有的ICO是天使融資，因為ICO沒有限制投資的門檻，雖然現在90%ICO都可能會倒，你也知道IPO 90%的新創公司都會倒，那你在ICO中投注，那你之後也可以享受很好的生活。說個故事我到台灣所有的創投去拜訪，三個月只找了20多家，而在ICO之後，只要你做得好，全世界每個角度的人都可以看到你，投資你。</p>
+</li>
+</ul>
+</li>
+<li><p>科技日新月異，關於量子電腦的產生，也許新的硬體會使區塊鏈崩潰？</p>
+<ul>
+<li>量子電腦仍然是電腦，其實他的算力還是不會比挖礦機好。挖礦機高度平行化的單元，兩台屌打100台天河二號。而若新的電腦出現，算法本身是一種共識，仍是可以改的。</li>
+</ul>
+</li>
+<li><p>我們現在好不容易有一種監理沙河，我們從科技的角度當然是希望他月開放越好，但政府和民眾都有疑慮，我有個狂想，是不是能像以前加工出口區的方式，個點開放，若真的很成功，再拓展到其他城市，不知道這樣想法是否可行？畢竟歷來想要發展新科技，都要有個破口？</p>
+<ul>
+<li>這是一個好想法，政府也想過了，但又回到一個基本的問題，台灣太過 <del>民粹</del> ，哪個地區要給產業嘗試，再說台灣土地又太貴，而居民不一定會同意，如同博弈法，當地居民有可能不同意，受到非常大的限制。</li>
+</ul>
+</li>
+</ul>
+</div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2018-03-10T17:43:14.000Z" title="3/10/2018, 5:43:14 PM">2018-03-10</time></span><span class="level-item">Updated&nbsp;<time dateTime="2026-02-20T18:08:53.556Z" title="2/20/2026, 6:08:53 PM">2026-02-20</time></span><span class="level-item"><a class="link-muted" href="/categories/SITCON/">SITCON</a></span><span class="level-item">5 minutes read (About 704 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2018/03/10/SITOCN-2018-%E8%AD%B0%E7%A8%8B%E7%AD%86%E8%A8%98/">SITOCN 2018 議程筆記</a></p><div class="content"><p><img src="https://i.imgur.com/yJfo63u.png"></p>
+<h2 id="由淺入坑區塊鏈～從認識架構到應用智能合約！-牟展佑"><a href="#由淺入坑區塊鏈～從認識架構到應用智能合約！-牟展佑" class="headerlink" title="由淺入坑區塊鏈～從認識架構到應用智能合約！ - 牟展佑"></a>由淺入坑區塊鏈～從認識架構到應用智能合約！ - 牟展佑</h2><ul>
+<li>簡報連結: <a target="_blank" rel="noopener" href="https://speakerdeck.com/williammou/you-qian-ru-keng-qu-kuai-lian-cong-ren-shi-jia-gou-dao-ying-yong-zhi-neng-he-yue">點我</a></li>
+</ul>
+<h3 id="開場影片"><a href="#開場影片" class="headerlink" title="開場影片"></a>開場影片</h3><ul>
+<li><a target="_blank" rel="noopener" href="https://youtu.be/5r8kJCE1S1s">『發現芬特克！比特幣 &amp; 區塊鏈原理大解析』芬特克 FinTech EP1</a></li>
+</ul>
+<h3 id="講者資訊"><a href="#講者資訊" class="headerlink" title="講者資訊"></a>講者資訊</h3><ul>
+<li>松資活動&#x2F;總務</li>
+<li>學長推坑SITCON</li>
+<li>偏好將資訊結合金融領域</li>
+<li>願在成為工具人之前成長茁壯(?</li>
+</ul>
+<h3 id="Part-0-銀行、中心化、比特幣到去中心化"><a href="#Part-0-銀行、中心化、比特幣到去中心化" class="headerlink" title="Part 0 銀行、中心化、比特幣到去中心化"></a>Part 0 銀行、中心化、比特幣到去中心化</h3><h4 id="貨幣"><a href="#貨幣" class="headerlink" title="貨幣"></a>貨幣</h4><ul>
+<li>以物易物&gt;金銀銅鐵錫&gt;法幣&gt;信用卡</li>
+<li>法定貨幣缺點: 中心化</li>
+</ul>
+<h3 id="Part-1-區塊鏈架構"><a href="#Part-1-區塊鏈架構" class="headerlink" title="Part 1 區塊鏈架構"></a>Part 1 區塊鏈架構</h3><h4 id="數位簽章-電腦的帳本"><a href="#數位簽章-電腦的帳本" class="headerlink" title="數位簽章(電腦的帳本)"></a>數位簽章(電腦的帳本)</h4><ul>
+<li>雜湊(hash)演算法SHA-256</li>
+<li>交易事件加密(簽章)</li>
+</ul>
+<h4 id="加密"><a href="#加密" class="headerlink" title="加密"></a>加密</h4><ul>
+<li>對稱加密: 相同鑰匙加密解密</li>
+<li>非對稱加密: 分為私鑰和公鑰，私鑰加密公鑰解密</li>
+</ul>
+<blockquote>
+<p>礦工收到: 紀錄 簽章</p>
+</blockquote>
+<ol>
+<li>SHA-256(紀錄) &gt;雜湊1</li>
+<li>用私鑰加密</li>
+<li>加密雜湊 &gt;簽章</li>
+<li>用公鑰解密 &gt;雜湊</li>
+<li>SHA-256(紀錄) &gt; 雜湊2</li>
+<li>驗證 雜湊1 &#x3D;&#x3D; 雜湊2</li>
+</ol>
+<h4 id="去中心化"><a href="#去中心化" class="headerlink" title="去中心化"></a>去中心化</h4><ol>
+<li>把元改成BTC(加密)</li>
+<li>把需要根付換成支付(數位簽章)</li>
+<li>確認支付量(無法查詢餘額故每筆交易都以過去的交易作為基礎)</li>
+<li>交易雙方的名字改成帳號(避免重名)</li>
+<li>轉帳紀錄存於各節點</li>
+</ol>
+<h4 id="一致性問題"><a href="#一致性問題" class="headerlink" title="一致性問題"></a>一致性問題</h4><ul>
+<li>避免紀錄竄改-&gt;區塊相連</li>
+<li>紀錄同步-&gt;產生新區塊</li>
+<li>避免重複使用-&gt;每筆交易會和前一個來源一起加密</li>
+</ul>
+<h4 id="如何實現"><a href="#如何實現" class="headerlink" title="如何實現"></a>如何實現</h4><ul>
+<li>hash 區塊 &gt; hash值前72位為0 &gt; 挖到礦</li>
+<li>CPU &gt; GPU &gt; 礦機 &gt; 一堆礦機(礦場)</li>
+</ul>
+<h4 id="獎勵機制"><a href="#獎勵機制" class="headerlink" title="獎勵機制"></a>獎勵機制</h4><ol>
+<li>挖到得到 12.5BTC(2017)</li>
+<li>交易手續費</li>
+</ol>
+<h4 id="算力過剩"><a href="#算力過剩" class="headerlink" title="算力過剩"></a>算力過剩</h4><ul>
+<li>調整難度</li>
+</ul>
+<h4 id="同時產生區塊"><a href="#同時產生區塊" class="headerlink" title="同時產生區塊?"></a>同時產生區塊?</h4><ul>
+<li>保留最長的區塊</li>
+</ul>
+<h4 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h4><p>*　利用SHA-256 &amp; 非對稱加密製作數字簽名<br>*　利用區塊練儲存交易紀錄<br>*　設置外的工作控制單位時間生產數<br>*　將一定數量比特幣發給礦工，促進成長<br>*　轉帳不依賴任何銀行或政府機構<br>*　比特幣網路內總量不超過2100萬個比特幣</p>
+<h4 id="交易方式"><a href="#交易方式" class="headerlink" title="交易方式"></a>交易方式</h4><ul>
+<li>場外交易:信任的人</li>
+<li>場內交易:交易所(bitoex、maicoin）</li>
+</ul>
+<h3 id="Part-2-從比特幣到以太坊"><a href="#Part-2-從比特幣到以太坊" class="headerlink" title="Part 2 從比特幣到以太坊"></a>Part 2 從比特幣到以太坊</h3><ul>
+<li>把數字改成文字</li>
+</ul>
+<h4 id="Etherenum"><a href="#Etherenum" class="headerlink" title="Etherenum"></a>Etherenum</h4><ul>
+<li>智能合約</li>
+<li>快速驗證(1min以下)</li>
+<li>有錢就可做到無窮迴圈(有錢就是任性?)</li>
+<li>目前無專用礦機</li>
+</ul>
+<h5 id="智能合約"><a href="#智能合約" class="headerlink" title="智能合約"></a>智能合約</h5><ul>
+<li>Browser-</li>
+<li></li>
+<li>Geth:讓我們能夠執行合約..等</li>
+<li>Mist:錢包</li>
+</ul>
+<p><code>智能合約的應用 ex:勞基法 老闆有智能合約 -&gt;加班的錢放入智能合約-&gt;判斷要給錢給員工(員工加班)還是退還老闆(員工放假)</code></p>
+<h3 id="Part-3-區塊練3-0"><a href="#Part-3-區塊練3-0" class="headerlink" title="Part 3 區塊練3.0"></a>Part 3 區塊練3.0</h3></div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2018-01-17T17:46:44.000Z" title="1/17/2018, 5:46:44 PM">2018-01-17</time></span><span class="level-item">Updated&nbsp;<time dateTime="2026-02-20T18:08:53.556Z" title="2/20/2026, 6:08:53 PM">2026-02-20</time></span><span class="level-item"><a class="link-muted" href="/categories/Blockchain/">Blockchain</a></span><span class="level-item">9 minutes read (About 1359 words)</span></div></div><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2018/01/17/Microsoft-Blockchain-%E5%90%88%E4%BD%9C%E6%A1%88%E4%BE%8B/">Microsoft Blockchain 合作案例</a></p><div class="content"><h1 id="區塊鏈實作：在成功得案例上做出您的第一個應用"><a href="#區塊鏈實作：在成功得案例上做出您的第一個應用" class="headerlink" title="區塊鏈實作：在成功得案例上做出您的第一個應用"></a>區塊鏈實作：在成功得案例上做出您的第一個應用</h1><h2 id="WiFi-access"><a href="#WiFi-access" class="headerlink" title="WiFi access:"></a>WiFi access:</h2><p><code>msevent998dl</code></p>
+<h1 id="Azure-Blockchain-as-a-service-Demo-30mins"><a href="#Azure-Blockchain-as-a-service-Demo-30mins" class="headerlink" title="Azure Blockchain-as-a-service(Demo)-30mins"></a>Azure Blockchain-as-a-service(Demo)-30mins</h1><p>Michael Chi 軟體開發工程師</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/michael-chi/blockchain-learning">作者GitHub</a>:<a target="_blank" rel="noopener" href="https://github.com/michael-chi/blockchain-learning">https://github.com/michael-chi/blockchain-learning</a></p>
+<h2 id="Before-we-start"><a href="#Before-we-start" class="headerlink" title="Before we start"></a>Before we start</h2><ul>
+<li><p>What is …</p>
+<ul>
+<li>Blockchain</li>
+<li>distributed ledger</li>
+<li>smart contract</li>
+</ul>
+</li>
+<li><p>Plus</p>
+<ul>
+<li>have programming knowledge</li>
+<li>Azure Knowledge</li>
+</ul>
+</li>
+<li><p>純技術 Workshop</p>
+</li>
+<li><p>區塊鏈解決方案中遇到問題如何解決，以解決的思路</p>
+</li>
+<li><p>Blockchain Case：</p>
+<ul>
+<li>東南亞航空公司</li>
+<li>農業產銷的公司，類似台糖的農產品版本</li>
+</ul>
+</li>
+</ul>
+<h2 id="農業產銷的公司"><a href="#農業產銷的公司" class="headerlink" title="農業產銷的公司"></a>農業產銷的公司</h2><ul>
+<li>有數個 farmer 管理者，用以確認 農人、農地大小、產品品質</li>
+<li>農民有數種、法律有數種、農地有數種，希望解決繁瑣的問題</li>
+</ul>
+<h3 id="解決方式"><a href="#解決方式" class="headerlink" title="解決方式"></a>解決方式</h3><blockquote>
+<p>IPFS 行星檔案系統：類似區塊鏈 p2p 的分散式檔案系統</p>
+</blockquote>
+<ul>
+<li>將農民資訊 ID 放到 smart contract 上，而藉由 hash ID ，將個人資料儲存於資料庫，不上鏈</li>
+<li>農地資料同上，ID 上鏈，其餘放到 IPFS 上</li>
+</ul>
+<h2 id="東南亞港口管理的機構"><a href="#東南亞港口管理的機構" class="headerlink" title="東南亞港口管理的機構"></a>東南亞港口管理的機構</h2><blockquote>
+<p>港口想要建造一艘新的船隻，非常麻煩，可能需要 30<del>60 張的憑證，需要 3</del>6 個月，而其中多數憑證需要人工申請，非常耗時耗人力。</p>
+</blockquote>
+<h3 id="解決方式-1"><a href="#解決方式-1" class="headerlink" title="解決方式"></a>解決方式</h3><blockquote>
+<p>一家船隻的擁有者，造船時，創建一個 smart contract 放到區塊鏈上，每張 smart contract 都代表一個憑證，取得憑證後，交給監管驗證，核發後建造。</p>
+</blockquote>
+<h2 id="Baseline"><a href="#Baseline" class="headerlink" title="Baseline"></a>Baseline</h2><ul>
+<li>參與者多</li>
+<li>資料共享者多</li>
+<li>憑證可以透過區塊鏈在多個機構中流通</li>
+</ul>
+<blockquote>
+<p>參與者越多，越適合用區塊鏈來解決問題</p>
+</blockquote>
+<h2 id="How-we-work-with-the-customer"><a href="#How-we-work-with-the-customer" class="headerlink" title="How we work with the customer"></a>How we work with the customer</h2><ul>
+<li>3 週聯絡交流</li>
+<li>2 週前往顧客公司討論</li>
+<li>2 月 coding</li>
+</ul>
+<h2 id="航空公司"><a href="#航空公司" class="headerlink" title="航空公司"></a>航空公司</h2><blockquote>
+<p>希望多家航空公司的里程數（紅利）可以共用，多個參與者可以擁有共通的交流平台。</p>
+</blockquote>
+<ul>
+<li>擁有一個共通的貨幣，用以交換產品或價值</li>
+<li>一個開放的平台，任何人只要他想，就可以來參與這個平台</li>
+<li>這個平台必須夠安全</li>
+<li>必須是全球性的</li>
+<li>輕易的加入這個聯盟</li>
+</ul>
+<h3 id="解決方式-2"><a href="#解決方式-2" class="headerlink" title="解決方式"></a>解決方式</h3><blockquote>
+<p>我們認為區塊鏈是好的解決方案、一個安全的方式，資料在其中是分享的，且是一個分散式的系統，資料就會在節點之中去 Ledger。<br>How do we</p>
+</blockquote>
+<ul>
+<li>創建一個 Token 、 ETH 、 Hyperledger？</li>
+<li>外幣交換的機制？</li>
+<li>Track Transaction？</li>
+<li>如何與現有的會員系統做整合？</li>
+<li>interact with other participates？</li>
+<li>如何建立一個全球可信賴的系統？</li>
+<li>多國間的資料如何同步？</li>
+<li>如何管理？</li>
+</ul>
+<h3 id="思考方向"><a href="#思考方向" class="headerlink" title="思考方向"></a>思考方向</h3><ul>
+<li>先解決簡單的問題</li>
+<li>設計一個給單一客戶的架構</li>
+<li>延伸至其他公司</li>
+</ul>
+<h3 id="業務場景"><a href="#業務場景" class="headerlink" title="業務場景"></a>業務場景</h3><ul>
+<li>創建一個貨幣，將各個公司的會員點數擁有一個共通的轉換媒介</li>
+<li>所有透過這個貨幣的交易都必須被完整的記錄下來</li>
+<li>所以的夥伴必須被管理，必須是某個航空公司的會員才能轉換</li>
+</ul>
+<h3 id="區塊鏈角度"><a href="#區塊鏈角度" class="headerlink" title="區塊鏈角度"></a>區塊鏈角度</h3><ul>
+<li>所有的客戶、智能合約都是一個 address 。</li>
+<li>需要數個 contract<ul>
+<li>Token contract</li>
+<li>Exchange Rate Contract</li>
+<li>Transaction Contract<ul>
+<li>記錄一些特殊的交易邏輯</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="We-decide-to"><a href="#We-decide-to" class="headerlink" title="We decide to"></a>We decide to</h3><blockquote>
+<p>微軟在 eth 有各種合作，又 因為有 80% 的 Token 都是 ERC 20 所以採取 ERC20</p>
+</blockquote>
+<ul>
+<li>smart from eth</li>
+<li>uses ERC 20 Standard<ul>
+<li>Function<ul>
+<li>total supply</li>
+<li>balanceOf</li>
+<li>Transfar</li>
+<li>transferFrom</li>
+<li>Approve</li>
+<li>allowance</li>
+</ul>
+</li>
+<li>Events <ul>
+<li>Transfer</li>
+<li>Approval</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>openzepplin：一個針對安全性做增強的 Token 範本</li>
+</ul>
+<h3 id="Create-Digital-Token"><a href="#Create-Digital-Token" class="headerlink" title="Create Digital Token"></a>Create Digital Token</h3><p>&#x3D;&#x3D;等補簡報中的 3 個 smart contract 的 Function&#x3D;&#x3D;</p>
+<ul>
+<li>Transaction</li>
+<li>Token</li>
+<li>Echange Rate</li>
+</ul>
+<h3 id="Questions"><a href="#Questions" class="headerlink" title="Questions"></a>Questions</h3><blockquote>
+<p>Now we have smart contracts ready</p>
+</blockquote>
+<ul>
+<li>Q:如果邏輯需要更改時該如何是好？<ul>
+<li>如何 update ？</li>
+</ul>
+</li>
+<li>A:Proxy Pattern<ul>
+<li>將邏輯與資料分開</li>
+<li>透過更改 Proxy contract ，判斷應該呼叫哪個版本</li>
+</ul>
+</li>
+<li>Q:如何使 API、操作 smart contract ，使之呈現於終端裝置上？</li>
+<li>A:需要一個 <ul>
+<li>Library</li>
+<li>API</li>
+<li>Authentication<ul>
+<li>In smart contract<ul>
+<li>Function <a target="_blank" rel="noopener" href="http://me.tryblockchain.org/blockchain-solidity-functionModifier.html">Modifier</a></li>
+</ul>
+</li>
+<li>In API<ul>
+<li>Truffle.js 部署 Smart Contracts 並測試</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>WEB3.JS<blockquote>
+<p>Challenge</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>Q:如何管理雲端的 eth 與離線的 Database</li>
+<li>A:在 Azure 上<ul>
+<li>Function App</li>
+<li>Web App&#x2F;API app</li>
+<li>Vitual Machines</li>
+</ul>
+</li>
+</ul>
+<h3 id="兩種解決方式"><a href="#兩種解決方式" class="headerlink" title="兩種解決方式"></a>兩種解決方式</h3><p><img src="https://i.imgur.com/CCNCb0g.jpg"></p>
+<blockquote>
+<p>oracle<br><img src="https://i.imgur.com/Md2WqbJ.jpg"> </p>
+</blockquote>
+<h3 id="小結"><a href="#小結" class="headerlink" title="小結"></a>小結</h3><ul>
+<li>呼叫己身 API </li>
+<li>管理自己的會員</li>
+<li>以 VPN 等等網路傳到區塊鏈上同步</li>
+<li>需要報表時，從 Databasr 查詢</li>
+<li>需要驗證時，從 Blockchain 查詢</li>
+</ul>
+<h3 id="未來的問題"><a href="#未來的問題" class="headerlink" title="未來的問題"></a>未來的問題</h3><ul>
+<li>區塊鏈、SQL 哪邊是主體</li>
+<li>是否能夠讓網路互連</li>
+<li>普通的 CI&#x2F;CD 可以使用 Azure 內建的 CI&#x2F;CD</li>
+<li>Smart Contract CI&#x2F;CD<ul>
+<li>當你部署一個新的版本後，對區塊鏈來說就是一個全新的事情，而究竟要不要自動使用 CI&#x2F;CD 尚未有定論。</li>
+</ul>
+</li>
+</ul>
+<h2 id="What’s-Next"><a href="#What’s-Next" class="headerlink" title="What’s Next"></a>What’s Next</h2><ul>
+<li>我們不希望每一個 case 都從頭開始</li>
+<li>我們希望能夠有個 base ，之後的開發都由此延伸</li>
+<li>我們有一個解決方案在 Azure 上，只要將它組合起來</li>
+</ul>
+<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="Before-Start"><a href="#Before-Start" class="headerlink" title="Before Start"></a>Before Start</h2><p><a target="_blank" rel="noopener" href="https://www.microsoftazurepass.com/SubmitPromoCode">https://www.microsoftazurepass.com/SubmitPromoCode</a><br><a target="_blank" rel="noopener" href="https://onedrive.live.com/?authkey=!AHCMYjJIaYWpXF0&id=E0579E51F1904020!363386&cid=E0579E51F1904020">https://onedrive.live.com/?authkey=%21AHCMYjJIaYWpXF0&amp;id=E0579E51F1904020%21363386&amp;cid=E0579E51F1904020</a></p>
+<blockquote>
+<p>快速的建立區塊鏈並運用<br>運用 Azure 上的 template</p>
+</blockquote>
+<p>從 60% ~ 70% 開始建立區塊鏈<br>之後會把代碼開源出來到 GitHub （大驚！！</p>
+<p>For 聯盟鏈</p>
+</div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/me.jpeg" alt="William Mou"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">William Mou</p><p class="is-size-6 is-block">HPC engineer</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>NTHU CS, Taiwan</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives/"><p class="title">22</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories/"><p class="title">7</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags/"><p class="title">22</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/William-Mou" target="_blank" rel="me noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Github" href="https://github.com/William-Mou"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Facebook" href="https://www.facebook.com/william.mou1024/"><i class="fab fa-facebook"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="Telegram" href="https://t.me/WilliamMou"><i class="fab fa-telegram"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="me noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="links"><div class="card-content"><div class="menu"><h3 class="menu-label">Links</h3><ul class="menu-list"><li><a class="level is-mobile" href="https://www.nthu.edu.tw/hotNews/content/1023" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">ASC</span></span><span class="level-right"><span class="level-item tag">www.nthu.edu.tw</span></span></a></li><li><a class="level is-mobile" href="https://sitcon.org/2020/agenda/bb4fc171-920f-48de-b411-ec0095306491" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">PVE</span></span><span class="level-right"><span class="level-item tag">sitcon.org</span></span></a></li><li><a class="level is-mobile" href="https://sitcon.org" target="_blank" rel="noopener"><span class="level-left"><span class="level-item">SITCON</span></span><span class="level-right"><span class="level-item tag">sitcon.org</span></span></a></li></ul></div></div></div><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">Categories</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Blockchain/"><span class="level-start"><span class="level-item">Blockchain</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/categories/SITCON/"><span class="level-start"><span class="level-item">SITCON</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%97%85%E8%A1%8C/"><span class="level-start"><span class="level-item">旅行</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/"><span class="level-start"><span class="level-item">機器學習</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li><li><a class="level is-mobile" href="/categories/%E7%B6%93%E9%A9%97%E8%B3%87%E6%BA%90/"><span class="level-start"><span class="level-item">經驗資源</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8/"><span class="level-start"><span class="level-item">資訊安全</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/categories/%E8%B3%87%E8%A8%8A%E8%AC%9B%E5%BA%A7/"><span class="level-start"><span class="level-item">資訊講座</span></span><span class="level-end"><span class="level-item tag">5</span></span></a></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><figure class="media-left"><a class="image" href="/2023/05/26/ISC23-Europe-Hamburg/"><img src="/img/ISC23-Europe-Hamburg_files/image_1n.png" alt="ISC23 歐洲行 - 漢堡"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-05-26T09:00:00.000Z">2023-05-26</time></p><p class="title"><a href="/2023/05/26/ISC23-Europe-Hamburg/">ISC23 歐洲行 - 漢堡</a></p><p class="categories"><a href="/categories/%E6%97%85%E8%A1%8C/">旅行</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2023/05/25/ISC23-Europe-Lubeck/"><img src="/img/ISC23-Europe-Lubeck_files/image_13.png" alt="ISC23 歐洲行 - 呂北克"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-05-25T09:00:00.000Z">2023-05-25</time></p><p class="title"><a href="/2023/05/25/ISC23-Europe-Lubeck/">ISC23 歐洲行 - 呂北克</a></p><p class="categories"><a href="/categories/%E6%97%85%E8%A1%8C/">旅行</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2023/05/21/ISC23-Europe-in-competition/"><img src="/img/ISC23-Europe-in-competition_files/image_j.png" alt="ISC23 歐洲行 - 賽中及展覽參訪"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-05-21T09:00:00.000Z">2023-05-21</time></p><p class="title"><a href="/2023/05/21/ISC23-Europe-in-competition/">ISC23 歐洲行 - 賽中及展覽參訪</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2023/05/20/ISC23-Europe-pre-competition/"><img src="/img/ISC23-Europe-pre-competition_files/image_b.png" alt="ISC23 歐洲行 - 賽前準備及旅遊安排"></a></figure><div class="media-content"><p class="date"><time dateTime="2023-05-20T09:00:00.000Z">2023-05-20</time></p><p class="title"><a href="/2023/05/20/ISC23-Europe-pre-competition/">ISC23 歐洲行 - 賽前準備及旅遊安排</a></p></div></article><article class="media"><figure class="media-left"><a class="image" href="/2019/09/13/%E5%AE%8C%E6%95%B4%E5%AD%B8%E7%BF%92%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%AF%A6%E9%8C%842%E2%80%94%E2%80%94%E5%AE%89%E8%A3%9D-Nvidia-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%92%B0%E5%A2%83/"><img src="https://img-blog.csdnimg.cn/20190117174859505.png?" alt="完整學習機器學習實錄2——安裝 Nvidia 機器學習環境"></a></figure><div class="media-content"><p class="date"><time dateTime="2019-09-13T22:31:13.000Z">2019-09-13</time></p><p class="title"><a href="/2019/09/13/%E5%AE%8C%E6%95%B4%E5%AD%B8%E7%BF%92%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%AF%A6%E9%8C%842%E2%80%94%E2%80%94%E5%AE%89%E8%A3%9D-Nvidia-%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%92%B0%E5%A2%83/">完整學習機器學習實錄2——安裝 Nvidia 機器學習環境</a></p><p class="categories"><a href="/categories/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/">機器學習</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2023/05/"><span class="level-start"><span class="level-item">May 2023</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/09/"><span class="level-start"><span class="level-item">September 2019</span></span><span class="level-end"><span class="level-item tag">4</span></span></a></li><li><a class="level is-mobile" href="/archives/2019/01/"><span class="level-start"><span class="level-item">January 2019</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/12/"><span class="level-start"><span class="level-item">December 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/11/"><span class="level-start"><span class="level-item">November 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/08/"><span class="level-start"><span class="level-item">August 2018</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/05/"><span class="level-start"><span class="level-item">May 2018</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/03/"><span class="level-start"><span class="level-item">March 2018</span></span><span class="level-end"><span class="level-item tag">3</span></span></a></li><li><a class="level is-mobile" href="/archives/2018/01/"><span class="level-start"><span class="level-item">January 2018</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2017/08/"><span class="level-start"><span class="level-item">August 2017</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">Tags</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/AIJT/"><span class="tag">AIJT</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/ChatBot/"><span class="tag">ChatBot</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Firefox/"><span class="tag">Firefox</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/GCP/"><span class="tag">GCP</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/GPU/"><span class="tag">GPU</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/HITCON/"><span class="tag">HITCON</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Microsoft/"><span class="tag">Microsoft</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Myself/"><span class="tag">Myself</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/NTHU/"><span class="tag">NTHU</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Telegram/"><span class="tag">Telegram</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/TensorFlow/"><span class="tag">TensorFlow</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Web/"><span class="tag">Web</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%8D%80%E5%A1%8A%E9%8F%88/"><span class="tag">區塊鏈</span><span class="tag">3</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%94%90%E9%B3%B3/"><span class="tag">唐鳳</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%AE%8C%E6%95%B4%E5%AD%B8%E7%BF%92%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E5%AF%A6%E9%8C%84/"><span class="tag">完整學習機器學習實錄</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%AF%A6%E9%A9%97%E6%95%99%E8%82%B2/"><span class="tag">實驗教育</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E5%BD%B1%E5%83%8F%E8%BE%A8%E8%AD%98/"><span class="tag">影像辨識</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/"><span class="tag">機器學習</span><span class="tag">6</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%A0%94%E8%A8%8E%E6%9C%83/"><span class="tag">研討會</span><span class="tag">2</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E7%B6%93%E9%A9%97%E5%88%86%E4%BA%AB/"><span class="tag">經驗分享</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%87%AA%E5%AD%B8/"><span class="tag">自學</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%E8%B3%87%E5%AE%89/"><span class="tag">資安</span><span class="tag">3</span></a></div></div></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">Subscribe for updates</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div><div class="card widget"><div class="card-content"><div class="notification is-danger">You need to set <code>client_id</code> and <code>slot_id</code> to show this AD unit. Please set it in <code>_config.yml</code>.</div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.png" alt="William Mou" height="28"></a><p class="is-size-7"><span>&copy; 2026 William Mou</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-sourcetree"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script data-pjax src="/js/column.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script data-pjax src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script data-pjax src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script data-pjax src="/js/insight.js" defer></script><script data-pjax>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>
