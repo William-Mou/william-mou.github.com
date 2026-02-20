@@ -1,6 +1,6 @@
 ---
 title: ISC23 歐洲行 - 賽前準備及旅遊安排
-date: 2026-02-18 16:34:23
+date: 2023-05-20 09:00:00
 tags:
 categories:
 thumbnail: /img/ISC23-Europe-pre-competition_files/image_b.png

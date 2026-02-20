@@ -1,6 +1,6 @@
 ---
 title: ISC23 歐洲行 - 賽中及展覽參訪
-date: 2026-02-18 18:00:36
+date: 2023-05-21 09:00:00
 tags:
 categories:
 thumbnail: /img/ISC23-Europe-in-competition_files/image_j.png
